@@ -12,6 +12,6 @@ Careers (as a page, not a system until there's an actual pipeline to justify one
 Legal pages (privacy policy, terms, company legal info)
 General contact
 
-Who has write access: You, initially. This is the one place brand-level messaging about both divisions coexists, so it's also the one place where a founder/CEO editorial pass makes sense without violating BBM's editorial independence. This page describes BBM's existence, it doesn't do BBM's editorial work.
+Who has write access: You, initially. This is the one place brand-level messaging about both divisions coexists, so it's also the one place where CEO editorial pass makes sense without violating BBM's editorial independence. This page describes BBM's existence, it doesn't do BBM's editorial work.
 
-Stack: Next.js, static/SSR, no database.
+Stack: React.js, static, no database.

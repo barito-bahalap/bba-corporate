@@ -2,12 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bba-corporate</title>
+
+    <!-- Primary SEO -->
+    <title>Barito Bahalap Agency | Technology & Media</title>
+
+    <meta
+      name="description"
+      content="Barito Bahalap Agency (BBA) is the holding company behind Barito Bahalap Tech and Barito Bahalap Media, building software and independent media from Kalimantan."
+    />
+    <link rel="canonical" href="https://baritobahalap.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Branding / browser UI -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0b1f1a" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph (link previews on WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Barito Bahalap Agency" />
+    <meta property="og:title" content="Barito Bahalap Agency" />
+    <meta
+      property="og:description"
+      content="The holding company behind Barito Bahalap Tech and Barito Bahalap Media."
+    />
+    <meta property="og:url" content="https://baritobahalap.com/" />
+    <meta property="og:image" content="https://baritobahalap.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_ID" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Barito Bahalap Agency" />
+    <meta
+      name="twitter:description"
+      content="The holding company behind Barito Bahalap Tech and Barito Bahalap Media."
+    />
+    <meta name="twitter:image" content="https://baritobahalap.com/og-image.png" />
+
+    <!-- Structured data: tells search engines who BBA is -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Barito Bahalap Agency",
+        "alternateName": "BBA",
+        "url": "https://baritobahalap.com/",
+        "logo": "https://baritobahalap.com/favicon.svg",
+        "areaServed": "ID",
+        "subOrganization": [
+          { "@type": "Organization", "name": "Barito Bahalap Tech" },
+          { "@type": "Organization", "name": "Barito Bahalap Media" }
+        ]
+      }
+    </script>
+
+    <!-- Fonts: uncomment once you pick them -->
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    -->
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      Barito Bahalap Agency is the holding company behind Barito Bahalap Tech
+      and Barito Bahalap Media. Please enable JavaScript to view this site.
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

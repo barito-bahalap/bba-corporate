@@ -1,0 +1,128 @@
+.footer {
+  background-color: var(--bba-primary-light);
+  color: var(--bba-ink);
+}
+
+.footer__main,
+.footer__bottom {
+  padding-inline: var(--bba-pad);
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding-block: 56px;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer__col:not(:last-child) {
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.footer__tagline {
+  max-width: 36ch;
+  margin: 4px 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--bba-ink-soft);
+}
+
+.footer__email {
+  color: var(--bba-ink);
+  font-size: 0.9375rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer__heading {
+  margin: 0 0 4px;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bba-ink-soft);
+}
+
+.footer__link {
+  color: var(--bba-ink);
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: color var(--duration-fast, 0.15s) var(--ease-default, ease);
+}
+
+a.footer__link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__division {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__division::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--bba-ink-muted);
+}
+
+.footer__division--bbt::before {
+  background-color: var(--bba-accent-tech);
+}
+
+.footer__division--bbm::before {
+  background-color: var(--bba-accent-media);
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-block: 20px;
+  background-color: var(--bba-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--bba-ink-soft);
+}
+
+@media (min-width: 768px) {
+  .footer__main {
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 72px;
+  }
+
+  .footer__col--brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer__col:not(:last-child) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__main {
+    grid-template-columns: 2fr repeat(3, 1fr);
+  }
+
+  .footer__col--brand {
+    grid-column: auto;
+  }
+}
