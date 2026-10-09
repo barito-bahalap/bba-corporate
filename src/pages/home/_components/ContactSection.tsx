@@ -1,15 +1,16 @@
+// Style
+
+// Config
 import { siteConfig } from "@barito-bahalap/config";
-import {
-  ContactForm,
-  Icon,
-  Section,
-  SectionHeader,
-  type ContactField,
-  type ContactFormErrors,
-  type ContactFormValues,
-  type SelectOption,
-} from "@barito-bahalap/components/ui";
-import type { ContactContent } from "../../../domain/content";
+import { ContactForm, Icon, Section, SectionHeader } from "@/components";
+// Types
+import type {
+   ContactField,
+   ContactFormErrors,
+   ContactFormValues,
+   SelectOption,
+} from "@/components";
+import type { ContactContent } from "@/domain/content";
 
 interface ContactSectionProps extends ContactContent {
   form: {
@@ -22,19 +23,31 @@ interface ContactSectionProps extends ContactContent {
   };
 }
 
-export function ContactSection({ eyebrow, title, intro, form }: ContactSectionProps) {
+export function ContactSection({
+  eyebrow,
+  title,
+  intro,
+  form,
+}: ContactSectionProps) {
   return (
     <Section id="contact" labelledBy="contact-title">
       <div className="home-contact">
         <div className="home-contact__info">
-          <SectionHeader eyebrow={eyebrow} title={title} intro={intro} id="contact-title" />
+          <SectionHeader
+            eyebrow={eyebrow}
+            title={title}
+            intro={intro}
+            id="contact-title"
+          />
           <ul className="home-contact__list" role="list">
             <li>
-              <Icon name="mail" size={20} />
-              <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+              <Icon iconName="envelope" size={20} />
+              <a href={`mailto:${siteConfig.contactEmail}`}>
+                {siteConfig.contactEmail}
+              </a>
             </li>
             <li>
-              <Icon name="pin" size={20} />
+              <Icon iconName="pin" size={20} />
               <span>{siteConfig.location}</span>
             </li>
           </ul>

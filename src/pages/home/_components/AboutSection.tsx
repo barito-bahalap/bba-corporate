@@ -1,7 +1,17 @@
-import { Section, SectionHeader, StatBlock } from "@barito-bahalap/components/ui";
-import type { AboutContent } from "../../../domain/content";
+// Style
 
-export function AboutSection({ eyebrow, title, paragraphs, stats }: AboutContent) {
+// Components
+import { Section, SectionHeader } from "@/components";
+import { StatBlock } from "@/components";
+// Types
+import type { AboutContent } from "@/domain/content";
+
+export function AboutSection({
+  eyebrow,
+  title,
+  paragraphs,
+  stats,
+}: AboutContent) {
   return (
     <Section id="about" tone="surface" labelledBy="about-title">
       <SectionHeader eyebrow={eyebrow} title={title} id="about-title" />

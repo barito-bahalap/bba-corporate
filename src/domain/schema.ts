@@ -14,7 +14,7 @@ export function buildOrganizationSchema(): Record<string, unknown> {
       addressRegion: "Central Kalimantan",
       addressCountry: "ID",
     },
-    founder: { "@type": "Person", name: "Basilius Tengang" },
+    founder: { "@type": "Profile", name: "Basilius Tengang" },
     subOrganization: divisions.map((division) => ({
       "@type": "Organization",
       name: division.name,

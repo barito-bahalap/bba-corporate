@@ -1,3 +1,4 @@
+// Types
 import type { HomeContent } from "@/domain/content";
 
 export const homeContent: HomeContent = {
@@ -59,19 +60,19 @@ export const homeContent: HomeContent = {
           "Designs, builds and maintains digital systems for organizational operations. BBT works as a long-term infrastructure partner, not as a one-off web developer.",
         capabilities: [
           {
-            iconName: "code",
+            iconName: "codeSlash",
             title: "Custom software and internal systems",
             description:
               "Enterprise applications and information systems built around your workflows.",
           },
           {
-            iconName: "chart",
+            iconName: "pieChartFill",
             title: "Operational dashboards",
             description:
               "Analytical and monitoring dashboards that bring internal data and reporting into one place.",
           },
           {
-            iconName: "workflow",
+            iconName: "barChart",
             title: "Automation and integration",
             description:
               "Business process automation and platform integration, with long-term technical support under a retainer.",
@@ -126,7 +127,7 @@ export const homeContent: HomeContent = {
               "Content operations, copywriting, editorial services and publication management.",
           },
           {
-            iconName: "camera",
+            iconName: "imageAlt",
             title: "Multimedia production",
             description:
               "Photography, videography and graphic production, supported by social media strategy.",
@@ -150,13 +151,13 @@ export const homeContent: HomeContent = {
       "These commitments are built into how the organization operates, so procurement, legal and compliance teams can review them.",
     items: [
       {
-        iconName: "split",
+        iconName: "box",
         title: "Separation by design",
         description:
           "BBT and BBM have separate brands, teams, client accounts and working data. Cross-division access happens only on a need-to-know basis.",
       },
       {
-        iconName: "file",
+        iconName: "filePdf",
         title: "Defined scope and accountability",
         description:
           "Every engagement rests on a written agreement covering scope, responsibilities, timeline and dispute resolution. Each function has a clear decision owner.",
@@ -168,7 +169,7 @@ export const homeContent: HomeContent = {
           "Client information is accessed only by personnel working on that engagement, and is not shared across divisions without the client's explicit agreement.",
       },
       {
-        iconName: "shield",
+        iconName: "shieldFillCheck",
         title: "Compliance and oversight",
         description:
           "Contractual, legal and reputational risk is overseen at holding level, without overriding technical or editorial decisions in either division.",
@@ -194,7 +195,7 @@ export const homeContent: HomeContent = {
     authority: [
       {
         brand: "tech",
-        iconName: "code",
+        iconName: "codeSlash",
         title: "Delivery Lead, BBT",
         description:
           "Holds authority over system architecture, development methodology and maintenance priorities.",

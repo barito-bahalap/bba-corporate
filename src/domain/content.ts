@@ -2,7 +2,7 @@ import type { LegalSectionData } from "@barito-bahalap/components";
 import type {
   DivisionBrand,
   DivisionId,
-  Person,
+  Profile,
   IconsType,
 } from "@barito-bahalap/types";
 
@@ -90,7 +90,7 @@ export interface LeadershipContent {
   eyebrow: string;
   title: string;
   intro: string;
-  people: Person[];
+  people: Profile[];
   authorityTitle: string;
   authority: AuthorityItem[];
 }

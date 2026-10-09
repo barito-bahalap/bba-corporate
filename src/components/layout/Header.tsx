@@ -80,9 +80,7 @@ export function Header() {
         </nav>
 
         <div className="header__cta">
-          <Button href={headerCta.href} size="sm">
-            {headerCta.label}
-          </Button>
+          <Button label={headerCta.label} href={headerCta.href} size="sm" />
         </div>
 
         <button
@@ -132,9 +130,7 @@ export function Header() {
             </SmartLink>
           ))}
           <div className="header__drawer-cta">
-            <Button href={headerCta.href} fullWidth onClick={closeDrawer}>
-              {headerCta.label}
-            </Button>
+            <Button label={headerCta.label} href={headerCta.href} fullWidth onClick={closeDrawer} />
           </div>
         </nav>
       </aside>

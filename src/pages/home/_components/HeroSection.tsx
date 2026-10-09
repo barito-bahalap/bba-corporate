@@ -1,6 +1,10 @@
-import { Button, Eyebrow } from "@barito-bahalap/components/ui";
-import type { HeroContent } from "../../../domain/content";
+// Style
+
+// Components
+import { Button, Eyebrow } from "@/components";
 import { RiverVisual } from "./RiverVisual";
+// Types
+import type { HeroContent } from "@/domain/content";
 
 export function HeroSection({
   eyebrow,
@@ -19,12 +23,19 @@ export function HeroSection({
           </h1>
           <p className="home-hero__subhead">{subhead}</p>
           <div className="home-hero__actions">
-            <Button href={primaryCta.href} size="lg" iconName="arrow-right" iconAfter>
-              {primaryCta.label}
-            </Button>
-            <Button href={secondaryCta.href} size="lg" variant="outline">
-              {secondaryCta.label}
-            </Button>
+            <Button
+              label={primaryCta.label}
+              href={primaryCta.href}
+              size="lg"
+              iconName="arrowRight"
+              iconAfter
+            />
+            <Button
+              label={secondaryCta.label}
+              href={secondaryCta.href}
+              size="lg"
+              variant="outline"
+            />
           </div>
         </div>
         <div className="home-hero__visual">

@@ -1,5 +1,9 @@
-import { InfoCard, PersonCard, Section, SectionHeader } from "@barito-bahalap/components/ui";
-import type { LeadershipContent } from "../../../domain/content";
+// Style
+
+// Components
+import { InfoCard, PersonCard, Section, SectionHeader } from "@/components";
+// Types
+import type { LeadershipContent } from "@/domain/content";
 
 export function LeadershipSection({
   eyebrow,
@@ -13,7 +17,12 @@ export function LeadershipSection({
 
   return (
     <Section id="leadership" labelledBy="leadership-title">
-      <SectionHeader eyebrow={eyebrow} title={title} intro={intro} id="leadership-title" />
+      <SectionHeader
+        eyebrow={eyebrow}
+        title={title}
+        intro={intro}
+        id="leadership-title"
+      />
       <div className="home-leadership__people">
         {published.map((person) => (
           <PersonCard

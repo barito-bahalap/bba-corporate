@@ -13,9 +13,7 @@ export default function NotFoundPage() {
           title="Page not found."
           sub="The page you are looking for does not exist or has moved."
           action={
-            <Button href="/" iconName="arrowRight" iconAfter>
-              Back to home
-            </Button>
+            <Button label="Back to home" href="/" iconName="arrowRight" iconAfter />
           }
         />
       </Section>
