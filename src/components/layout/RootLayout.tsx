@@ -1,11 +1,11 @@
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 // Style
 import "./RootLayout.css";
 // Contexts
-import { HeaderProvider } from "@barito-bahalap/contexts/header";
+import { HeaderProvider } from "@barito-bahalap/contexts";
 // Components
-import { Header, Footer } from ".";
-import { ScrollToTop } from "@barito-bahalap/components/routing";
+import { LoadingSpinner, ScrollToTop, Header, Footer } from "@/components";
 
 export function RootLayout() {
   return (
@@ -20,7 +20,9 @@ export function RootLayout() {
         <Header />
 
         <main id="main" className="root-layout__main">
-          <Outlet />
+          <Suspense fallback={<LoadingSpinner block />}>
+            <Outlet />
+          </Suspense>
         </main>
 
         <Footer />

@@ -1,22 +1,29 @@
-import { Link } from "react-router-dom";
+// Style
+import "./Brand.css";
 // Config
 import { siteConfig } from "@barito-bahalap/config";
+// Components
+import { SmartLink } from "@/components";
 
 interface BrandProps {
-  showName?: boolean;
+  onDark?: boolean;
 }
 
-export function Brand({ showName = true }: BrandProps) {
+export function Brand({ onDark = false }: BrandProps) {
   return (
-    <Link to="/" className="bba-brand" aria-label={`${siteConfig.name} home`}>
-      <span className="bba-brand__mark" aria-hidden="true">
-        <span className="bba-brand__dot bba-brand__dot--tech" />
-        <span className="bba-brand__dot bba-brand__dot--media" />
+    <SmartLink
+      href="/"
+      className={`brand${onDark ? " brand--on-dark" : ""}`}
+      aria-label={`${siteConfig.name}, home`}
+    >
+      <span className="brand__mark" aria-hidden="true">
+        <span className="brand__dot" data-brand="tech" />
+        <span className="brand__dot" data-brand="media" />
       </span>
-      <span className="bba-brand__text">
-        <span className="bba-brand__short">{siteConfig.shortName}</span>
-        {showName && <span className="bba-brand__name">{siteConfig.name}</span>}
+      <span className="brand__text">
+        <span className="brand__short">{siteConfig.shortName}</span>
+        <span className="brand__name">{siteConfig.name}</span>
       </span>
-    </Link>
+    </SmartLink>
   );
 }

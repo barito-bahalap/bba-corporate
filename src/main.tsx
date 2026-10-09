@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 // Style
 import "@barito-bahalap/styles";
 import "@barito-bahalap/styles/brands/corporate";
+import "@barito-bahalap/styles/brands/scopes";
 // App
-import App from "./app/App.tsx";
+import { App } from "./app/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

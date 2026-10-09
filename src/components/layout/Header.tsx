@@ -1,57 +1,56 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 // Style
 import "./Header.css";
 // Config
 import { headerCta, mainNav } from "@barito-bahalap/config";
 // Contexts
-import { useHeaderContext } from "@barito-bahalap/contexts/header";
+import { useHeaderContext } from "@barito-bahalap/contexts";
 // Components
-import { SmartLink } from "@barito-bahalap/components/routing";
-import { Brand } from ".";
+import { Button, SmartLink, Brand } from "@/components";
 
 export function Header() {
   const { transparentAllowed } = useHeaderContext();
   const { pathname } = useLocation();
-  const [scrolled, setScrolled] = useState(false);
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(
+    () => typeof window !== "undefined" && window.scrollY > 40,
+  );
+  const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+
+  const drawerOpen = openedAt === pathname;
 
   useEffect(() => {
-    function handleScroll() {
-      setScrolled(window.scrollY > 40);
-    }
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 1024px)");
+    const onChange = (event: MediaQueryListEvent) => {
+      if (event.matches) setOpenedAt(null);
+    };
+    query.addEventListener("change", onChange);
+    return () => query.removeEventListener("change", onChange);
   }, []);
 
   useEffect(() => {
     if (!drawerOpen) return;
-    function handleEscape(e: KeyboardEvent) {
-      if (e.key === "Escape") setDrawerOpen(false);
-    }
-    document.addEventListener("keydown", handleEscape);
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpenedAt(null);
+    };
+    document.addEventListener("keydown", onKey);
     document.body.classList.add("no-scroll");
+    closeRef.current?.focus();
     return () => {
-      document.removeEventListener("keydown", handleEscape);
+      document.removeEventListener("keydown", onKey);
       document.body.classList.remove("no-scroll");
     };
   }, [drawerOpen]);
 
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 1024) setDrawerOpen(false);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    setDrawerOpen(false);
-  }, [pathname]);
-
-  const isTransparent = transparentAllowed && !scrolled;
-  const closeDrawer = () => setDrawerOpen(false);
+  const isTransparent = transparentAllowed && !scrolled && !drawerOpen;
+  const closeDrawer = () => setOpenedAt(null);
   const isActive = (href: string) => !href.includes("#") && href === pathname;
 
   return (
@@ -64,7 +63,7 @@ export function Header() {
         .filter(Boolean)
         .join(" ")}
     >
-      <div className="header__main">
+      <div className="header__main container wide">
         <Brand />
 
         <nav className="header__menus" aria-label="Primary">
@@ -72,21 +71,19 @@ export function Header() {
             <SmartLink
               key={href}
               href={href}
-              className={`header__menu-item${
-                isActive(href) ? " header__menu-item--active" : ""
-              }`}
+              className={`header__menu-item${isActive(href) ? " header__menu-item--active" : ""}`}
+              aria-current={isActive(href) ? "page" : undefined}
             >
               {label}
             </SmartLink>
           ))}
         </nav>
 
-        <SmartLink
-          href={headerCta.href}
-          className="header__cta bba-btn bba-btn--light"
-        >
-          {headerCta.label}
-        </SmartLink>
+        <div className="header__cta">
+          <Button href={headerCta.href} size="sm">
+            {headerCta.label}
+          </Button>
+        </div>
 
         <button
           type="button"
@@ -94,7 +91,7 @@ export function Header() {
           aria-label="Open menu"
           aria-expanded={drawerOpen}
           aria-controls="header-drawer"
-          onClick={() => setDrawerOpen(true)}
+          onClick={() => setOpenedAt(pathname)}
         >
           <span className="header__bars" aria-hidden="true" />
         </button>
@@ -108,10 +105,12 @@ export function Header() {
       <aside
         id="header-drawer"
         className={`header__drawer${drawerOpen ? " header__drawer--open" : ""}`}
-        aria-hidden={!drawerOpen}
+        aria-label="Menu"
+        inert={!drawerOpen}
       >
         <div className="header__drawer-head">
           <button
+            ref={closeRef}
             type="button"
             className="header__close"
             aria-label="Close menu"
@@ -126,23 +125,17 @@ export function Header() {
             <SmartLink
               key={href}
               href={href}
-              tabIndex={drawerOpen ? 0 : -1}
               onClick={closeDrawer}
-              className={`header__drawer-item${
-                isActive(href) ? " header__drawer-item--active" : ""
-              }`}
+              className={`header__drawer-item${isActive(href) ? " header__drawer-item--active" : ""}`}
             >
               {label}
             </SmartLink>
           ))}
-          <SmartLink
-            href={headerCta.href}
-            tabIndex={drawerOpen ? 0 : -1}
-            onClick={closeDrawer}
-            className="header__drawer-cta bba-btn bba-btn--light"
-          >
-            {headerCta.label}
-          </SmartLink>
+          <div className="header__drawer-cta">
+            <Button href={headerCta.href} fullWidth onClick={closeDrawer}>
+              {headerCta.label}
+            </Button>
+          </div>
         </nav>
       </aside>
     </header>
