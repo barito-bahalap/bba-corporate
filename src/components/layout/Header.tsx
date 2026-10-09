@@ -3,11 +3,11 @@ import { useLocation } from "react-router-dom";
 // Style
 import "./Header.css";
 // Config
-import { headerCta, mainNav } from "@barito-bahalap/config";
+import { headerCta, mainNav } from "@baritobahalap/config";
 // Contexts
-import { useHeaderContext } from "@barito-bahalap/contexts/header";
+import { useHeaderContext } from "@baritobahalap/contexts/header";
 // Components
-import { SmartLink } from "@barito-bahalap/components/routing";
+import { SmartLink } from "@baritobahalap/components/routing";
 import { Brand } from ".";
 
 export function Header() {

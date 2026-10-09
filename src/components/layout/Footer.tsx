@@ -6,9 +6,9 @@ import {
   footerGroups,
   siteConfig,
   socialLinks,
-} from "@barito-bahalap/config";
+} from "@baritobahalap/config";
 // Components
-import { SmartLink } from "@barito-bahalap/components/routing";
+import { SmartLink } from "@baritobahalap/components/routing";
 import { Brand } from ".";
 
 export function Footer() {

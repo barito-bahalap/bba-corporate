@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // Config
-import { siteConfig } from "@barito-bahalap/config";
+import { siteConfig } from "@baritobahalap/config";
 
 interface BrandProps {
   showName?: boolean;
