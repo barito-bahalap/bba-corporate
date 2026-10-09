@@ -3,7 +3,7 @@ import type { HomeContent } from "@/domain/content";
 
 export const homeContent: HomeContent = {
   seo: {
-    title: "Technology and strategic communications",
+    title: "Barito Bahalap Agency | Technology and strategic communications",
     description:
       "Barito Bahalap Agency is an independent holding organization in Palangka Raya, Central Kalimantan, overseeing Barito Bahalap Tech and Barito Bahalap Media as two separate operating brands.",
   },
@@ -186,7 +186,8 @@ export const homeContent: HomeContent = {
       {
         id: "basilius-tengang",
         name: "Basilius Tengang",
-        role: "Founder and Director",
+        role: "SUPER_ADMIN",
+        title: "Founder and Director",
         bio: "Oversees corporate governance, strategy, contracts, finance, legal compliance and reputational risk for BBA.",
         published: true,
       },

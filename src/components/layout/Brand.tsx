@@ -16,14 +16,19 @@ export function Brand({ onDark = false }: BrandProps) {
       className={`brand${onDark ? " brand--on-dark" : ""}`}
       aria-label={`${siteConfig.name}, home`}
     >
-      <span className="brand__mark" aria-hidden="true">
+      
+      
+      <img src="/favicon.svg"/>
+
+      <span className="brand__text">
+        <span className="brand__mark" aria-hidden="true">
         <span className="brand__dot" data-brand="tech" />
         <span className="brand__dot" data-brand="media" />
       </span>
-      <span className="brand__text">
         <span className="brand__short">{siteConfig.shortName}</span>
         <span className="brand__name">{siteConfig.name}</span>
       </span>
+
     </SmartLink>
   );
 }

@@ -28,7 +28,7 @@ export function LeadershipSection({
           <PersonCard
             key={person.id}
             name={person.name}
-            role={person.role}
+            title={person.title}
             bio={person.bio}
             photoSrc={person.photoSrc}
             photoAlt={person.photoAlt}
