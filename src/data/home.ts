@@ -187,7 +187,7 @@ export const homeContent: HomeContent = {
         id: "basilius-tengang",
         name: "Basilius Tengang",
         role: "SUPER_ADMIN",
-        title: "Founder and Director",
+        title: "Co-founder & CEO",
         bio: "Oversees corporate governance, strategy, contracts, finance, legal compliance and reputational risk for BBA.",
         published: true,
       },
