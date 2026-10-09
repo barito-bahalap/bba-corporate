@@ -1,3 +1,3 @@
 export * from "./layout";
 
-// export * from "@baritobahalap/components";
+// export * from "@barito-bahalap/components";

@@ -2,10 +2,10 @@ import { Outlet } from "react-router-dom";
 // Style
 import "./RootLayout.css";
 // Contexts
-import { HeaderProvider } from "@baritobahalap/contexts/header";
+import { HeaderProvider } from "@barito-bahalap/contexts/header";
 // Components
 import { Header, Footer } from ".";
-import { ScrollToTop } from "@baritobahalap/components/routing";
+import { ScrollToTop } from "@barito-bahalap/components/routing";
 
 export function RootLayout() {
   return (
