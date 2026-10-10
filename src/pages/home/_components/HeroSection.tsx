@@ -17,10 +17,12 @@ export function HeroSection({
     <section className="home-hero" aria-labelledby="hero-title">
       <div className="home-hero__grid container content">
         <div className="home-hero__copy">
-          <Eyebrow>{eyebrow}</Eyebrow>
+          {eyebrow && <Eyebrow label={eyebrow} />}
+
           <h1 id="hero-title" className="home-hero__title">
             {headline}
           </h1>
+
           <p className="home-hero__subhead">{subhead}</p>
           <div className="home-hero__actions">
             <Button

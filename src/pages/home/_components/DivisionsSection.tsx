@@ -3,10 +3,7 @@
 // Components
 import { Badge, Button, Icon, Section, SectionHeader } from "@/components";
 // Types
-import type {
-  DivisionContent,
-  DivisionsContent,
-} from "@/domain/content";
+import type { DivisionContent, DivisionsContent } from "@/domain/content";
 
 function DivisionCard({ division }: { division: DivisionContent }) {
   return (
@@ -15,9 +12,8 @@ function DivisionCard({ division }: { division: DivisionContent }) {
       data-brand={division.brand}
     >
       <header className="division-card__head">
-        <Badge variant="primary" dot>
-          {division.badge}
-        </Badge>
+        <Badge label={division.badge} variant="primary" dot />
+
         <h3 className="division-card__name">{division.name}</h3>
         <p className="division-card__descriptor">{division.descriptor}</p>
       </header>
@@ -28,7 +24,12 @@ function DivisionCard({ division }: { division: DivisionContent }) {
         {division.capabilities.map((capability) => (
           <li key={capability.title} className="division-card__cap">
             <span className="division-card__cap-icon">
-              <Icon iconName={capability.iconName} size={20} />
+              <Icon
+                iconName={capability.iconName}
+                fill="var(--clr-primary)"
+                fillHover="var(--clr-primary-hover)"
+                size={20}
+              />
             </span>
             <div>
               <h4 className="division-card__cap-title">{capability.title}</h4>
@@ -72,8 +73,7 @@ function DivisionCard({ division }: { division: DivisionContent }) {
         label={division.cta.label}
         href={division.cta.href}
         variant="primary"
-        iconName="arrowRight"
-        iconAfter
+        fullWidth
       />
     </article>
   );

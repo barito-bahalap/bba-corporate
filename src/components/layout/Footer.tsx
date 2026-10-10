@@ -40,10 +40,12 @@ export function Footer() {
 
         <div className="footer__col">
           <h2 className="footer__heading">Divisions</h2>
-          {divisions.map(({ id, brand, name }) => (
+          {divisions.map(({ id, brand, name, href }) => (
             <span key={id} className="footer__division" data-brand={brand}>
               <span className="footer__dot" aria-hidden="true" />
-              {name}
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {name}
+              </a>
             </span>
           ))}
         </div>

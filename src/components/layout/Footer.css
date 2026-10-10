@@ -61,7 +61,7 @@
 .footer__division {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: var(--space-2);
   color: var(--clr-ink-on-dark-soft);
   font-size: var(--fs-sm-alt);
 }

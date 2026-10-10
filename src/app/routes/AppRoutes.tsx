@@ -15,7 +15,7 @@ export const appRoutes = [
     children: [
       { index: true, element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
-      { path: "career", element: <CareersPage /> },
+      { path: "careers", element: <CareersPage /> },
       { path: "privacy", element: <PrivacyPage /> },
       { path: "terms", element: <TermsPage /> },
     ],

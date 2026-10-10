@@ -12,7 +12,7 @@ export interface Cta {
 }
 
 export interface HeroContent {
-  eyebrow: string;
+  eyebrow?: string | null;
   headline: string;
   subhead: string;
   primaryCta: Cta;

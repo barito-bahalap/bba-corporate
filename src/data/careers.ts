@@ -28,9 +28,10 @@ export const careersContent: CareersContent = {
       division: "Barito Bahalap Tech",
       roles: [
         "Delivery Lead",
-        "Software Developers",
+        "Software Developer (Backend)",
+        "Software Developer (Frontend)",
         "Quality Assurance",
-        "UI and UX Design",
+        "UI/UX Designer",
       ],
     },
     {

@@ -9,7 +9,7 @@ export const homeContent: HomeContent = {
   },
 
   hero: {
-    eyebrow: "Palangka Raya, Central Kalimantan",
+    eyebrow: null,
     headline:
       "Technology and strategic communications for institutional partners.",
     subhead:

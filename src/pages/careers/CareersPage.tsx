@@ -54,9 +54,7 @@ export default function CareersPage() {
               className="card not-hoverable careers-roles__group"
               data-brand={group.brand}
             >
-              <Badge variant="primary" dot>
-                {group.division}
-              </Badge>
+              <Badge label={group.division} variant="primary" dot />
               <ul className="careers-roles__list" role="list">
                 {group.roles.map((role) => (
                   <li key={role}>{role}</li>

@@ -15,7 +15,7 @@ export function CareersTeaserSection({
     <Section tone="surface" labelledBy="careers-title">
       <div className="home-careers">
         <div className="home-careers__copy">
-          <Eyebrow>{eyebrow}</Eyebrow>
+          <Eyebrow label={eyebrow} />
           <h2 id="careers-title">{title}</h2>
           <p>{body}</p>
         </div>
@@ -24,6 +24,8 @@ export function CareersTeaserSection({
           href={cta.href}
           variant="outline"
           iconName="arrowRight"
+          iconFill="var(--clr-ink)"
+          iconFillHover="var(--clr-ink-hover)"
           iconAfter
         />
       </div>
