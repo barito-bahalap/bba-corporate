@@ -1,4 +1,4 @@
-apps/corporate -> baritobahalap.com
+bba-corporate -> baritobahalap.com
 
 Purpose: BBA as a holding entity. This is where you prove BBA is a real, governed company — not a portfolio of two freelance side projects wearing a logo.
 
