@@ -41,8 +41,7 @@
     "globals": "^17.12.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.69.0",
-    "vite": "^8.3.0",
-    "vite-plugin-static-copy": "^4.1.1"
+    "vite": "^8.3.0"
   },
   "packageManager": "pnpm@12.10.1"
 }
