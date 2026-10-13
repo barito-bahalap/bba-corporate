@@ -10,15 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@barito-bahalap/assets": "*",
-    "@barito-bahalap/components": "*",
-    "@barito-bahalap/config": "*",
-    "@barito-bahalap/contexts": "*",
-    "@barito-bahalap/icons": "*",
-    "@barito-bahalap/styles": "*",
-    "@barito-bahalap/supabase": "*",
-    "@barito-bahalap/types": "*",
-    "@barito-bahalap/utils": "*",
+    "@barito-bahalap/assets": "^1.0.0",
+    "@barito-bahalap/components": "^1.1.2",
+    "@barito-bahalap/config": "^1.0.2",
+    "@barito-bahalap/contexts": "^1.0.3",
+    "@barito-bahalap/icons": "^1.1.2",
+    "@barito-bahalap/styles": "^1.1.2",
+    "@barito-bahalap/supabase": "^1.0.3",
+    "@barito-bahalap/types": "^1.0.5",
+    "@barito-bahalap/utils": "^1.1.3",
     "@tanstack/react-query": "^5.101.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
-    "@barito-bahalap/ts-config": "*",
+    "@barito-bahalap/ts-config": "^1.0.2",
     "@eslint/js": "^10.0.1",
     "@rolldown/plugin-babel": "^0.2.3",
     "@types/babel__core": "^7.20.5",
@@ -43,5 +43,6 @@
     "typescript-eslint": "^8.69.0",
     "vite": "^8.3.0",
     "vite-plugin-static-copy": "^4.1.1"
-  }
+  },
+  "packageManager": "pnpm@12.10.1"
 }
