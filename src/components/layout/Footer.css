@@ -77,15 +77,30 @@
   border-top: var(--border-w) solid rgba(var(--palette-white-rgb), 0.12);
 }
 
-.footer__bottom-inner {
+/* .footer__bottom-inner {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
   padding-block: var(--space-5);
-}
+} */
 
 .footer__bottom small {
   color: var(--clr-ink-on-dark-muted);
+}
+
+.footer__bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-6);
+}
+
+.footer__bottom-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
 }
 
 @media (min-width: 768px) {

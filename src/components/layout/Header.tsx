@@ -9,8 +9,7 @@ import { getHeaderCta, getMainNav } from "@barito-bahalap/config";
 import { useHeaderContext } from "@barito-bahalap/contexts";
 import { useLocale, useLanguageSwitch } from "@/hooks";
 // Components
-import { Button, SmartLink, Brand } from "@/components";
-import { LanguageSwitcher } from ".";
+import { Button, SmartLink, Brand, LanguageSwitcher } from "@/components";
 
 export function Header() {
   const { transparentAllowed } = useHeaderContext();
@@ -23,7 +22,9 @@ export function Header() {
     () => typeof window !== "undefined" && window.scrollY > 40,
   );
   const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const restoreFocusRef = useRef(false);
 
   const drawerOpen = openedAt === pathname;
 
@@ -44,20 +45,33 @@ export function Header() {
 
   useEffect(() => {
     if (!drawerOpen) return;
+    const root = document.getElementById("root");
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpenedAt(null);
+      if (event.key !== "Escape") return;
+      restoreFocusRef.current = true;
+      setOpenedAt(null);
     };
     document.addEventListener("keydown", onKey);
     document.body.classList.add("no-scroll");
+    root?.setAttribute("inert", "");
     closeRef.current?.focus();
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.classList.remove("no-scroll");
+      root?.removeAttribute("inert");
+      if (restoreFocusRef.current) {
+        restoreFocusRef.current = false;
+        triggerRef.current?.focus();
+      }
     };
   }, [drawerOpen]);
 
   const isTransparent = transparentAllowed && !scrolled && !drawerOpen;
   const closeDrawer = () => setOpenedAt(null);
+  const dismissDrawer = () => {
+    restoreFocusRef.current = true;
+    setOpenedAt(null);
+  };
   const isActive = (target: string) =>
     !target.includes("#") && href(target) === pathname;
 
@@ -93,6 +107,7 @@ export function Header() {
         </div>
 
         <button
+          ref={triggerRef}
           type="button"
           className="header__trigger"
           aria-label={ui.menu.open}
@@ -108,7 +123,7 @@ export function Header() {
         <>
           <div
             className={`header__overlay${drawerOpen ? " header__overlay--open" : ""}`}
-            onClick={closeDrawer}
+            onClick={dismissDrawer}
             aria-hidden="true"
           />
 
@@ -126,7 +141,7 @@ export function Header() {
                 type="button"
                 className="header__close"
                 aria-label={ui.menu.close}
-                onClick={closeDrawer}
+                onClick={dismissDrawer}
               >
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -145,10 +160,13 @@ export function Header() {
               ))}
 
               <div className="header__drawer-cta">
-                <LanguageSwitcher
-                  items={languageItems}
-                  label={ui.language.label}
-                />
+                <div className="header__drawer-lang">
+                  <p className="text caption">{ui.language.label}</p>
+                  <LanguageSwitcher
+                    items={languageItems}
+                    label={ui.language.label}
+                  />
+                </div>
                 <Button
                   label={cta.label}
                   href={href(cta.href)}

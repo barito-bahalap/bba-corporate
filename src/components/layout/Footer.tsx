@@ -4,13 +4,14 @@ import "./Footer.css";
 import { getDivisions, getFooterGroups } from "@barito-bahalap/config";
 import { socialLinks } from "@barito-bahalap/config";
 // Hooks
-import { useLocale } from "@/hooks/useLocale";
+import { useLocale, useLanguageSwitch } from "@/hooks";
 // Components
-import { SmartLink, Brand } from "@/components";
+import { SmartLink, Brand, LanguageSwitcher } from "@/components";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
   const { locale, ui, site, href } = useLocale();
+  const languageItems = useLanguageSwitch();
   const groups = getFooterGroups(locale);
   const divisions = getDivisions(locale);
 
@@ -70,7 +71,14 @@ export function Footer() {
           <small>
             &copy; {currentYear} {site.legalName}. {ui.footer.rights}
           </small>
-          <small>{site.location}</small>
+          <div className="footer__bottom-end">
+            <small>{site.location}</small>
+            <LanguageSwitcher
+              items={languageItems}
+              label={ui.language.label}
+              onDark
+            />
+          </div>
         </div>
       </div>
     </footer>
