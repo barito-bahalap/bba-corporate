@@ -6,7 +6,8 @@ import "./RootLayout.css";
 import { HeaderProvider } from "@barito-bahalap/contexts";
 import { useLocale, useScrollReveal } from "@/hooks";
 // Components
-import { LoadingSpinner, ScrollToTop, Header, Footer } from "@/components";
+import { LoadingSpinner, Header, Footer } from "@/components";
+import { ScrollToTop, ScrollToSection } from "@/components";
 
 export function RootLayout() {
   const { ui } = useLocale();
@@ -24,6 +25,7 @@ export function RootLayout() {
 
         <Header />
 
+        <ScrollToSection />
         <main ref={mainRef} id="main" className="root-layout__main">
           <Suspense fallback={<LoadingSpinner block srLabel={ui.loading} />}>
             <Outlet />

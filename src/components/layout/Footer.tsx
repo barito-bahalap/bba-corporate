@@ -4,7 +4,7 @@ import "./Footer.css";
 import { getDivisions, getFooterGroups } from "@barito-bahalap/config";
 import { socialLinks } from "@barito-bahalap/config";
 // Hooks
-import { useLocale, useLanguageSwitch } from "@/hooks";
+import { useLocale, useLanguageSwitch, useSectionLink } from "@/hooks";
 // Components
 import { SmartLink, Brand, LanguageSwitcher } from "@/components";
 
@@ -14,6 +14,7 @@ export function Footer() {
   const languageItems = useLanguageSwitch();
   const groups = getFooterGroups(locale);
   const divisions = getDivisions(locale);
+  const onSectionClick = useSectionLink();
 
   return (
     <footer className="footer">
@@ -30,13 +31,14 @@ export function Footer() {
         {groups.map(({ title, links }) => (
           <nav key={title} className="footer__col" aria-label={title}>
             <h2 className="footer__heading">{title}</h2>
-            {links.map(({ label, href: target }) => (
+            {links.map((item) => (
               <SmartLink
-                key={target}
-                href={href(target)}
+                key={item.label}
+                href={href(item.href)}
+                onClick={(e) => onSectionClick(e, item, href(item.href))}
                 className="footer__link"
               >
-                {label}
+                {item.label}
               </SmartLink>
             ))}
           </nav>

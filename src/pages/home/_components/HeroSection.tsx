@@ -14,7 +14,7 @@ export function HeroSection({
   secondaryCta,
 }: HeroContent) {
   return (
-    <section className="home-hero" aria-labelledby="hero-title">
+    <section id="home-hero" className="home-hero" aria-labelledby="hero-title">
       <div className="home-hero__grid container content">
         <div className="home-hero__copy">
           {eyebrow && <Eyebrow label={eyebrow} />}

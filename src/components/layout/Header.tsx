@@ -7,9 +7,11 @@ import "./Header.css";
 import { getHeaderCta, getMainNav } from "@barito-bahalap/config";
 // Contexts & Hooks
 import { useHeaderContext } from "@barito-bahalap/contexts";
-import { useLocale, useLanguageSwitch } from "@/hooks";
+import { useLocale, useLanguageSwitch, useSectionLink } from "@/hooks";
 // Components
 import { Button, SmartLink, Brand, LanguageSwitcher } from "@/components";
+// Types
+import type { NavLink } from "@barito-bahalap/types";
 
 export function Header() {
   const { transparentAllowed } = useHeaderContext();
@@ -18,6 +20,7 @@ export function Header() {
   const languageItems = useLanguageSwitch();
   const nav = getMainNav(locale);
   const cta = getHeaderCta(locale);
+  const onSectionClick = useSectionLink();
   const [scrolled, setScrolled] = useState(
     () => typeof window !== "undefined" && window.scrollY > 40,
   );
@@ -46,6 +49,7 @@ export function Header() {
   useEffect(() => {
     if (!drawerOpen) return;
     const root = document.getElementById("root");
+    const trigger = triggerRef.current;
     const onKey = (event: KeyboardEvent) => {
       if (event.key !== "Escape") return;
       restoreFocusRef.current = true;
@@ -61,7 +65,7 @@ export function Header() {
       root?.removeAttribute("inert");
       if (restoreFocusRef.current) {
         restoreFocusRef.current = false;
-        triggerRef.current?.focus();
+        trigger?.focus();
       }
     };
   }, [drawerOpen]);
@@ -72,8 +76,8 @@ export function Header() {
     restoreFocusRef.current = true;
     setOpenedAt(null);
   };
-  const isActive = (target: string) =>
-    !target.includes("#") && href(target) === pathname;
+  const isActive = ({ href: target, section }: NavLink) =>
+    !section && href(target) === pathname;
 
   return (
     <header
@@ -89,21 +93,30 @@ export function Header() {
         <Brand />
 
         <nav className="header__menus" aria-label={ui.menu.primaryNav}>
-          {nav.map(({ label, href: target }) => (
+          {nav.map((item) => (
             <SmartLink
-              key={target}
-              href={href(target)}
-              className={`header__menu-item${isActive(target) ? " header__menu-item--active" : ""}`}
-              aria-current={isActive(target) ? "page" : undefined}
+              key={item.label}
+              href={href(item.href)}
+              onClick={(e) => onSectionClick(e, item, href(item.href))}
+              className={`header__menu-item${isActive(item) ? " header__menu-item--active" : ""}`}
+              aria-current={isActive(item) ? "page" : undefined}
             >
-              {label}
+              {item.label}
             </SmartLink>
           ))}
         </nav>
 
         <div className="header__cta">
           <LanguageSwitcher items={languageItems} label={ui.language.label} />
-          <Button label={cta.label} href={href(cta.href)} size="sm" />
+          <Button
+            label={cta.label}
+            href={href(cta.href)}
+            fullWidth
+            onClick={(e) => {
+              onSectionClick(e, cta, href(cta.href));
+              closeDrawer();
+            }}
+          />
         </div>
 
         <button
@@ -148,14 +161,17 @@ export function Header() {
             </div>
 
             <nav className="header__drawer-nav" aria-label={ui.menu.mobileNav}>
-              {nav.map(({ label, href: target }) => (
+              {nav.map((item) => (
                 <SmartLink
-                  key={target}
-                  href={href(target)}
-                  onClick={closeDrawer}
-                  className={`header__drawer-item${isActive(target) ? " header__drawer-item--active" : ""}`}
+                  key={item.label}
+                  href={href(item.href)}
+                  onClick={(e) => {
+                    onSectionClick(e, item, href(item.href));
+                    closeDrawer();
+                  }}
+                  className={`header__drawer-item${isActive(item) ? " header__drawer-item--active" : ""}`}
                 >
-                  {label}
+                  {item.label}
                 </SmartLink>
               ))}
 
