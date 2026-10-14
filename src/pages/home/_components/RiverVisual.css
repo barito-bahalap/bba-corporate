@@ -1,0 +1,31 @@
+.river {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.river path {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.river__trunk {
+  stroke: var(--clr-ink-muted);
+}
+
+.river__tech {
+  stroke: var(--palette-teal);
+}
+
+.river__media {
+  stroke: var(--palette-orange);
+}
+
+.river__label {
+  fill: var(--clr-ink-muted);
+  font-family: var(--font-control);
+  font-size: 11px;
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-widest);
+}

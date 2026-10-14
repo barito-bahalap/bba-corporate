@@ -25,7 +25,7 @@ export function CareersTeaserSection({
           variant="outline"
           iconName="arrowRight"
           iconFill="var(--clr-ink)"
-          iconFillHover="var(--clr-ink-hover)"
+          iconFillHover="var(--clr-ink-soft)"
           iconAfter
         />
       </div>

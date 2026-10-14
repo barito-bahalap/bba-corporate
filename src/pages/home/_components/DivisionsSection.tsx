@@ -8,7 +8,7 @@ import type { DivisionContent, DivisionsContent } from "@/domain/content";
 function DivisionCard({ division }: { division: DivisionContent }) {
   return (
     <article
-      className="card not-hoverable division-card"
+      className="card bordered not-hoverable division-card"
       data-brand={division.brand}
     >
       <header className="division-card__head">

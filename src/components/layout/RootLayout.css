@@ -27,18 +27,3 @@
 .root-layout__skip:focus {
   top: var(--space-2);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  [data-reveal="hidden"] {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-
-  [data-reveal="shown"] {
-    opacity: 1;
-    transform: none;
-    transition:
-      opacity var(--duration-slower) var(--ease-out),
-      transform var(--duration-slower) var(--ease-out);
-  }
-}

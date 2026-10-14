@@ -1,0 +1,136 @@
+.home-divisions__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.division-card {
+  gap: var(--space-5);
+  padding: var(--space-6);
+  padding-top: calc(var(--space-6) + 4px);
+}
+
+.division-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background-color: var(--clr-primary);
+}
+
+.division-card > :last-child {
+  margin-top: auto;
+}
+
+.division-card__head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.division-card__descriptor {
+  color: var(--clr-ink-muted);
+}
+
+.division-card__caps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: 0;
+}
+
+.division-card__cap {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.division-card__cap-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--clr-primary-soft);
+  color: var(--clr-ink);
+}
+
+.division-card__cap-title {
+  font-size: var(--fs-base);
+}
+
+.division-card__cap-text {
+  font-size: var(--fs-sm-alt);
+}
+
+.division-card__record {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-top: var(--space-5);
+  border-top: var(--border-w) solid var(--clr-border);
+}
+
+.division-card__record-title {
+  font-family: var(--txt-eyebrow-font);
+  font-size: var(--txt-eyebrow-size);
+  font-weight: var(--txt-eyebrow-weight);
+  letter-spacing: var(--txt-eyebrow-tracking);
+  text-transform: uppercase;
+  color: var(--clr-ink-muted);
+}
+
+.division-card__record-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: 0;
+}
+
+.division-card__record-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.division-card__record-client {
+  font-size: var(--fs-sm-alt);
+  color: var(--clr-ink-soft);
+}
+
+.division-card__status {
+  font-size: var(--fs-sm-alt);
+  font-style: italic;
+  color: var(--clr-ink-soft);
+}
+
+.division-card__note {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: var(--border-w) solid var(--clr-border);
+  border-radius: var(--radius-md);
+  background-color: var(--clr-surface);
+}
+
+.division-card__note-title {
+  font-size: var(--fs-base);
+}
+
+.division-card__note p {
+  font-size: var(--fs-sm-alt);
+}
+
+@media (min-width: 1024px) {
+  .home-divisions__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .division-card {
+    padding: var(--space-8);
+    padding-top: calc(var(--space-8) + 4px);
+  }
+}
