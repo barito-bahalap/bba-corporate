@@ -170,11 +170,11 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       '@barito-bahalap/components':
-        specifier: ^1.1.2
-        version: 1.1.2(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+        specifier: ^1.2.0
+        version: 1.2.0(@barito-bahalap/config@1.1.0(react@19.3.0))(@barito-bahalap/icons@1.1.2(react@19.3.0))(@barito-bahalap/types@1.0.5(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       '@barito-bahalap/config':
-        specifier: 1.0.3
-        version: 1.0.3(react@19.3.0)
+        specifier: 1.1.0
+        version: 1.1.0(react@19.3.0)
       '@barito-bahalap/contexts':
         specifier: ^1.0.3
         version: 1.0.3(react@19.3.0)
@@ -217,7 +217,7 @@ importers:
         version: 10.0.1(eslint@10.12.0)
       '@rolldown/plugin-babel':
         specifier: ^0.2.3
-        version: 0.2.4(@babel/core@7.29.7)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2))
+        version: 0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.10)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2))
       '@types/babel__core':
         specifier: ^7.20.5
         version: 7.20.5
@@ -232,7 +232,7 @@ importers:
         version: 19.3.0(@types/react@19.3.0)
       '@vitejs/plugin-react':
         specifier: ^6.1.1
-        version: 6.1.2(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.4(@types/node@24.19.2))
+        version: 6.1.2(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.10)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.4(@types/node@24.19.2))
       babel-plugin-react-compiler:
         specifier: ^1.0.0
         version: 1.0.0
@@ -315,6 +315,10 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
+  '@babel/runtime@7.29.10':
+    resolution: {integrity: sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/template@7.29.7':
     resolution: {integrity: sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg==}
     engines: {node: '>=6.9.0'}
@@ -330,15 +334,18 @@ packages:
   '@barito-bahalap/assets@1.0.0':
     resolution: {integrity: sha512-SswDI9eo5IH30LyNSviX622QiAaVZztK4wXlnCl1zqJ+DDiIjXRer7LOj1tJRRmtVc8Kit9A8QHpWVe+q4/GwQ==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/assets/1.0.0/b52f503bf744b3a0face734bf027c931809afe1f}
 
-  '@barito-bahalap/components@1.1.2':
-    resolution: {integrity: sha512-RlOvRZE+S5IKvAjXamWL8DGJMnV8V8Z2HhQGD9lCNwkcRqDh7O76MUWqaBs0YkF3SWDeMOeZnnsxMJc7/kIepg==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/components/1.1.2/ab428e3ea39de67317dac5b6b5a3f8993e584018}
+  '@barito-bahalap/components@1.2.0':
+    resolution: {integrity: sha512-hn5rjfmgAlQEMWVK5oltKwnzNTUhTA7gl5dlLwONZLVMbCcLdqIpcJ062uvILg9Mjf5Zc6vA+51EJX05/2j5aA==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/components/1.2.0/17961f202cfb931c71f484b1daf914d8e020c642}
     peerDependencies:
+      '@barito-bahalap/config': ^1.1.0
+      '@barito-bahalap/icons': ^1.1.2
+      '@barito-bahalap/types': ^1.0.5
       react: ^18 || ^19
       react-dom: ^18 || ^19
       react-router-dom: ^6 || ^7
 
-  '@barito-bahalap/config@1.0.3':
-    resolution: {integrity: sha512-OdHICzgahxrNj7yk7PHinz9NWytCI0wHDOsXA5pusReG8ehvNMEpRsEj1UayQtZ6kGfsUXvz23UUy6z1weDrsQ==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/config/1.0.3/34787e467c61d0537ab91d70669e436ce08cb963}
+  '@barito-bahalap/config@1.1.0':
+    resolution: {integrity: sha512-N0LRK5wga7wcGKQSIp7EFCrSX2DrQoOqKpmoCE7RENCcxqSbzgU4douje37qsO+128HHSzkTlAsqnXnOMAaG6A==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/config/1.1.0/495c33980a7d1a3dbc4c794b29da7e61e23f3d40}
 
   '@barito-bahalap/contexts@1.0.3':
     resolution: {integrity: sha512-2IqQL0M0OK5qgVP64UA4c0bZF+CRPmBs37j4k197VHp8JXt7akDse2vcIQ6rbl7e5uuOqS4JEctejDzyMNoY0w==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/contexts/1.0.3/d7e52e1defd8aec21914be4734e4f6f48b7c5ab1}
@@ -1363,6 +1370,9 @@ snapshots:
     dependencies:
       '@babel/types': 7.29.8
 
+  '@babel/runtime@7.29.10':
+    optional: true
+
   '@babel/template@7.29.7':
     dependencies:
       '@babel/code-frame': 7.29.7
@@ -1388,16 +1398,16 @@ snapshots:
 
   '@barito-bahalap/assets@1.0.0': {}
 
-  '@barito-bahalap/components@1.1.2(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+  '@barito-bahalap/components@1.2.0(@barito-bahalap/config@1.1.0(react@19.3.0))(@barito-bahalap/icons@1.1.2(react@19.3.0))(@barito-bahalap/types@1.0.5(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
     dependencies:
-      '@barito-bahalap/config': 1.0.3(react@19.3.0)
+      '@barito-bahalap/config': 1.1.0(react@19.3.0)
       '@barito-bahalap/icons': 1.1.2(react@19.3.0)
       '@barito-bahalap/types': 1.0.5(react@19.3.0)
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
       react-router-dom: 7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
-  '@barito-bahalap/config@1.0.3(react@19.3.0)':
+  '@barito-bahalap/config@1.1.0(react@19.3.0)':
     dependencies:
       '@barito-bahalap/types': 1.0.5(react@19.3.0)
     transitivePeerDependencies:
@@ -1575,12 +1585,13 @@ snapshots:
   '@rolldown/binding-win32-x64-msvc@1.2.13':
     optional: true
 
-  '@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2))':
+  '@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.10)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2))':
     dependencies:
       '@babel/core': 7.29.7
       picomatch: 4.0.7
       rolldown: 1.2.13
     optionalDependencies:
+      '@babel/runtime': 7.29.10
       vite: 8.3.4(@types/node@24.19.2)
 
   '@rolldown/pluginutils@1.0.1': {}
@@ -1754,12 +1765,12 @@ snapshots:
       '@typescript-eslint/types': 8.71.1
       eslint-visitor-keys: 5.0.1
 
-  '@vitejs/plugin-react@6.1.2(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.4(@types/node@24.19.2))':
+  '@vitejs/plugin-react@6.1.2(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.10)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.4(@types/node@24.19.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
       vite: 8.3.4(@types/node@24.19.2)
     optionalDependencies:
-      '@rolldown/plugin-babel': 0.2.4(@babel/core@7.29.7)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2))
+      '@rolldown/plugin-babel': 0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.10)(rolldown@1.2.13)(vite@8.3.4(@types/node@24.19.2))
       babel-plugin-react-compiler: 1.0.0
 
   acorn-jsx@5.3.2(acorn@8.19.0):
