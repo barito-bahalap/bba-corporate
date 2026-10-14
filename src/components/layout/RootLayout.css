@@ -6,6 +6,7 @@
 
 .root-layout__main {
   flex: 1;
+  z-index: var(--z-base);
 }
 
 .root-layout__main [id] {

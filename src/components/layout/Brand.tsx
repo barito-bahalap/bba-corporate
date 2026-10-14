@@ -2,6 +2,8 @@
 import "./Brand.css";
 // Config
 import { siteConfig } from "@barito-bahalap/config";
+// Hooks
+import { useLocale } from "@/hooks/useLocale";
 // Components
 import { SmartLink } from "@/components";
 
@@ -10,11 +12,13 @@ interface BrandProps {
 }
 
 export function Brand({ onDark = false }: BrandProps) {
+  const { ui, href } = useLocale();
+
   return (
     <SmartLink
-      href="/"
+      href={href("/")}
       className={`brand${onDark ? " brand--on-dark" : ""}`}
-      aria-label={`${siteConfig.name}, home`}
+      aria-label={`${siteConfig.name}, ${ui.brandHome}`}
     >
       <span className="brand__mark" aria-hidden="true">
         <span className="brand__dot" data-brand="tech" />
