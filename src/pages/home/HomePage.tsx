@@ -5,8 +5,7 @@ import { useTransparentHeader } from "@barito-bahalap/contexts";
 import { useContactForm, useHomeContent, useLocale, useSeoMeta } from "@/hooks";
 // Components
 import { SEO } from "@/components";
-// import { LeadershipSection } from "./_components";
-import { HeroSection, AboutSection } from "./_components";
+import { HeroSection, AboutSection, LeadershipSection } from "./_components";
 import { DivisionsSection, ApproachSection } from "./_components";
 import { CareersTeaserSection, ContactSection } from "./_components";
 // Utils
@@ -33,8 +32,7 @@ export default function HomePage() {
       <AboutSection {...content.about} />
       <DivisionsSection {...content.divisions} />
       <ApproachSection {...content.approach} />
-      {/* <LeadershipSection {...content.leadership} /> */}
-      {/* TODO: re-enable */}
+      <LeadershipSection {...content.leadership} />
       <CareersTeaserSection {...content.careers} />
       <ContactSection
         {...content.contact}

@@ -150,12 +150,6 @@ export const homeContent: HomeContent = {
       "Komitmen berikut tertanam dalam cara organisasi beroperasi, sehingga dapat ditinjau oleh tim pengadaan, hukum, dan kepatuhan.",
     items: [
       {
-        iconName: "box",
-        title: "Pemisahan sejak perancangan",
-        description:
-          "BBT dan BBM memiliki merek, tim, akun klien, dan data kerja yang terpisah. Akses lintas divisi hanya diberikan berdasarkan kebutuhan.",
-      },
-      {
         iconName: "filePdf",
         title: "Lingkup dan akuntabilitas yang jelas",
         description:

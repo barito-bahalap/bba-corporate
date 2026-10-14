@@ -19,7 +19,7 @@ export function ApproachSection({
         intro={intro}
         id="approach-title"
       />
-      <div className="grid-4">
+      <div className="grid-auto">
         {items.map((item) => (
           <InfoCard key={item.title} {...item} />
         ))}
