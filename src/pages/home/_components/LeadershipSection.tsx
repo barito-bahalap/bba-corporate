@@ -1,5 +1,5 @@
 // Style
-
+import "./LeadershipSection.css";
 // Components
 import { InfoCard, PersonCard, Section, SectionHeader } from "@/components";
 // Types

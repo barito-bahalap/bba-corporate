@@ -1,5 +1,5 @@
 // Style
-
+import "./AboutSection.css";
 // Components
 import { Section, SectionHeader } from "@/components";
 import { StatBlock } from "@/components";

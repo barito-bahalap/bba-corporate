@@ -1,32 +1,23 @@
+import type { ComponentProps } from "react";
 // Style
-
-// Config
-import { siteConfig } from "@barito-bahalap/config";
+import "./ContactSection.css";
+// Components
 import { ContactForm, Icon, Section, SectionHeader } from "@/components";
 // Types
-import type {
-  ContactField,
-  ContactFormErrors,
-  ContactFormValues,
-  SelectOption,
-} from "@/components";
 import type { ContactContent } from "@/domain/content";
 
 interface ContactSectionProps extends ContactContent {
-  form: {
-    values: ContactFormValues;
-    errors: ContactFormErrors;
-    status: "idle" | "prepared";
-    divisionOptions: readonly SelectOption[];
-    onChange: (field: ContactField, value: string | boolean) => void;
-    onSubmit: () => void;
-  };
+  email: string;
+  location: string;
+  form: ComponentProps<typeof ContactForm>;
 }
 
 export function ContactSection({
   eyebrow,
   title,
   intro,
+  email,
+  location,
   form,
 }: ContactSectionProps) {
   return (
@@ -47,9 +38,7 @@ export function ContactSection({
                 fillHover="var(--clr-ink)"
                 size={20}
               />
-              <a href={`mailto:${siteConfig.contactEmail}`}>
-                {siteConfig.contactEmail}
-              </a>
+              <a href={`mailto:${email}`}>{email}</a>
             </li>
             <li>
               <Icon
@@ -58,7 +47,7 @@ export function ContactSection({
                 fillHover="var(--clr-ink)"
                 size={20}
               />
-              <span>{siteConfig.location}</span>
+              <span>{location}</span>
             </li>
           </ul>
         </div>

@@ -1,5 +1,5 @@
 // Style
-
+import "./DivisionsSection.css";
 // Components
 import { Badge, Button, Icon, Section, SectionHeader } from "@/components";
 // Types

@@ -1,5 +1,5 @@
 // Style
-
+import "./ApproachSection.css";
 // Components
 import { InfoCard, Section, SectionHeader } from "@/components";
 // Types

@@ -1,5 +1,5 @@
 // Style
-
+import "./CareersTeaserSection.css";
 // Components
 import { Button, Eyebrow, Section } from "@/components";
 // Types

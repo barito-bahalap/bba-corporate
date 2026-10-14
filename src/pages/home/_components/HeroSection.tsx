@@ -1,5 +1,5 @@
 // Style
-
+import "./HeroSection.css";
 // Components
 import { Button, Eyebrow } from "@/components";
 import { RiverVisual } from "./RiverVisual";

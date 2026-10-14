@@ -1,20 +1,23 @@
 // Style
 import "./CareersPage.css";
 // Hooks
-import { useCareersContent } from "@/hooks";
+import { useCareersContent, useLocale, useSeoMeta } from "@/hooks";
 // Components
-import { Badge, CallToAction, Section, SectionHeader } from "@/components";
-import { EmptyState, SEO } from "@/components";
+import { Badge, CallToAction, Section } from "@/components";
+import { EmptyState, SEO, SectionHeader } from "@/components";
 
 export default function CareersPage() {
   const content = useCareersContent();
+  const { href } = useLocale();
+  const seo = useSeoMeta();
 
   return (
     <>
       <SEO
+        {...seo}
         title={content.seo.title}
         description={content.seo.description}
-        path="/careers"
+        path={href("/careers")}
       />
 
       <Section
@@ -25,7 +28,6 @@ export default function CareersPage() {
         <SectionHeader
           as="h1"
           id="careers-page-title"
-          eyebrow="Join us"
           title={content.title}
           intro={content.intro}
         />
