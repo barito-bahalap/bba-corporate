@@ -6,11 +6,22 @@ import { useContactForm, useHomeContent, useLocale } from "@/hooks";
 import { useSectionsContent, useSeoMeta } from "@/hooks";
 // Components
 import { SEO } from "@/components";
-import { HeroSection, AboutSection, ApproachSection } from "./_components";
-import { ProofSection, DoorsSection, WorkSection } from "./_components";
-import { EngageSection, StructureSection, ProfileSection } from "./_components";
-import { CareersTeaserSection, ContactSection } from "./_components";
-import { DivisionsSection, LeadershipSection } from "./_components";
+import {
+  AboutSection,
+  ApproachSection,
+  CareersTeaserSection,
+  ContactSection,
+  DivisionsSection,
+  DoorsSection,
+  EngageSection,
+  HeroSection,
+  InquirySection,
+  LeadershipSection,
+  ProfileSection,
+  ProofSection,
+  StructureSection,
+  WorkSection,
+} from "./_components";
 // Utils
 import { buildOrganizationSchema } from "@/domain/schema";
 
@@ -19,7 +30,7 @@ export default function HomePage() {
   const content = useHomeContent();
   const sections = useSectionsContent();
   const form = useContactForm();
-  const { href, site } = useLocale();
+  const { href, site, locale } = useLocale();
   const seo = useSeoMeta();
 
   return (
@@ -38,10 +49,16 @@ export default function HomePage() {
       <EngageSection {...sections.engage} />
       <StructureSection {...sections.structure} />
       <AboutSection {...content.about} />
-      <ProfileSection {...sections.profile} />{" "}
+      <ProfileSection {...sections.profile} />
       <DivisionsSection {...content.divisions} />
       <ApproachSection {...content.approach} />
       <LeadershipSection {...content.leadership} />
+      <InquirySection
+        locale={locale}
+        email={site.contactEmail}
+        location={site.location}
+        privacyHref={href("/privacy")}
+      />
       <CareersTeaserSection {...content.careers} />
       <ContactSection
         {...content.contact}

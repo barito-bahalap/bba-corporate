@@ -1,13 +1,10 @@
 export const LOCALES = {
   id: { htmlLang: "id", label: "Bahasa Indonesia", short: "ID", enabled: true },
   en: { htmlLang: "en", label: "English", short: "EN", enabled: true },
-  nij: { htmlLang: "nij", label: "Dayak Ngaju", short: "NGJ", enabled: false },
-  mhy: {
-    htmlLang: "mhy",
-    label: "Dayak Ma'anyan",
-    short: "MHY",
-    enabled: false,
-  },
+
+  // LATER UPDATE (OPTIONAL): Add Ngaju & Maanyan
+  // nij: { htmlLang: "nij", label: "Dayak Ngaju", short: "NGJ", enabled: false },
+  // mhy: { htmlLang: "mhy", label: "Dayak Ma'anyan", short: "MHY", enabled: false },
 } as const;
 
 export type LocaleCode = keyof typeof LOCALES;

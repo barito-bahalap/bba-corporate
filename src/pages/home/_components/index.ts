@@ -12,3 +12,4 @@ export { ProofSection } from "./ProofSection";
 export { RiverVisual } from "./RiverVisual";
 export { StructureSection } from "./StructureSection";
 export { WorkSection } from "./WorkSection";
+export { InquirySection } from "./InquirySection";

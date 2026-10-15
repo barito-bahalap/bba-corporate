@@ -11,3 +11,5 @@ const bundles: Partial<Record<LocaleCode, ContentBundle>> = {
 export function getContent(locale: LocaleCode): ContentBundle {
   return bundles[locale] ?? idContent;
 }
+
+export { inquirySectionCopy } from "./inquiry";
