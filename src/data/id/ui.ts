@@ -60,12 +60,12 @@ export const uiContent: UiContent = {
       {
         label: "Divisi",
         description: "Barito Bahalap Tech dan Barito Bahalap Media.",
-        href: "/#divisions",
+        href: "/divisions",
       },
       {
         label: "Pendekatan",
         description: "Cara kami bekerja dan memisahkan divisi.",
-        href: "/#approach",
+        href: "/approach",
       },
       {
         label: "Karier",

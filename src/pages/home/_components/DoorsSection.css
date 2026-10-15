@@ -1,0 +1,75 @@
+.doors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  margin-top: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.door {
+  --door-accent: #007979;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+  border-top: 4px solid var(--door-accent);
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.door--media {
+  --door-accent: #e37434;
+}
+
+.door__discipline {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--door-accent);
+}
+
+.door__name {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+  line-height: 1.2;
+}
+
+.door__statement {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.door__points {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.door__points li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.door__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.5rem;
+  height: 2px;
+  background: var(--door-accent);
+}
+
+@media (max-width: 820px) {
+  .doors {
+    grid-template-columns: 1fr;
+  }
+}

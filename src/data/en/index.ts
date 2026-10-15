@@ -13,3 +13,5 @@ export const enContent: ContentBundle = {
   terms: termsContent,
   ui: uiContent,
 };
+
+export { sectionsEn } from "./sections";

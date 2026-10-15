@@ -1,0 +1,64 @@
+.engage {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin: clamp(1.75rem, 4vw, 2.75rem) 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.engage__step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid #007979;
+}
+
+.engage__index {
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+  color: #007979;
+}
+
+.engage__title {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-size: 1.15rem;
+}
+
+.engage__text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.engage__deliverable {
+  display: grid;
+  gap: 0.15rem;
+  margin: auto 0 0;
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.engage__deliverable span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+@media (max-width: 960px) {
+  .engage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .engage {
+    grid-template-columns: 1fr;
+  }
+}
