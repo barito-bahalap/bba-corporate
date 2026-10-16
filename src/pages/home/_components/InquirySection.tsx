@@ -1,8 +1,8 @@
 // Style
 import "./InquirySection.css";
 // Components
-import { Section, SectionHeader } from "@barito-bahalap/components";
 import { InquiryForm, WhatsAppButton } from "@barito-bahalap/components";
+import { Button, Section, SectionHeader } from "@barito-bahalap/components";
 // Data
 import { inquirySectionCopy } from "@/data/inquiry";
 
@@ -40,19 +40,19 @@ export function InquirySection({
       />
 
       <div className="inquiry-section">
-        {ENDPOINT && TURNSTILE_SITE_KEY ? (
+        {ENDPOINT ? (
           <InquiryForm
             endpoint={ENDPOINT}
-            turnstileSiteKey={TURNSTILE_SITE_KEY}
+            turnstileSiteKey={TURNSTILE_SITE_KEY || undefined}
             locale={locale}
             divisions={["bbt", "bbm", "partnership"]}
             privacyHref={privacyHref}
           />
         ) : (
-          <p role="alert">
-            Inquiry form is not configured (VITE_INQUIRY_ENDPOINT,
-            VITE_TURNSTILE_SITE_KEY).
-          </p>
+          <div className="inquiry-section__fallback">
+            <p>{copy.fallback}</p>
+            <Button href={`mailto:${email}`} label={email} variant="outline" />
+          </div>
         )}
 
         <aside

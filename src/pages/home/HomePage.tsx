@@ -2,7 +2,7 @@
 import "./HomePage.css";
 // Contexts & Hooks
 import { useTransparentHeader } from "@barito-bahalap/contexts";
-import { useContactForm, useHomeContent, useLocale } from "@/hooks";
+import { useHomeContent, useLocale } from "@/hooks";
 import { useSectionsContent, useSeoMeta } from "@/hooks";
 // Components
 import { SEO } from "@/components";
@@ -10,7 +10,6 @@ import {
   AboutSection,
   ApproachSection,
   CareersTeaserSection,
-  ContactSection,
   DivisionsSection,
   DoorsSection,
   EngageSection,
@@ -29,7 +28,6 @@ export default function HomePage() {
   useTransparentHeader();
   const content = useHomeContent();
   const sections = useSectionsContent();
-  const form = useContactForm();
   const { href, site, locale } = useLocale();
   const seo = useSeoMeta();
 
@@ -53,18 +51,12 @@ export default function HomePage() {
       <DivisionsSection {...content.divisions} />
       <ApproachSection {...content.approach} />
       <LeadershipSection {...content.leadership} />
+      <CareersTeaserSection {...content.careers} />
       <InquirySection
         locale={locale}
         email={site.contactEmail}
         location={site.location}
         privacyHref={href("/privacy")}
-      />
-      <CareersTeaserSection {...content.careers} />
-      <ContactSection
-        {...content.contact}
-        email={site.contactEmail}
-        location={site.location}
-        form={form}
       />
     </>
   );

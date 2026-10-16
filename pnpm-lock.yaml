@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@barito-bahalap/components':
-        specifier: ^1.10.0
-        version: 1.10.0(@barito-bahalap/config@1.2.0(react@19.3.0))(@barito-bahalap/icons@1.1.2(react@19.3.0))(@barito-bahalap/types@1.1.0(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
+        specifier: ^1.14.0
+        version: 1.14.0(@barito-bahalap/config@1.2.0(react@19.3.0))(@barito-bahalap/icons@1.1.2(react@19.3.0))(@barito-bahalap/types@1.1.0(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       '@barito-bahalap/config':
         specifier: ^1.2.0
         version: 1.2.0(react@19.3.0)
@@ -328,8 +328,8 @@ packages:
     resolution: {integrity: sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==}
     engines: {node: '>=6.9.0'}
 
-  '@barito-bahalap/components@1.10.0':
-    resolution: {integrity: sha512-AxYsdQ7NaeCVsUexBdr5S6sRWtDnyiFvi07pMSpEHznGmm2gw25ZKf9afxxogZKFK03QWJY/VdOunDwK0V+7tA==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/components/1.10.0/0a6957bf073a42a865d4fbdd97cabe70660b6c64}
+  '@barito-bahalap/components@1.14.0':
+    resolution: {integrity: sha512-wZLZE7qfD/UEuo68qCsXw7+g+XoKfdUqXbnV9RL4sKqXyUNxfLWTMid11BdXr4q2LIfsUEN+YnGo2PHhVeVobw==, tarball: https://npm.pkg.github.com/download/@barito-bahalap/components/1.14.0/4befcdd4463916a1a3adab64dd3dbb79dffc71d5}
     peerDependencies:
       '@barito-bahalap/config': ^1.2.0
       '@barito-bahalap/icons': ^1.1.2
@@ -1390,7 +1390,7 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
-  '@barito-bahalap/components@1.10.0(@barito-bahalap/config@1.2.0(react@19.3.0))(@barito-bahalap/icons@1.1.2(react@19.3.0))(@barito-bahalap/types@1.1.0(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+  '@barito-bahalap/components@1.14.0(@barito-bahalap/config@1.2.0(react@19.3.0))(@barito-bahalap/icons@1.1.2(react@19.3.0))(@barito-bahalap/types@1.1.0(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react-router-dom@7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)':
     dependencies:
       '@barito-bahalap/config': 1.2.0(react@19.3.0)
       '@barito-bahalap/icons': 1.1.2(react@19.3.0)

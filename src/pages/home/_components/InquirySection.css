@@ -31,3 +31,12 @@
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+
+.inquiry-section__fallback {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+}
+.inquiry-section__fallback p {
+  margin: 0;
+}
