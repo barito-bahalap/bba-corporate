@@ -4,13 +4,13 @@ export const sectionsId: SectionsContent = {
   proof: {
     label: "Rekam jejak terverifikasi",
     items: [
-      { value: "3", label: "Keterlibatan klien telah dikerjakan oleh BBT" },
+      { value: "3", label: "Sistem klien dibangun dan dikelola oleh BBT" },
       {
         value: "Retainer",
         label:
           "Hubungan kerja berkelanjutan dengan PT Telkom Indonesia Regional 3",
       },
-      { value: "2", label: "Unit usaha operasional yang terpisah" },
+      { value: "2", label: "Divisi operasional yang terpisah" },
       {
         value: "Kalteng",
         label: "Berbasis di Palangka Raya, Kalimantan Tengah",
@@ -19,10 +19,10 @@ export const sectionsId: SectionsContent = {
   },
 
   doors: {
-    eyebrow: "Dua Unit Usaha",
-    title: "Dua unit usaha, dua disiplin yang berdiri sendiri",
+    eyebrow: "Dua divisi",
+    title: "Dua divisi, dua disiplin yang berdiri sendiri",
     intro:
-      "BBA adalah organisasi induk. Layanan dijalankan oleh dua unit yang terpisah, masing-masing dengan identitas, tim, dan kanal tersendiri. Pilih unit yang sesuai dengan kebutuhan Anda.",
+      "BBA adalah organisasi induk. Pekerjaan dijalankan oleh dua divisi yang terpisah, masing-masing dengan identitas, tim, dan kanal tersendiri. Pilih yang sesuai dengan kebutuhan Anda.",
     doors: [
       {
         key: "tech",
@@ -58,10 +58,10 @@ export const sectionsId: SectionsContent = {
   },
 
   work: {
-    eyebrow: "Karya Terpilih",
-    title: "Pekerjaan yang telah dan sedang dijalankan",
+    eyebrow: "Karya terpilih",
+    title: "Yang telah dan sedang dikerjakan",
     intro:
-      "Rekam jejak disajikan per unit usaha. Setiap entri merujuk pada keterlibatan yang telah dikonfirmasi.",
+      "Rekam jejak disajikan per divisi. Setiap entri adalah kerja sama yang telah dikonfirmasi.",
     imagePlaceholder: "Dokumentasi menyusul",
     tech: {
       label: "Barito Bahalap Tech",
@@ -71,7 +71,7 @@ export const sectionsId: SectionsContent = {
           title: "RSO2 Telkom Dashboard",
           location: "Surabaya, Jawa Timur",
           summary:
-            "Dasbor analitik dan operasional yang disesuaikan dengan alur kerja dan kebutuhan data internal, dilengkapi pelaporan otomatis.",
+            "Dasbor analitik dan operasional yang dibangun mengikuti alur kerja dan kebutuhan data internal, dilengkapi pelaporan otomatis.",
           tags: ["Dasbor Operasional", "Otomasi Pelaporan", "Retainer"],
           status: "Berjalan aktif",
           image: { alt: "Tampilan RSO2 Telkom Dashboard" },
@@ -90,7 +90,7 @@ export const sectionsId: SectionsContent = {
           title: "Situs resmi dan platform manajemen organisasi",
           location: "Kalimantan Tengah",
           summary:
-            "Platform terpadu untuk informasi organisasi, program kerja, berita, dokumen, media, pendaftaran kemitraan, dan penyampaian aspirasi.",
+            "Satu platform untuk informasi organisasi, program kerja, berita, dokumen, media, pendaftaran kemitraan, dan penyampaian aspirasi.",
           tags: ["Platform Web", "Sistem Informasi"],
           image: { alt: "Tampilan situs resmi AMPI Kalteng" },
         },
@@ -100,7 +100,7 @@ export const sectionsId: SectionsContent = {
       label: "Barito Bahalap Media",
       emptyTitle: "Portofolio sedang disusun",
       emptyText:
-        "BBM berada pada tahap awal pengembangan operasional. Rekam jejak akan dipublikasikan secara bertahap setelah proyek awal selesai dan klien memberikan persetujuan.",
+        "BBM berada pada tahap awal operasional. Rekam jejaknya akan dipublikasikan secara bertahap setelah proyek awal selesai dan klien memberikan persetujuan.",
       practiceTitle: "Bidang praktik",
       practiceAreas: [
         {
@@ -138,12 +138,12 @@ export const sectionsId: SectionsContent = {
         {
           title: "Keberimbangan",
           description:
-            "Penyajian informasi yang berimbang dan dapat dipertanggungjawabkan.",
+            "Informasi disajikan secara berimbang dan dapat dipertanggungjawabkan.",
         },
         {
           title: "Keputusan editorial independen",
           description:
-            "Narasi, konten, dan jadwal publikasi diputuskan oleh Creative Lead BBM, bukan oleh holding maupun klien teknologi BBT.",
+            "Narasi, konten, dan jadwal publikasi diputuskan oleh Creative Lead BBM, bukan oleh induk usaha maupun klien teknologi BBT.",
         },
       ],
       principlesNote:
@@ -152,16 +152,16 @@ export const sectionsId: SectionsContent = {
   },
 
   engage: {
-    eyebrow: "Cara Kerja Sama",
-    title: "Alur keterlibatan yang jelas dan dapat diaudit",
+    eyebrow: "Cara kerja sama",
+    title: "Alur kerja sama yang jelas dan dapat diaudit",
     intro:
-      "Setiap keterlibatan diikat kontrak dengan lingkup, jangka waktu, dan keluaran yang terukur.",
+      "Setiap kerja sama diikat kontrak dengan lingkup, jangka waktu, dan keluaran yang terukur.",
     deliverableLabel: "Keluaran",
     steps: [
       {
         title: "Penjajakan",
         description:
-          "Identifikasi kebutuhan, pemangku kepentingan, dan batasan. Tujuan dan indikator keberhasilan disepakati sejak awal.",
+          "Kami mengidentifikasi kebutuhan, pemangku kepentingan, dan batasan. Tujuan dan indikator keberhasilan disepakati sejak awal.",
         deliverable: "Ringkasan kebutuhan",
       },
       {
@@ -177,7 +177,7 @@ export const sectionsId: SectionsContent = {
         deliverable: "Keluaran per tahap dan BAST",
       },
       {
-        title: "Dukungan dan Retainer",
+        title: "Dukungan dan retainer",
         description:
           "Pemeliharaan, perbaikan, dan pengembangan lanjutan melalui skema retainer dengan tingkat layanan yang disepakati.",
         deliverable: "Laporan layanan berkala",
@@ -186,10 +186,10 @@ export const sectionsId: SectionsContent = {
   },
 
   structure: {
-    eyebrow: "Struktur dan Tata Kelola",
-    title: "Kepemilikan yang sama, operasional yang terpisah",
+    eyebrow: "Struktur dan tata kelola",
+    title: "Kepemilikan bersama, operasional terpisah",
     intro:
-      "BBT dan BBM berada dalam satu kelompok usaha namun berjalan sebagai dua unit yang terpisah secara fungsional. Pemisahan ini adalah kerangka tata kelola, bukan strategi pemasaran.",
+      "BBT dan BBM berada dalam satu kelompok usaha, tetapi berjalan sebagai dua divisi yang terpisah secara fungsional. Pemisahan ini adalah kerangka tata kelola, bukan strategi pemasaran.",
     diagramLabel: "Diagram struktur BBA, BBT, dan BBM",
     holding: {
       name: "Barito Bahalap Agency",
@@ -218,7 +218,7 @@ export const sectionsId: SectionsContent = {
     ],
     governanceTitle: "Pemisahan operasional pada tujuh dimensi",
     governanceIntro:
-      "Operational Firewall mengatur batas antara BBT dan BBM agar klien dari kedua sisi terlindungi dari benturan kepentingan.",
+      "Operational Firewall menetapkan batas antara BBT dan BBM, sehingga klien di kedua sisi terlindungi dari benturan kepentingan.",
     dimensions: [
       {
         title: "Identitas merek",
@@ -228,12 +228,12 @@ export const sectionsId: SectionsContent = {
       {
         title: "Tim",
         description:
-          "Jalur kerja teknis dan editorial terpisah. Penugasan lintas unit dibatasi need-to-know.",
+          "Jalur kerja teknis dan editorial terpisah. Penugasan lintas divisi dibatasi need-to-know.",
       },
       {
         title: "Pengelolaan akun klien",
         description:
-          "Informasi klien satu unit tidak dibagikan ke unit lain tanpa persetujuan klien.",
+          "Informasi klien satu divisi tidak dibagikan ke divisi lain tanpa persetujuan klien.",
       },
       {
         title: "Data dan informasi",
@@ -252,7 +252,7 @@ export const sectionsId: SectionsContent = {
       {
         title: "Pengawasan hukum dan reputasi",
         description:
-          "Kontrak, kepatuhan, dan risiko dikelola di tingkat holding tanpa mengintervensi keputusan unit.",
+          "Kontrak, kepatuhan, dan risiko dikelola di tingkat induk tanpa mengintervensi keputusan divisi.",
       },
     ],
     pressTitle: "Kepatuhan pers",
@@ -261,8 +261,8 @@ export const sectionsId: SectionsContent = {
   },
 
   profile: {
-    title: "Profil Perusahaan",
-    text: "Unduh ringkasan profil BBA: struktur, unit usaha, tata kelola, dan rekam jejak terkonfirmasi.",
+    title: "Profil perusahaan",
+    text: "Unduh ringkasan profil BBA: struktur, divisi, tata kelola, dan rekam jejak terkonfirmasi.",
     cta: "Unduh Profil (PDF)",
     url: "/files/BBA-Company-Profile-ID.pdf",
     meta: "PDF, Bahasa Indonesia",

@@ -2,52 +2,52 @@ import type { HomeContent } from "@/domain/content";
 
 export const homeContent: HomeContent = {
   seo: {
-    title: "Barito Bahalap Agency | Teknologi dan komunikasi strategis",
+    title:
+      "Barito Bahalap Agency | Perangkat lunak enterprise dan komunikasi strategis",
     description:
-      "Barito Bahalap Agency adalah organisasi induk independen di Palangka Raya, Kalimantan Tengah, yang menaungi Barito Bahalap Tech dan Barito Bahalap Media sebagai dua merek operasional yang terpisah.",
+      "Barito Bahalap Agency adalah organisasi induk independen di Palangka Raya, Kalimantan Tengah. Barito Bahalap Tech membangun perangkat lunak enterprise. Barito Bahalap Media menjalankan komunikasi strategis.",
   },
 
   hero: {
-    eyebrow: null,
-    headline: "Teknologi dan komunikasi strategis untuk mitra institusional.",
+    eyebrow: "Organisasi induk independen · Palangka Raya",
+    headline: "Sistem yang berjalan. Pesan yang sampai.",
     subhead:
-      "Barito Bahalap Agency adalah organisasi induk independen. Organisasi ini menaungi dua merek operasional, Barito Bahalap Tech dan Barito Bahalap Media, masing-masing dengan tim, akun klien, dan data tersendiri.",
-    primaryCta: { label: "Jelajahi divisi kami", href: "/#divisions" },
+      "Barito Bahalap Agency adalah organisasi induk independen dari Kalimantan Tengah. Barito Bahalap Tech membangun dan memelihara perangkat lunak enterprise. Barito Bahalap Media menjalankan komunikasi strategis. Tim, akun klien, dan data terpisah, dengan satu standar akuntabilitas.",
+    primaryCta: { label: "Kenali kedua divisi kami", href: "/#divisions" },
     secondaryCta: { label: "Hubungi kami", href: "/#contact" },
   },
 
   about: {
     eyebrow: "Tentang BBA",
-    title: "Organisasi induk, bukan agensi gabungan.",
+    title: "Satu organisasi induk. Dua disiplin, dipisahkan dengan sengaja.",
     paragraphs: [
-      "Barito Bahalap Agency (BBA) didirikan pada 2026 di Palangka Raya. BBA menaungi dua merek operasional dengan spesialisasi berbeda: teknologi dan komunikasi strategis.",
-      "Peran BBA terbatas pada fungsi korporasi: strategi, kontrak dan hubungan bisnis, keuangan, kepatuhan hukum, serta pengawasan risiko dan reputasi. BBA tidak mengambil keputusan teknis untuk BBT maupun keputusan redaksi untuk BBM.",
+      "Barito Bahalap Agency (BBA) didirikan pada 2026 di Palangka Raya. BBA menaungi dua merek operasional: Barito Bahalap Tech untuk rekayasa perangkat lunak, dan Barito Bahalap Media untuk komunikasi strategis.",
+      "BBA membatasi diri pada fungsi korporasi: strategi, kontrak, keuangan, kepatuhan hukum, serta risiko dan reputasi. BBA tidak mengambil keputusan teknis untuk BBT maupun keputusan redaksi untuk BBM. Pemisahan ini melindungi klien di kedua sisi dari benturan kepentingan.",
     ],
     stats: [
-      {
-        value: "2",
-        label: "Merek operasional",
-        note: "Tim, akun klien, dan data yang terpisah.",
-      },
       {
         value: "3",
         label: "Sistem dibangun dan dikelola",
         note: "Oleh Barito Bahalap Tech.",
       },
       {
-        value: "7",
-        label: "Dimensi pemisahan operasional",
-        note: "Dari identitas merek hingga independensi redaksi.",
+        value: "2",
+        label: "Merek operasional",
+        note: "Tim, akun klien, dan data yang terpisah.",
+      },
+      {
+        value: "2026",
+        label: "Didirikan di Palangka Raya",
+        note: "Melayani klien di Kalimantan Tengah dan Jawa Timur.",
       },
     ],
   },
 
   divisions: {
     eyebrow: "Divisi kami",
-    title:
-      "Dua merek operasional, masing-masing bertanggung jawab atas pekerjaannya.",
+    title: "Dua merek. Masing-masing bertanggung jawab atas pekerjaannya.",
     intro:
-      "Setiap divisi memiliki identitas, tim, akun klien, dan kewenangan keputusan sendiri. Informasi tentang klien satu divisi tidak dibagikan kepada divisi lain tanpa persetujuan tertulis dari klien tersebut.",
+      "Setiap divisi memiliki identitas, tim, akun klien, dan kewenangan keputusan sendiri. Informasi klien tetap berada di divisi yang melayaninya, kecuali klien menyetujui secara tegas.",
     items: [
       {
         id: "bbt",
@@ -56,28 +56,28 @@ export const homeContent: HomeContent = {
         badge: "BBT",
         descriptor: "Teknologi dan infrastruktur digital",
         summary:
-          "Merancang, membangun, dan memelihara sistem digital untuk operasional organisasi. BBT berperan sebagai mitra infrastruktur jangka panjang, bukan pengembang web sekali pakai.",
+          "Merancang, membangun, dan memelihara sistem digital yang menjadi tulang punggung operasional organisasi. BBT hadir sebagai mitra infrastruktur jangka panjang, bukan pengembang web sekali pakai.",
         capabilities: [
           {
             iconName: "codeSlash",
             title: "Perangkat lunak khusus dan sistem internal",
             description:
-              "Aplikasi dan sistem informasi perusahaan yang dibangun sesuai alur kerja Anda.",
+              "Aplikasi dan sistem informasi enterprise yang dibangun mengikuti cara kerja organisasi Anda yang sebenarnya.",
           },
           {
             iconName: "pieChartFill",
             title: "Dasbor operasional",
             description:
-              "Dasbor analitik dan pemantauan yang menyatukan data internal dan pelaporan dalam satu tempat.",
+              "Analitik dan pemantauan yang menyatukan data internal dan pelaporan dalam satu tempat.",
           },
           {
             iconName: "barChart",
             title: "Otomasi dan integrasi",
             description:
-              "Otomasi proses bisnis dan integrasi platform, dengan dukungan teknis jangka panjang melalui skema retainer.",
+              "Otomasi proses dan integrasi platform, dengan dukungan teknis jangka panjang melalui skema retainer.",
           },
         ],
-        trackRecordTitle: "Telah dibangun dan dikelola",
+        trackRecordTitle: "Berjalan di produksi, dalam skema retainer",
         trackRecord: [
           {
             project: "RSO2 Telkom Dashboard",
@@ -95,12 +95,12 @@ export const homeContent: HomeContent = {
             project: "Situs web AMPI Kalteng",
             client: "AMPI Kalimantan Tengah",
             scope:
-              "Platform terpadu untuk informasi organisasi, program, berita, dokumen, media, pendaftaran mitra, dan kiriman dari publik. Retainer berjalan.",
+              "Satu platform untuk informasi organisasi, program, berita, dokumen, media, pendaftaran mitra, dan kiriman dari publik. Retainer berjalan.",
           },
         ],
         note: {
           title: "Otoritas teknis",
-          body: "Keputusan teknis, mulai dari arsitektur sistem hingga prioritas pemeliharaan, berada pada Delivery Lead BBT.",
+          body: "Arsitektur sistem, pendekatan pengembangan, dan prioritas pemeliharaan diputuskan oleh Delivery Lead BBT.",
         },
         cta: { label: "Diskusikan proyek BBT", href: "/#contact" },
       },
@@ -111,7 +111,7 @@ export const homeContent: HomeContent = {
         badge: "BBM",
         descriptor: "Media dan komunikasi strategis",
         summary:
-          "Komunikasi strategis, konten, dan pengelolaan publikasi untuk organisasi dan institusi. BBM adalah operasi komunikasi profesional, bukan sekadar layanan media sosial.",
+          "Komunikasi strategis, konten, dan pengelolaan publikasi untuk organisasi dan institusi. Operasi komunikasi profesional, bukan sekadar layanan media sosial.",
         capabilities: [
           {
             iconName: "megaphone",
@@ -123,7 +123,7 @@ export const homeContent: HomeContent = {
             iconName: "newspaper",
             title: "Konten dan operasional redaksi",
             description:
-              "Operasional konten, penulisan naskah, layanan editorial, dan pengelolaan publikasi.",
+              "Penulisan naskah, layanan editorial, kalender konten, dan pengelolaan publikasi.",
           },
           {
             iconName: "imageAlt",
@@ -133,10 +133,10 @@ export const homeContent: HomeContent = {
           },
         ],
         statusNote:
-          "BBM berada pada tahap awal operasional. Portofolionya akan dipublikasikan seiring selesainya proyek.",
+          "BBM berada pada tahap awal operasional. Portofolionya akan dipublikasikan seiring selesainya proyek dan persetujuan klien.",
         note: {
           title: "Independensi redaksi",
-          body: "Keputusan redaksi mengenai konten, narasi, dan jadwal publikasi berada pada Creative Lead BBM. Founder dan Direktur BBA mengawasi kontrak, keuangan, kepatuhan hukum, dan risiko reputasi, serta tidak mengambil keputusan redaksi sehari-hari. Kegiatan publikasi pers mengikuti Undang-Undang Nomor 40 Tahun 1999 tentang Pers dan kode etik jurnalistik yang berlaku.",
+          body: "Konten, narasi, dan jadwal publikasi diputuskan oleh Creative Lead BBM. Founder dan Direktur BBA mengawasi kontrak, keuangan, kepatuhan hukum, dan risiko reputasi, serta tidak terlibat dalam keputusan redaksi sehari-hari. Kegiatan publikasi pers mengikuti Undang-Undang Nomor 40 Tahun 1999 tentang Pers dan kode etik jurnalistik yang berlaku.",
         },
         cta: { label: "Diskusikan kerja sama BBM", href: "/#contact" },
       },
@@ -145,10 +145,16 @@ export const homeContent: HomeContent = {
 
   approach: {
     eyebrow: "Pendekatan kami",
-    title: "Cara kami bekerja.",
+    title: "Cara kami bekerja",
     intro:
       "Komitmen berikut tertanam dalam cara organisasi beroperasi, sehingga dapat ditinjau oleh tim pengadaan, hukum, dan kepatuhan.",
     items: [
+      {
+        iconName: "box",
+        title: "Pemisahan sejak rancangan",
+        description:
+          "BBT dan BBM memiliki merek, tim, akun klien, dan data kerja yang terpisah. Akses lintas divisi hanya atas dasar need-to-know.",
+      },
       {
         iconName: "filePdf",
         title: "Lingkup dan akuntabilitas yang jelas",
@@ -159,7 +165,7 @@ export const homeContent: HomeContent = {
         iconName: "lock",
         title: "Kerahasiaan sebagai standar",
         description:
-          "Informasi klien hanya diakses oleh personel yang menangani kerja sama tersebut, dan tidak dibagikan lintas divisi tanpa persetujuan tegas dari klien.",
+          "Hanya personel yang menangani suatu kerja sama yang dapat mengakses informasi kliennya. Informasi tidak berpindah lintas divisi tanpa persetujuan tegas dari klien.",
       },
       {
         iconName: "shieldFillCheck",
@@ -172,7 +178,7 @@ export const homeContent: HomeContent = {
 
   leadership: {
     eyebrow: "Kepemimpinan",
-    title: "Pihak yang bertanggung jawab atas organisasi.",
+    title: "Siapa yang bertanggung jawab",
     intro:
       "Tata kelola berada pada Founder dan Direktur. Keputusan teknis dan redaksi berada pada pimpinan divisi.",
     people: [
@@ -192,22 +198,21 @@ export const homeContent: HomeContent = {
         iconName: "codeSlash",
         title: "Delivery Lead, BBT",
         description:
-          "Memegang kewenangan atas arsitektur sistem, metodologi pengembangan, dan prioritas pemeliharaan.",
+          "Memutuskan arsitektur sistem, metodologi pengembangan, dan prioritas pemeliharaan.",
       },
       {
         brand: "media",
         iconName: "newspaper",
         title: "Creative Lead, BBM",
-        description:
-          "Memegang kewenangan atas konten, narasi, dan jadwal publikasi.",
+        description: "Memutuskan konten, narasi, dan jadwal publikasi.",
       },
     ],
   },
 
   careers: {
     eyebrow: "Karier",
-    title: "Kami sedang membangun tim teknis dan redaksi yang terpisah.",
-    body: "BBT dan BBM merekrut dan mengelola timnya masing-masing. Saat ini belum ada posisi yang dibuka, tetapi Anda dapat memperkenalkan diri dan pekerjaan yang Anda tekuni.",
+    title: "Membangun dua tim, satu divisi demi satu divisi.",
+    body: "BBT dan BBM merekrut secara mandiri. Saat ini belum ada posisi yang dibuka, tetapi Anda dipersilakan memperkenalkan diri dan pekerjaan yang Anda tekuni.",
     cta: { label: "Karier di BBA", href: "/careers" },
   },
 

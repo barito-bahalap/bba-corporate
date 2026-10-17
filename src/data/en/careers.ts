@@ -5,23 +5,23 @@ export const careersContent: CareersContent = {
   seo: {
     title: "Careers",
     description:
-      "Careers at Barito Bahalap Agency. BBT and BBM build and manage their teams independently.",
+      "Careers at Barito Bahalap Agency. BBT and BBM build and manage their teams independently, from Palangka Raya.",
   },
   title: "Careers",
   intro:
-    "Barito Bahalap Agency is at an early stage. We are building technical and editorial teams in Palangka Raya, one division at a time.",
+    "Barito Bahalap Agency is early. We are building technical and editorial teams in Palangka Raya, one division at a time, and the people who join now will shape how those teams work.",
   openings: {
     title: "No open positions at the moment.",
-    sub: "You are welcome to introduce yourself. We keep applications on file and contact people when a role opens.",
+    sub: "Introduce yourself anyway. We keep applications on file and reach out when a role opens.",
   },
   hiringTitle: "How we hire",
   hiringParagraphs: [
-    "BBT and BBM recruit and manage their teams independently. Technical roles report into BBT and editorial and creative roles report into BBM, so that each division keeps its own working practices, client accounts and data.",
+    "BBT and BBM recruit and manage their teams independently. Technical roles report into BBT and editorial and creative roles report into BBM, so each division keeps its own working practices, client accounts and data.",
     "In your introduction, tell us which division your work relates to, what you have built or produced, and where you are based.",
   ],
   rolesTitle: "Roles in our organization",
   rolesIntro:
-    "These are the functions in our organization structure. Listing a role here does not mean it is currently open.",
+    "These are the functions in our organization structure. A role listed here is not necessarily open.",
   roleGroups: [
     {
       brand: "tech",
@@ -48,7 +48,7 @@ export const careersContent: CareersContent = {
   ],
   cta: {
     title: "Introduce yourself",
-    body: "Send a short note and links to your work. Please state which division you are writing about.",
+    body: "Send a short note and links to your work, and tell us which division you are writing about.",
     primary: {
       label: "Email us",
       href: `mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("Introduction: careers")}`,

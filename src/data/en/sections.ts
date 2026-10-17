@@ -4,7 +4,7 @@ export const sectionsEn: SectionsContent = {
   proof: {
     label: "Verified track record",
     items: [
-      { value: "3", label: "Client engagements delivered by BBT" },
+      { value: "3", label: "Client systems delivered and maintained by BBT" },
       {
         value: "Retainer",
         label: "Ongoing relationship with PT Telkom Indonesia Regional 3",
@@ -15,17 +15,17 @@ export const sectionsEn: SectionsContent = {
   },
 
   doors: {
-    eyebrow: "Two Divisions",
+    eyebrow: "Two divisions",
     title: "Two divisions, two independent disciplines",
     intro:
-      "BBA is the holding company. Services are delivered by two separate divisions, each with its own identity, team, and channels. Choose the one that fits your need.",
+      "BBA is the holding company. The work is done by two separate divisions, each with its own identity, team and channels. Choose the one that fits what you need.",
     doors: [
       {
         key: "tech",
         name: "Barito Bahalap Tech",
         discipline: "Technology & Digital Infrastructure",
         statement:
-          "A long-term digital infrastructure partner for internal systems, operational dashboards, and business process automation.",
+          "A long-term digital infrastructure partner for internal systems, operational dashboards and business process automation.",
         points: [
           "Custom software and information systems",
           "Operational dashboards and report automation",
@@ -40,7 +40,7 @@ export const sectionsEn: SectionsContent = {
         name: "Barito Bahalap Media",
         discipline: "Media & Strategic Communications",
         statement:
-          "A professional communications operation for institutions and public figures: message strategy, media relations, and content production.",
+          "A professional communications operation for institutions and public figures: message strategy, media relations and content production.",
         points: [
           "Strategic communications and media relations",
           "Editorial services and publication management",
@@ -54,10 +54,10 @@ export const sectionsEn: SectionsContent = {
   },
 
   work: {
-    eyebrow: "Selected Work",
-    title: "Work delivered and in progress",
+    eyebrow: "Selected work",
+    title: "Delivered and in progress",
     intro:
-      "Track record is shown per division. Each entry refers to a confirmed engagement.",
+      "Track record is shown per division. Every entry is a confirmed engagement.",
     imagePlaceholder: "Documentation forthcoming",
     tech: {
       label: "Barito Bahalap Tech",
@@ -67,7 +67,7 @@ export const sectionsEn: SectionsContent = {
           title: "RSO2 Telkom Dashboard",
           location: "Surabaya, East Java",
           summary:
-            "An analytical and operational dashboard tailored to internal workflows and data needs, with automated reporting.",
+            "An analytical and operational dashboard built around internal workflows and data needs, with automated reporting.",
           tags: ["Operational Dashboard", "Report Automation", "Retainer"],
           status: "Active",
           image: { alt: "RSO2 Telkom Dashboard interface" },
@@ -86,7 +86,7 @@ export const sectionsEn: SectionsContent = {
           title: "Official website and organization management platform",
           location: "Central Kalimantan",
           summary:
-            "An integrated platform for organizational information, programs, news, documents, media, partnership registration, and public aspirations.",
+            "One platform for organizational information, programs, news, documents, media, partnership registration and public submissions.",
           tags: ["Web Platform", "Information System"],
           image: { alt: "AMPI Kalteng official website interface" },
         },
@@ -96,7 +96,7 @@ export const sectionsEn: SectionsContent = {
       label: "Barito Bahalap Media",
       emptyTitle: "Portfolio in preparation",
       emptyText:
-        "BBM is in an early stage of operational development. Track record will be published progressively once initial engagements are complete and clients have given consent.",
+        "BBM is in an early stage of operations. Its track record will be published progressively as initial engagements are completed and clients give consent.",
       practiceTitle: "Practice areas",
       practiceAreas: [
         {
@@ -106,20 +106,20 @@ export const sectionsEn: SectionsContent = {
         },
         {
           title: "Media relations",
-          description: "Management of media relationships and correspondence.",
+          description: "Managing media relationships and correspondence.",
         },
         {
           title: "Content operations",
-          description: "Writing, editing, and institutional content calendars.",
+          description: "Writing, editing and institutional content calendars.",
         },
         {
           title: "Editorial and publication",
           description:
-            "Publication management following journalistic standards.",
+            "Publication management that follows journalistic standards.",
         },
         {
           title: "Multimedia production",
-          description: "Photography, videography, and graphic design.",
+          description: "Photography, videography and graphic design.",
         },
         {
           title: "Social media strategy",
@@ -135,12 +135,12 @@ export const sectionsEn: SectionsContent = {
         {
           title: "Balance",
           description:
-            "Information is presented in a balanced and accountable manner.",
+            "Information is presented in a balanced and accountable way.",
         },
         {
           title: "Independent editorial decisions",
           description:
-            "Narrative, content, and publication schedule are decided by BBM's Creative Lead, not by the holding company or BBT's technology clients.",
+            "Narrative, content and publication schedule are decided by BBM's Creative Lead, not by the holding company or by BBT's technology clients.",
         },
       ],
       principlesNote:
@@ -149,22 +149,22 @@ export const sectionsEn: SectionsContent = {
   },
 
   engage: {
-    eyebrow: "How We Engage",
-    title: "A clear, auditable engagement process",
+    eyebrow: "How we engage",
+    title: "A clear engagement process you can audit",
     intro:
-      "Every engagement is contract-based, with defined scope, duration, and measurable deliverables.",
+      "Every engagement is contract-based, with defined scope, duration and measurable deliverables.",
     deliverableLabel: "Deliverable",
     steps: [
       {
         title: "Discovery",
         description:
-          "We identify needs, stakeholders, and constraints. Objectives and success indicators are agreed from the start.",
+          "We identify needs, stakeholders and constraints. Objectives and success indicators are agreed from the start.",
         deliverable: "Requirements summary",
       },
       {
         title: "Proposal",
         description:
-          "Scope, schedule, cost structure, and contract terms are prepared to fit the client's procurement requirements.",
+          "Scope, schedule, cost structure and contract terms are prepared to fit the client's procurement requirements.",
         deliverable: "Proposal and draft contract",
       },
       {
@@ -174,19 +174,19 @@ export const sectionsEn: SectionsContent = {
         deliverable: "Stage deliverables and BAST",
       },
       {
-        title: "Support and Retainer",
+        title: "Support and retainer",
         description:
-          "Maintenance, fixes, and further development under a retainer with an agreed service level.",
+          "Maintenance, fixes and further development under a retainer with an agreed service level.",
         deliverable: "Periodic service reports",
       },
     ],
   },
 
   structure: {
-    eyebrow: "Structure & Governance",
+    eyebrow: "Structure & governance",
     title: "Shared ownership, separate operations",
     intro:
-      "BBT and BBM sit within one group but run as two functionally separate divisions. This separation is a governance framework, not a marketing strategy.",
+      "BBT and BBM sit within one group but run as two functionally separate divisions. The separation is a governance framework, not a marketing strategy.",
     diagramLabel: "Structure diagram of BBA, BBT, and BBM",
     holding: {
       name: "Barito Bahalap Agency",
@@ -215,12 +215,12 @@ export const sectionsEn: SectionsContent = {
     ],
     governanceTitle: "Operational separation across seven dimensions",
     governanceIntro:
-      "The Operational Firewall sets the boundary between BBT and BBM so that clients on both sides are protected from conflicts of interest.",
+      "The Operational Firewall sets the boundary between BBT and BBM, so clients on both sides are protected from conflicts of interest.",
     dimensions: [
       {
         title: "Brand identity",
         description:
-          "Distinct names, logos, public channels, and positioning. No combined marketing material.",
+          "Distinct names, logos, public channels and positioning. No combined marketing material.",
       },
       {
         title: "Teams",
@@ -230,7 +230,7 @@ export const sectionsEn: SectionsContent = {
       {
         title: "Client account management",
         description:
-          "One division's client information is not shared with the other without client consent.",
+          "One division's client information is not shared with the other without the client's consent.",
       },
       {
         title: "Data and information",
@@ -250,7 +250,7 @@ export const sectionsEn: SectionsContent = {
       {
         title: "Legal and reputation oversight",
         description:
-          "Contracts, compliance, and risk are handled at holding level without overriding divisional decisions.",
+          "Contracts, compliance and risk are handled at holding level without overriding divisional decisions.",
       },
     ],
     pressTitle: "Press compliance",
@@ -259,8 +259,8 @@ export const sectionsEn: SectionsContent = {
   },
 
   profile: {
-    title: "Company Profile",
-    text: "Download a summary of BBA: structure, divisions, governance, and confirmed track record.",
+    title: "Company profile",
+    text: "Download a summary of BBA: structure, divisions, governance and confirmed track record.",
     cta: "Download Profile (PDF)",
     url: "/files/BBA-Company-Profile-EN.pdf",
     meta: "PDF, English",
