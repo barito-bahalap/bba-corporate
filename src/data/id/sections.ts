@@ -260,6 +260,7 @@ export const sectionsId: SectionsContent = {
       "Untuk aktivitas yang termasuk penerbitan pers, fungsi editorial BBM dijalankan dengan memperhatikan Undang-Undang Nomor 40 Tahun 1999 tentang Pers beserta peraturan pelaksanaannya.",
   },
 
+  // TODO: Make the actual presentable PDF, currently its a placeholder
   profile: {
     title: "Profil perusahaan",
     text: "Unduh ringkasan profil BBA: struktur, divisi, tata kelola, dan rekam jejak terkonfirmasi.",

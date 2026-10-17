@@ -20,7 +20,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footer__main cg-wrap">
         <div className="footer__col footer__col--brand">
-          <Brand onDark />
+          <Brand onDark logo logoFull />
           <p className="footer__tagline">{site.tagline}</p>
           <a className="footer__email" href={`mailto:${site.contactEmail}`}>
             {site.contactEmail}

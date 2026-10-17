@@ -1,12 +1,12 @@
 :root[data-theme="corporate-grid"] {
-  --cg-teal: #007979;
-  --cg-teal-deep: #005a5a;
-  --cg-teal-light: #24b1b1;
-  --cg-orange: #e37434;
-  --cg-cream: #ffe2af;
-  --cg-slate: #10201f;
-  --cg-paper: #fbfaf6;
-  --cg-white: #ffffff;
+  --cg-teal: var(--palette-teal);
+  --cg-teal-deep: var(--palette-teal-hover);
+  --cg-teal-light: var(--palette-teal-light);
+  --cg-orange: var(--palette-orange);
+  --cg-cream: var(--palette-cream);
+  --cg-slate: var(--palette-gray-900);
+  --cg-paper: var(--palette-gray-100);
+  --cg-white: var(--palette-gray-0);
   --cg-line: rgba(16, 32, 31, 0.16);
   --cg-line-on-dark: rgba(255, 255, 255, 0.22);
   --cg-on-dark-soft: rgba(255, 255, 255, 0.82);

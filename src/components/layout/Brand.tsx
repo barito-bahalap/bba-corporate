@@ -9,10 +9,40 @@ import { SmartLink } from "@/components";
 
 interface BrandProps {
   onDark?: boolean;
+  logo?: boolean;
+  logoFull?: boolean;
 }
 
-export function Brand({ onDark = false }: BrandProps) {
+const LOGO_SRC = {
+  light: {
+    icon: "/favicon.svg",
+    full: "/favicon-alt.svg",
+  },
+  dark: {
+    icon: "/favicon-inverted.svg",
+    full: "/favicon-alt-inverted.svg",
+  },
+} as const;
+
+export function Brand({
+  onDark = false,
+  logo = false,
+  logoFull = false,
+}: BrandProps) {
   const { ui, href } = useLocale();
+
+  if (logo) {
+    const variant = onDark ? "dark" : "light";
+    const type = logoFull ? "full" : "icon";
+
+    return (
+      <img
+        src={LOGO_SRC[variant][type]}
+        alt={siteConfig.name}
+        className={`brand__bba-logo${logoFull ? " brand__bba-logo--full" : ""}`}
+      />
+    );
+  }
 
   return (
     <SmartLink

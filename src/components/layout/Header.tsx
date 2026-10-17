@@ -30,7 +30,7 @@ export function Header() {
   return (
     <header className="header">
       <div className="header__main cg-wrap">
-        <Brand />
+        <Brand logo />
 
         <nav className="header__menus" aria-label={ui.menu.primaryNav}>
           {nav.map((item) => (
@@ -87,7 +87,7 @@ export function Header() {
             inert={!open}
           >
             <div className="header__drawer-head">
-              <Brand onDark />
+              <Brand onDark logo />
               <button
                 ref={closeRef}
                 type="button"

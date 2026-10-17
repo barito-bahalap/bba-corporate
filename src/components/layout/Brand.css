@@ -6,6 +6,14 @@
   border-bottom: none;
 }
 
+.brand__bba-logo {
+  height: 18px;
+}
+
+.brand__bba-logo--full {
+  height: 48px;
+}
+
 .brand--on-dark {
   color: var(--cg-white);
 }
@@ -30,7 +38,7 @@
 }
 
 .brand--on-dark .brand__dot[data-brand="media"] {
-  background-color: var(--cg-teal-light);
+  background-color: var(--cg-orange);
 }
 
 .brand__text {
