@@ -13,3 +13,5 @@ export function getContent(locale: LocaleCode): ContentBundle {
 }
 
 export { inquirySectionCopy } from "./inquiry";
+
+export { placeholders } from "./placeholders";

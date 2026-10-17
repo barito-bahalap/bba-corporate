@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import "./RootLayout.css";
 // Contexts & Hooks
 import { HeaderProvider } from "@barito-bahalap/contexts";
-import { useLocale, useScrollReveal } from "@/hooks";
+import { useGridReveal, useLocale, useScrollReveal } from "@/hooks";
 // Components
 import { LoadingSpinner, Header, Footer } from "@/components";
 import { ScrollToTop, ScrollToSection } from "@/components";
@@ -13,6 +13,7 @@ export function RootLayout() {
   const { ui } = useLocale();
   const mainRef = useRef<HTMLElement>(null);
   useScrollReveal(mainRef);
+  useGridReveal(mainRef);
 
   return (
     <HeaderProvider>

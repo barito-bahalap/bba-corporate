@@ -1,0 +1,27 @@
+.cg-leadership__people {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  max-width: 22rem;
+  margin-bottom: var(--space-12);
+}
+
+.cg-leadership__subtitle {
+  margin-bottom: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 2px solid var(--cg-teal);
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
+}
+
+.cg-leadership__authority {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .cg-leadership__authority {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

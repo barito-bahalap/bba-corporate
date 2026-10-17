@@ -4,6 +4,7 @@ import "./ResponsiveImage.css";
 
 interface ResponsiveImageProps {
   base?: string;
+  src?: string;
   alt: string;
   placeholderLabel: string;
   width?: number;
@@ -21,6 +22,7 @@ const buildSet = (base: string, widths: number[], ext: string) =>
 
 export function ResponsiveImage({
   base,
+  src,
   alt,
   placeholderLabel,
   width = 16,
@@ -32,10 +34,26 @@ export function ResponsiveImage({
   const [failed, setFailed] = useState(false);
   const style = { aspectRatio: `${width} / ${height}` };
 
-  if (!base || failed) {
+  if ((!base && !src) || failed) {
     return (
       <div className="rimg rimg--placeholder" style={style}>
         <span>{placeholderLabel}</span>
+      </div>
+    );
+  }
+
+  if (!base && src) {
+    return (
+      <div className="rimg" style={style}>
+        <img
+          src={src}
+          alt={alt}
+          width={width * 100}
+          height={height * 100}
+          loading={priority ? "eager" : "lazy"}
+          decoding="async"
+          onError={() => setFailed(true)}
+        />
       </div>
     );
   }
@@ -47,17 +65,17 @@ export function ResponsiveImage({
       <picture>
         <source
           type="image/avif"
-          srcSet={buildSet(base, widths, "avif")}
+          srcSet={buildSet(base!, widths, "avif")}
           sizes={sizes}
         />
         <source
           type="image/webp"
-          srcSet={buildSet(base, widths, "webp")}
+          srcSet={buildSet(base!, widths, "webp")}
           sizes={sizes}
         />
         <img
           src={`${base}-${fallbackWidth}.jpg`}
-          srcSet={buildSet(base, widths, "jpg")}
+          srcSet={buildSet(base!, widths, "jpg")}
           sizes={sizes}
           alt={alt}
           width={width * 100}

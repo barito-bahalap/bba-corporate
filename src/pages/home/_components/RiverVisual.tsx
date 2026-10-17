@@ -7,7 +7,7 @@ const OPACITY = [1, 0.55, 0.3];
 export function RiverVisual() {
   return (
     <svg
-      className="river anim-fade-in"
+      className="river"
       viewBox="0 0 480 400"
       fill="none"
       aria-hidden="true"
@@ -21,14 +21,17 @@ export function RiverVisual() {
         >
           <path
             className="river__trunk"
+            pathLength={1}
             d="M-20 90C50 50 110 140 190 150S240 160 250 160"
           />
           <path
             className="river__tech"
+            pathLength={1}
             d="M250 160C320 165 345 105 410 112S480 150 520 130"
           />
           <path
             className="river__media"
+            pathLength={1}
             d="M250 160C310 200 335 260 400 268S475 250 520 290"
           />
         </g>

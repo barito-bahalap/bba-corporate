@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: color-mix(in srgb, currentColor 6%, transparent);
+  background-color: var(--cg-teal);
 }
 
 .rimg picture,
@@ -14,6 +14,7 @@
 
 .rimg img {
   object-fit: cover;
+  transition: transform 700ms var(--cg-ease);
 }
 
 .rimg--placeholder {
@@ -23,13 +24,15 @@
     repeating-linear-gradient(
       135deg,
       transparent 0 14px,
-      color-mix(in srgb, currentColor 5%, transparent) 14px 15px
+      rgba(255, 255, 255, 0.12) 14px 15px
     ),
-    color-mix(in srgb, currentColor 5%, transparent);
+    var(--cg-teal);
 }
 
 .rimg--placeholder span {
-  font-size: 0.8125rem;
-  letter-spacing: 0.04em;
-  opacity: 0.55;
+  color: var(--cg-cream);
+  font-family: var(--cg-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

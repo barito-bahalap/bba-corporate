@@ -1,34 +1,32 @@
-// Style
-import "./HomePage.css";
-// Contexts & Hooks
-import { useTransparentHeader } from "@barito-bahalap/contexts";
-import { useHomeContent, useLocale } from "@/hooks";
-import { useSectionsContent, useSeoMeta } from "@/hooks";
+// Config
+import { siteConfig } from "@barito-bahalap/config";
+// Hooks
+import {
+  useContactForm,
+  useHomeContent,
+  useLocale,
+  useSectionsContent,
+  useSeoMeta,
+} from "@/hooks";
 // Components
 import { SEO } from "@/components";
 import {
-  AboutSection,
-  ApproachSection,
-  CareersTeaserSection,
-  DivisionsSection,
+  ContactSection,
   DoorsSection,
   EngageSection,
   HeroSection,
-  InquirySection,
-  LeadershipSection,
-  ProfileSection,
   ProofSection,
-  StructureSection,
   WorkSection,
 } from "./_components";
-// Utils
+// Data & Utils
+import { placeholders } from "@/data/placeholders";
 import { buildOrganizationSchema } from "@/domain/schema";
 
 export default function HomePage() {
-  useTransparentHeader();
   const content = useHomeContent();
   const sections = useSectionsContent();
-  const { href, site, locale } = useLocale();
+  const { href, site } = useLocale();
+  const { form } = useContactForm();
   const seo = useSeoMeta();
 
   return (
@@ -40,23 +38,30 @@ export default function HomePage() {
         path={href("/")}
         structuredData={buildOrganizationSchema()}
       />
-      <HeroSection {...content.hero} />
-      <ProofSection {...sections.proof} />
-      <DoorsSection {...sections.doors} />
-      <WorkSection {...sections.work} />
-      <EngageSection {...sections.engage} />
-      <StructureSection {...sections.structure} />
-      <AboutSection {...content.about} />
-      <ProfileSection {...sections.profile} />
-      <DivisionsSection {...content.divisions} />
-      <ApproachSection {...content.approach} />
-      <LeadershipSection {...content.leadership} />
-      <CareersTeaserSection {...content.careers} />
-      <InquirySection
-        locale={locale}
+      <HeroSection
+        {...content.hero}
+        index="00"
+        location={site.location}
+        imageSrc={placeholders.hero}
+      />
+      <ProofSection {...sections.proof} index="01" />
+      <DoorsSection
+        {...sections.doors}
+        index="02"
+        holding={siteConfig.shortName}
+      />
+      <WorkSection
+        {...sections.work}
+        index="03"
+        fallbackImages={placeholders.cases}
+      />
+      <EngageSection {...sections.engage} index="04" />
+      <ContactSection
+        {...content.contact}
+        index="05"
         email={site.contactEmail}
         location={site.location}
-        privacyHref={href("/privacy")}
+        form={form}
       />
     </>
   );

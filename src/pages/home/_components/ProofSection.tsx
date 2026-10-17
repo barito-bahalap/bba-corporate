@@ -1,24 +1,32 @@
 // Style
 import "./ProofSection.css";
 // Components
-import { Section } from "@barito-bahalap/components";
+import { DataCell, GridSection, IndexLabel } from "@/components";
+// Utils
+import { pad2 } from "@/domain/format";
 // Types
 import type { ProofContent } from "@/domain/sections";
 
-export function ProofSection({ label, items }: ProofContent) {
+interface ProofSectionProps extends ProofContent {
+  index: string;
+}
+
+export function ProofSection({ index, label, items }: ProofSectionProps) {
   return (
-    <Section id="proof" tone="paper" labelledBy="proof-label" className="proof">
-      <p id="proof-label" className="proof__label">
-        {label}
-      </p>
-      <dl className="proof__list">
-        {items.map((item) => (
-          <div className="proof__item" key={item.label}>
-            <dt className="proof__value">{item.value}</dt>
-            <dd className="proof__text">{item.label}</dd>
-          </div>
+    <GridSection id="proof" tone="teal" ariaLabel={label} className="cg-proof">
+      <IndexLabel index={index} label={label} />
+      <dl className="cg-proof__list">
+        {items.map((item, i) => (
+          <DataCell
+            key={item.label}
+            value={item.value}
+            label={item.label}
+            index={pad2(i + 1)}
+            delay={i}
+            tone="dark"
+          />
         ))}
       </dl>
-    </Section>
+    </GridSection>
   );
 }

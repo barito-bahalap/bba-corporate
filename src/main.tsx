@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import "@barito-bahalap/styles";
 import "@barito-bahalap/styles/brands/corporate";
 import "@barito-bahalap/styles/brands/scopes";
+import "./styles/theme.css";
 // App
 import { App } from "./app/App";
 

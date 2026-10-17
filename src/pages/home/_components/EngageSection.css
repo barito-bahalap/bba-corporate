@@ -1,64 +1,70 @@
-.engage {
+.cg-engage {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1rem, 2vw, 1.5rem);
-  margin: clamp(1.75rem, 4vw, 2.75rem) 0 0;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: none;
 }
 
-.engage__step {
+.cg-engage__step {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  padding-top: 1.25rem;
-  border-top: 2px solid #007979;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background-color: var(--cg-white);
+  border-top: 4px solid var(--cg-teal);
 }
 
-.engage__index {
-  font-family: "PT Serif", serif;
-  font-size: 1.5rem;
-  color: #007979;
+.cg-engage__index {
+  color: var(--cg-teal);
+  font-family: var(--cg-mono);
+  font-size: 2.5rem;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
-.engage__title {
-  margin: 0;
-  font-family: "PT Serif", serif;
-  font-size: 1.15rem;
+.cg-engage__title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-xl);
 }
 
-.engage__text {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.cg-engage__text {
+  font-size: var(--fs-sm-alt);
+  line-height: var(--lh-relaxed);
+  color: var(--clr-ink-soft);
 }
 
-.engage__deliverable {
-  display: grid;
-  gap: 0.15rem;
-  margin: auto 0 0;
-  padding-top: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
+.cg-engage__deliverable {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-top: auto;
+  padding: var(--space-3);
+  background-color: var(--cg-cream);
+  color: var(--cg-slate);
+  font-size: var(--fs-sm-alt);
+  font-weight: var(--fw-semibold);
 }
 
-.engage__deliverable span {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+.cg-engage__deliverable span {
+  font-family: var(--cg-mono);
+  font-size: 0.6875rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  opacity: 0.55;
+  opacity: 0.7;
 }
 
-@media (max-width: 960px) {
-  .engage {
+@media (min-width: 640px) {
+  .cg-engage {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 560px) {
-  .engage {
-    grid-template-columns: 1fr;
+@media (min-width: 1024px) {
+  .cg-engage {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

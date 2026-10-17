@@ -8,24 +8,38 @@
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
 }
 
 .river__trunk {
-  stroke: var(--clr-ink-muted);
+  stroke: var(--cg-cream);
 }
 
 .river__tech {
-  stroke: var(--palette-teal);
+  stroke: var(--cg-white);
 }
 
 .river__media {
-  stroke: var(--palette-orange);
+  stroke: var(--cg-teal-light);
 }
 
 .river__label {
-  fill: var(--clr-ink-muted);
-  font-family: var(--font-control);
-  font-size: 11px;
+  fill: var(--cg-cream);
+  font-family: var(--cg-mono);
+  font-size: 12px;
   font-weight: var(--fw-bold);
-  letter-spacing: var(--ls-widest);
+  letter-spacing: 0.18em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .river path {
+    stroke-dashoffset: 1;
+    animation: cg-draw 1800ms var(--cg-ease) 300ms forwards;
+  }
+
+  .river__tech,
+  .river__media {
+    animation-delay: 1100ms;
+  }
 }

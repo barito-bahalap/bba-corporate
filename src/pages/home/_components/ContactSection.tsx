@@ -2,17 +2,19 @@ import type { ComponentProps } from "react";
 // Style
 import "./ContactSection.css";
 // Components
-import { ContactForm, Icon, Section, SectionHeader } from "@/components";
+import { ContactForm, GridHeader, GridSection, Icon } from "@/components";
 // Types
 import type { ContactContent } from "@/domain/content";
 
 interface ContactSectionProps extends ContactContent {
+  index: string;
   email: string;
   location: string;
   form: ComponentProps<typeof ContactForm>;
 }
 
 export function ContactSection({
+  index,
   eyebrow,
   title,
   intro,
@@ -21,21 +23,22 @@ export function ContactSection({
   form,
 }: ContactSectionProps) {
   return (
-    <Section id="contact" labelledBy="contact-title">
-      <div className="home-contact">
-        <div className="home-contact__info">
-          <SectionHeader
+    <GridSection id="contact" tone="deep" labelledBy="contact-title">
+      <div className="cg-contact">
+        <div className="cg-contact__info">
+          <GridHeader
+            index={index}
             eyebrow={eyebrow}
             title={title}
             intro={intro}
             id="contact-title"
           />
-          <ul className="home-contact__list" role="list">
+          <ul className="cg-contact__list" role="list">
             <li>
               <Icon
                 iconName="envelope"
-                fill="var(--clr-ink-soft)"
-                fillHover="var(--clr-ink)"
+                fill="var(--cg-cream)"
+                fillHover="var(--cg-cream)"
                 size={20}
               />
               <a href={`mailto:${email}`}>{email}</a>
@@ -43,18 +46,19 @@ export function ContactSection({
             <li>
               <Icon
                 iconName="geoAltFill"
-                fill="var(--clr-ink-soft)"
-                fillHover="var(--clr-ink)"
+                fill="var(--cg-cream)"
+                fillHover="var(--cg-cream)"
                 size={20}
               />
               <span>{location}</span>
             </li>
           </ul>
         </div>
-        <div className="card not-hoverable home-contact__form">
+
+        <div className="cg-contact__form" data-cg-reveal>
           <ContactForm {...form} />
         </div>
       </div>
-    </Section>
+    </GridSection>
   );
 }

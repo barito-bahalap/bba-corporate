@@ -1,42 +1,79 @@
 // Style
 import "./DoorsSection.css";
 // Components
-import { Button, Section, SectionHeader } from "@barito-bahalap/components";
+import { Badge, Button, GridHeader, GridSection } from "@/components";
+// Utils
+import { pad2 } from "@/domain/format";
 // Types
-import type { DoorsContent } from "@/domain/sections";
+import type { DivisionKey, DoorsContent } from "@/domain/sections";
 
-export function DoorsSection({ eyebrow, title, intro, doors }: DoorsContent) {
+interface DoorsSectionProps extends DoorsContent {
+  index: string;
+  holding: string;
+}
+
+const CODE: Record<DivisionKey, string> = { tech: "BBT", media: "BBM" };
+
+export function DoorsSection({
+  index,
+  holding,
+  eyebrow,
+  title,
+  intro,
+  doors,
+}: DoorsSectionProps) {
   return (
-    <Section id="divisions" labelledBy="divisions-title">
-      <SectionHeader
+    <GridSection id="divisions" tone="white" labelledBy="divisions-title">
+      <GridHeader
+        index={index}
         eyebrow={eyebrow}
         title={title}
         intro={intro}
         id="divisions-title"
       />
 
-      <div className="doors">
-        {doors.map((door) => (
-          <article className={`door door--${door.key}`} key={door.key}>
-            <p className="door__discipline">{door.discipline}</p>
-            <h3 className="door__name">{door.name}</h3>
-            <p className="door__statement">{door.statement}</p>
-            <ul className="door__points">
-              {door.points.map((point) => (
-                <li key={point}>{point}</li>
+      <div className="cg-doors">
+        <p className="cg-doors__root" aria-hidden="true">
+          <span>{holding}</span>
+          <span>
+            {CODE.tech} + {CODE.media}
+          </span>
+        </p>
+
+        {doors.map((door, i) => (
+          <article
+            key={door.key}
+            className={`cg-door cg-door--${door.key}`}
+            data-cg-reveal
+          >
+            <div className="cg-door__top">
+              <span className="cg-door__code">{CODE[door.key]}</span>
+              <Badge label={door.discipline} variant="accent" />
+            </div>
+            <h3 className="cg-door__name">{door.name}</h3>
+            <p className="cg-door__statement">{door.statement}</p>
+            <ul className="cg-door__points">
+              {door.points.map((point, p) => (
+                <li key={point}>
+                  <span aria-hidden="true">{pad2(p + 1)}</span>
+                  {point}
+                </li>
               ))}
             </ul>
             <Button
               href={door.url}
-              variant={door.key === "tech" ? "primary" : "accent"}
+              label={door.cta}
+              variant="accent"
+              size="lg"
               iconName="arrowRight"
+              iconFill="var(--cg-slate)"
+              iconFillHover="var(--cg-slate)"
               iconAfter
-            >
-              {door.cta}
-            </Button>
+              aria-label={`${door.cta}, ${door.name} ${pad2(i + 1)}`}
+            />
           </article>
         ))}
       </div>
-    </Section>
+    </GridSection>
   );
 }

@@ -1,29 +1,36 @@
 // Style
 import "./LeadershipSection.css";
 // Components
-import { InfoCard, PersonCard, Section, SectionHeader } from "@/components";
+import { GridHeader, GridSection, InfoCard, PersonCard } from "@/components";
 // Types
 import type { LeadershipContent } from "@/domain/content";
 
+interface LeadershipSectionProps extends LeadershipContent {
+  index: string;
+}
+
 export function LeadershipSection({
+  index,
   eyebrow,
   title,
   intro,
   people,
   authorityTitle,
   authority,
-}: LeadershipContent) {
+}: LeadershipSectionProps) {
   const published = people.filter((person) => person.published);
 
   return (
-    <Section id="leadership" labelledBy="leadership-title">
-      <SectionHeader
+    <GridSection id="leadership" labelledBy="leadership-title">
+      <GridHeader
+        index={index}
         eyebrow={eyebrow}
         title={title}
         intro={intro}
         id="leadership-title"
       />
-      <div className="home-leadership__people">
+
+      <div className="cg-leadership__people" data-cg-reveal>
         {published.map((person) => (
           <PersonCard
             key={person.id}
@@ -36,8 +43,8 @@ export function LeadershipSection({
         ))}
       </div>
 
-      <h3 className="home-leadership__subtitle">{authorityTitle}</h3>
-      <div className="home-leadership__authority">
+      <h3 className="cg-leadership__subtitle">{authorityTitle}</h3>
+      <div className="cg-leadership__authority">
         {authority.map((item) => (
           <InfoCard
             key={item.title}
@@ -48,6 +55,6 @@ export function LeadershipSection({
           />
         ))}
       </div>
-    </Section>
+    </GridSection>
   );
 }

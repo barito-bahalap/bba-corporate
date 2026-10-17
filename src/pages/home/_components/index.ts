@@ -1,15 +1,8 @@
-export { AboutSection } from "./AboutSection";
-export { ApproachSection } from "./ApproachSection";
-export { CareersTeaserSection } from "./CareersTeaserSection";
 export { ContactSection } from "./ContactSection";
-export { DivisionsSection } from "./DivisionsSection";
 export { DoorsSection } from "./DoorsSection";
 export { EngageSection } from "./EngageSection";
 export { HeroSection } from "./HeroSection";
-export { LeadershipSection } from "./LeadershipSection";
-export { ProfileSection } from "./ProfileSection";
+export { InquirySection } from "./InquirySection";
 export { ProofSection } from "./ProofSection";
 export { RiverVisual } from "./RiverVisual";
-export { StructureSection } from "./StructureSection";
 export { WorkSection } from "./WorkSection";
-export { InquirySection } from "./InquirySection";

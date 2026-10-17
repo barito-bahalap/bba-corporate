@@ -7,19 +7,30 @@
 }
 
 .brand--on-dark {
-  color: var(--clr-ink-on-dark);
+  color: var(--cg-white);
 }
 
 .brand__mark {
   display: inline-flex;
-  gap: 4px;
+  gap: 3px;
 }
 
 .brand__dot {
-  width: 14px;
-  height: 14px;
-  border-radius: var(--radius-circle);
-  background-color: var(--clr-primary);
+  width: 12px;
+  height: 24px;
+  background-color: var(--cg-teal);
+}
+
+.brand__dot[data-brand="media"] {
+  background-color: var(--cg-teal-light);
+}
+
+.brand--on-dark .brand__dot {
+  background-color: var(--cg-cream);
+}
+
+.brand--on-dark .brand__dot[data-brand="media"] {
+  background-color: var(--cg-teal-light);
 }
 
 .brand__text {
@@ -38,8 +49,9 @@
 .brand__name {
   display: none;
   margin-top: 2px;
-  font-size: var(--fs-2xs);
-  letter-spacing: var(--ls-widest);
+  font-family: var(--cg-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   opacity: 0.7;
 }

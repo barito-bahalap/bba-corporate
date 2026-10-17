@@ -1,0 +1,24 @@
+.cg-index {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 2px solid currentColor;
+  color: var(--cg-teal);
+  font-family: var(--cg-mono);
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.cg-index__num {
+  flex-shrink: 0;
+}
+
+.cg-section--teal .cg-index,
+.cg-section--deep .cg-index {
+  color: var(--cg-cream);
+}

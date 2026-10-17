@@ -1,0 +1,22 @@
+.cg-about__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 62ch;
+  margin-bottom: var(--space-8);
+  color: var(--cg-on-dark-soft);
+  font-size: var(--fs-md);
+}
+
+.cg-about__stats {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .cg-about__stats {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}

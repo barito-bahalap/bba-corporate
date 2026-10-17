@@ -1,0 +1,33 @@
+.cg-section {
+  padding-block: var(--cg-block);
+  background-color: var(--cg-paper);
+  color: var(--clr-ink);
+}
+
+.cg-section--white {
+  background-color: var(--cg-white);
+}
+
+.cg-section--cream {
+  background-color: var(--cg-cream);
+  color: var(--cg-slate);
+}
+
+.cg-section--teal {
+  background-color: var(--cg-teal);
+  color: var(--cg-white);
+}
+
+.cg-section--deep {
+  background-color: var(--cg-teal-deep);
+  color: var(--cg-white);
+}
+
+.cg-section--teal :is(h1, h2, h3, h4, p),
+.cg-section--deep :is(h1, h2, h3, h4, p) {
+  color: inherit;
+}
+
+.cg-section--cream :is(h1, h2, h3, h4) {
+  color: var(--cg-slate);
+}
