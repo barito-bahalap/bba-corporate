@@ -1,3 +1,5 @@
+import type { BadgeVariant } from "@barito-bahalap/components";
+
 export interface ProofItem {
   value: string;
   label: string;
@@ -17,6 +19,7 @@ export interface DoorContent {
   statement: string;
   points: string[];
   cta: string;
+  badgeVariant: BadgeVariant;
   url: string;
 }
 

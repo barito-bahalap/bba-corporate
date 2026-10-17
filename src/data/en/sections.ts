@@ -32,6 +32,7 @@ export const sectionsEn: SectionsContent = {
           "Technical support and ongoing retainers",
         ],
         cta: "Visit Barito Bahalap Tech",
+        badgeVariant: "accent",
         url: "https://tech.baritobahalap.com",
       },
       {
@@ -46,6 +47,7 @@ export const sectionsEn: SectionsContent = {
           "Multimedia production and social media strategy",
         ],
         cta: "Visit Barito Bahalap Media",
+        badgeVariant: "accent",
         url: "https://media.baritobahalap.com",
       },
     ],
@@ -99,7 +101,8 @@ export const sectionsEn: SectionsContent = {
       practiceAreas: [
         {
           title: "Strategic communications",
-          description: "Institutional message planning and public communication.",
+          description:
+            "Institutional message planning and public communication.",
         },
         {
           title: "Media relations",
@@ -111,7 +114,8 @@ export const sectionsEn: SectionsContent = {
         },
         {
           title: "Editorial and publication",
-          description: "Publication management following journalistic standards.",
+          description:
+            "Publication management following journalistic standards.",
         },
         {
           title: "Multimedia production",
@@ -130,7 +134,8 @@ export const sectionsEn: SectionsContent = {
         },
         {
           title: "Balance",
-          description: "Information is presented in a balanced and accountable manner.",
+          description:
+            "Information is presented in a balanced and accountable manner.",
         },
         {
           title: "Independent editorial decisions",
@@ -186,7 +191,13 @@ export const sectionsEn: SectionsContent = {
     holding: {
       name: "Barito Bahalap Agency",
       role: "Holding company and governance layer",
-      items: ["Strategy", "Contracts", "Finance", "Legal compliance", "Risk and reputation"],
+      items: [
+        "Strategy",
+        "Contracts",
+        "Finance",
+        "Legal compliance",
+        "Risk and reputation",
+      ],
     },
     units: [
       {
@@ -208,31 +219,38 @@ export const sectionsEn: SectionsContent = {
     dimensions: [
       {
         title: "Brand identity",
-        description: "Distinct names, logos, public channels, and positioning. No combined marketing material.",
+        description:
+          "Distinct names, logos, public channels, and positioning. No combined marketing material.",
       },
       {
         title: "Teams",
-        description: "Separate technical and editorial work lines. Cross-division assignments are need-to-know only.",
+        description:
+          "Separate technical and editorial work lines. Cross-division assignments are need-to-know only.",
       },
       {
         title: "Client account management",
-        description: "One division's client information is not shared with the other without client consent.",
+        description:
+          "One division's client information is not shared with the other without client consent.",
       },
       {
         title: "Data and information",
-        description: "Project documents and data are stored and accessed separately.",
+        description:
+          "Project documents and data are stored and accessed separately.",
       },
       {
         title: "Decision-making",
-        description: "Technical and editorial decisions run on independent lines.",
+        description:
+          "Technical and editorial decisions run on independent lines.",
       },
       {
         title: "Editorial independence",
-        description: "The Founder/Director is not BBM's day-to-day editorial decision-maker.",
+        description:
+          "The Founder/Director is not BBM's day-to-day editorial decision-maker.",
       },
       {
         title: "Legal and reputation oversight",
-        description: "Contracts, compliance, and risk are handled at holding level without overriding divisional decisions.",
+        description:
+          "Contracts, compliance, and risk are handled at holding level without overriding divisional decisions.",
       },
     ],
     pressTitle: "Press compliance",

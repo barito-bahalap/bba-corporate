@@ -7,10 +7,14 @@ export const sectionsId: SectionsContent = {
       { value: "3", label: "Keterlibatan klien telah dikerjakan oleh BBT" },
       {
         value: "Retainer",
-        label: "Hubungan kerja berkelanjutan dengan PT Telkom Indonesia Regional 3",
+        label:
+          "Hubungan kerja berkelanjutan dengan PT Telkom Indonesia Regional 3",
       },
       { value: "2", label: "Unit usaha operasional yang terpisah" },
-      { value: "Kalteng", label: "Berbasis di Palangka Raya, Kalimantan Tengah" },
+      {
+        value: "Kalteng",
+        label: "Berbasis di Palangka Raya, Kalimantan Tengah",
+      },
     ],
   },
 
@@ -32,6 +36,7 @@ export const sectionsId: SectionsContent = {
           "Dukungan teknis dan retainer berkelanjutan",
         ],
         cta: "Kunjungi Barito Bahalap Tech",
+        badgeVariant: "accent",
         url: "https://tech.baritobahalap.com",
       },
       {
@@ -46,6 +51,7 @@ export const sectionsId: SectionsContent = {
           "Produksi multimedia dan strategi media sosial",
         ],
         cta: "Kunjungi Barito Bahalap Media",
+        badgeVariant: "accent",
         url: "https://media.baritobahalap.com",
       },
     ],
@@ -107,7 +113,8 @@ export const sectionsId: SectionsContent = {
         },
         {
           title: "Operasi konten",
-          description: "Penulisan, penyuntingan, dan kalender konten institusional.",
+          description:
+            "Penulisan, penyuntingan, dan kalender konten institusional.",
         },
         {
           title: "Editorial dan publikasi",
@@ -130,7 +137,8 @@ export const sectionsId: SectionsContent = {
         },
         {
           title: "Keberimbangan",
-          description: "Penyajian informasi yang berimbang dan dapat dipertanggungjawabkan.",
+          description:
+            "Penyajian informasi yang berimbang dan dapat dipertanggungjawabkan.",
         },
         {
           title: "Keputusan editorial independen",
@@ -186,7 +194,13 @@ export const sectionsId: SectionsContent = {
     holding: {
       name: "Barito Bahalap Agency",
       role: "Organisasi induk dan lapisan tata kelola",
-      items: ["Strategi", "Kontrak", "Keuangan", "Kepatuhan hukum", "Risiko dan reputasi"],
+      items: [
+        "Strategi",
+        "Kontrak",
+        "Keuangan",
+        "Kepatuhan hukum",
+        "Risiko dan reputasi",
+      ],
     },
     units: [
       {
@@ -208,15 +222,18 @@ export const sectionsId: SectionsContent = {
     dimensions: [
       {
         title: "Identitas merek",
-        description: "Nama, logo, kanal publik, dan positioning berbeda. Tidak ada materi pemasaran gabungan.",
+        description:
+          "Nama, logo, kanal publik, dan positioning berbeda. Tidak ada materi pemasaran gabungan.",
       },
       {
         title: "Tim",
-        description: "Jalur kerja teknis dan editorial terpisah. Penugasan lintas unit dibatasi need-to-know.",
+        description:
+          "Jalur kerja teknis dan editorial terpisah. Penugasan lintas unit dibatasi need-to-know.",
       },
       {
         title: "Pengelolaan akun klien",
-        description: "Informasi klien satu unit tidak dibagikan ke unit lain tanpa persetujuan klien.",
+        description:
+          "Informasi klien satu unit tidak dibagikan ke unit lain tanpa persetujuan klien.",
       },
       {
         title: "Data dan informasi",
@@ -224,15 +241,18 @@ export const sectionsId: SectionsContent = {
       },
       {
         title: "Pengambilan keputusan",
-        description: "Keputusan teknis dan editorial berjalan pada jalur yang independen.",
+        description:
+          "Keputusan teknis dan editorial berjalan pada jalur yang independen.",
       },
       {
         title: "Independensi editorial",
-        description: "Founder/Direktur bukan pengambil keputusan editorial harian BBM.",
+        description:
+          "Founder/Direktur bukan pengambil keputusan editorial harian BBM.",
       },
       {
         title: "Pengawasan hukum dan reputasi",
-        description: "Kontrak, kepatuhan, dan risiko dikelola di tingkat holding tanpa mengintervensi keputusan unit.",
+        description:
+          "Kontrak, kepatuhan, dan risiko dikelola di tingkat holding tanpa mengintervensi keputusan unit.",
       },
     ],
     pressTitle: "Kepatuhan pers",

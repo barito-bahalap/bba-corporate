@@ -48,7 +48,7 @@ export function DoorsSection({
           >
             <div className="cg-door__top">
               <span className="cg-door__code">{CODE[door.key]}</span>
-              <Badge label={door.discipline} variant="accent" />
+              <Badge label={door.discipline} variant={door.badgeVariant} />
             </div>
             <h3 className="cg-door__name">{door.name}</h3>
             <p className="cg-door__statement">{door.statement}</p>
