@@ -1,6 +1,6 @@
 bba-corporate -> baritobahalap.com
 
-Purpose: BBA as a holding entity. This is where you prove BBA is a real, governed company — not a portfolio of two freelance side projects wearing a logo.
+Purpose: BBA as a holding entity. This is where you prove BBA is a real, governed company, not a portfolio of two freelance side projects wearing a logo.
 
 Audience: Institutional partners, prospective clients doing due diligence before engaging BBT or BBM, prospective partners/investors, anyone checking "who is behind this."
 

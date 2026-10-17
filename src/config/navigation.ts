@@ -7,7 +7,7 @@ const text = {
   process: { en: "Process", id: "Proses" },
   about: { en: "About", id: "Tentang" },
   careers: { en: "Careers", id: "Karier" },
-  contact: { en: "Contact", id: "Kontak" },
+  contact: { en: "Contact Us", id: "Hubungi Kami" },
   company: { en: "Company", id: "Perusahaan" },
   legal: { en: "Legal", id: "Legal" },
   privacy: { en: "Privacy Policy", id: "Kebijakan Privasi" },

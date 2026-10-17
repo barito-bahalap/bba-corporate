@@ -1,23 +1,14 @@
+// Style
+import "./HomePage.css";
 // Config
 import { siteConfig } from "@barito-bahalap/config";
 // Hooks
-import {
-  useContactForm,
-  useHomeContent,
-  useLocale,
-  useSectionsContent,
-  useSeoMeta,
-} from "@/hooks";
+import { useLocale, useSectionsContent, useSeoMeta } from "@/hooks";
+import { useContactForm, useHomeContent } from "@/hooks";
 // Components
 import { SEO } from "@/components";
-import {
-  ContactSection,
-  DoorsSection,
-  EngageSection,
-  HeroSection,
-  ProofSection,
-  WorkSection,
-} from "./_components";
+import { ContactSection, DoorsSection, EngageSection } from "./_components";
+import { HeroSection, ProofSection, WorkSection } from "./_components";
 // Data & Utils
 import { placeholders } from "@/data/placeholders";
 import { buildOrganizationSchema } from "@/domain/schema";
@@ -26,7 +17,7 @@ export default function HomePage() {
   const content = useHomeContent();
   const sections = useSectionsContent();
   const { href, site } = useLocale();
-  const { form } = useContactForm();
+  const form = useContactForm();
   const seo = useSeoMeta();
 
   return (
@@ -38,6 +29,7 @@ export default function HomePage() {
         path={href("/")}
         structuredData={buildOrganizationSchema()}
       />
+
       <HeroSection
         {...content.hero}
         index="00"

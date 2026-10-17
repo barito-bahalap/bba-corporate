@@ -18,7 +18,7 @@
   order: -1;
   margin: 0;
   font-family: var(--cg-mono);
-  font-size: clamp(1.75rem, 6vw, 3rem);
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
   font-weight: var(--fw-bold);
   line-height: 1.05;
   letter-spacing: -0.02em;

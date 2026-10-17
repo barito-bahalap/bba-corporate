@@ -19,7 +19,8 @@ export function Header() {
   const { locale, ui, href } = useLocale();
   const languageItems = useLanguageSwitch();
   const onSectionClick = useSectionLink();
-  const drawer = useHeaderDrawer();
+  const { open, triggerRef, closeRef, openDrawer, closeDrawer, dismissDrawer } =
+    useHeaderDrawer();
   const nav = getMainNav(locale);
   const cta = getHeaderCta(locale);
 
@@ -51,18 +52,19 @@ export function Header() {
             label={cta.label}
             href={href(cta.href)}
             variant="accent"
+            size="sm"
             onClick={(e) => onSectionClick(e, cta, href(cta.href))}
           />
         </div>
 
         <button
-          ref={drawer.triggerRef}
+          ref={triggerRef}
           type="button"
           className="header__trigger"
           aria-label={ui.menu.open}
-          aria-expanded={drawer.open}
+          aria-expanded={open}
           aria-controls="header-drawer"
-          onClick={drawer.openDrawer}
+          onClick={openDrawer}
         >
           <span className="header__bars" aria-hidden="true" />
         </button>
@@ -71,27 +73,27 @@ export function Header() {
       {createPortal(
         <>
           <div
-            className={`header__overlay${drawer.open ? " header__overlay--open" : ""}`}
-            onClick={drawer.dismissDrawer}
+            className={`header__overlay${open ? " header__overlay--open" : ""}`}
+            onClick={dismissDrawer}
             aria-hidden="true"
           />
 
           <aside
             id="header-drawer"
-            className={`header__drawer${drawer.open ? " header__drawer--open" : ""}`}
+            className={`header__drawer${open ? " header__drawer--open" : ""}`}
             role="dialog"
             aria-label={ui.menu.mobileDialog}
             aria-modal="true"
-            inert={!drawer.open}
+            inert={!open}
           >
             <div className="header__drawer-head">
               <Brand onDark />
               <button
-                ref={drawer.closeRef}
+                ref={closeRef}
                 type="button"
                 className="header__close"
                 aria-label={ui.menu.close}
-                onClick={drawer.dismissDrawer}
+                onClick={dismissDrawer}
               >
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -104,7 +106,7 @@ export function Header() {
                   href={href(item.href)}
                   onClick={(e) => {
                     onSectionClick(e, item, href(item.href));
-                    drawer.closeDrawer();
+                    closeDrawer();
                   }}
                   className={`header__drawer-item${isActive(item) ? " header__drawer-item--active" : ""}`}
                 >
@@ -130,7 +132,7 @@ export function Header() {
                 fullWidth
                 onClick={(e) => {
                   onSectionClick(e, cta, href(cta.href));
-                  drawer.closeDrawer();
+                  closeDrawer();
                 }}
               />
             </div>

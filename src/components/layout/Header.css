@@ -97,7 +97,7 @@
   z-index: var(--z-modal);
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 75%;
   max-width: 26rem;
   height: 100dvh;
   overflow: hidden;

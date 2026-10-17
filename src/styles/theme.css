@@ -65,7 +65,7 @@
   --btn-border: var(--cg-orange);
   --btn-bg-hover: #cf6525;
   --btn-border-hover: #cf6525;
-  --btn-fg: var(--cg-slate);
+  --btn-fg: var(--clr-accent-ink);
 }
 
 :root[data-theme="corporate-grid"] .badge {
