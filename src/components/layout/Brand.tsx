@@ -36,11 +36,13 @@ export function Brand({
     const type = logoFull ? "full" : "icon";
 
     return (
-      <img
-        src={LOGO_SRC[variant][type]}
-        alt={siteConfig.name}
-        className={`brand__bba-logo${logoFull ? " brand__bba-logo--full" : ""}`}
-      />
+      <a href={href("/")} aria-label={`${siteConfig.name}, ${ui.brandHome}`}>
+        <img
+          src={LOGO_SRC[variant][type]}
+          alt={siteConfig.name}
+          className={`brand__bba-logo${logoFull ? " brand__bba-logo--full" : ""}`}
+        />
+      </a>
     );
   }
 
