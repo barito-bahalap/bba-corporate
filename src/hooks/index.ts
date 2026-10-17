@@ -9,3 +9,6 @@ export { useLanguageSwitch, type LanguageItem } from "./useLanguageSwitch";
 export { useSeoMeta } from "./useSeoMeta";
 export { useScrollReveal } from "./useScrollReveal";
 export { useSectionLink } from "./useSectionLink";
+
+export { useGridReveal } from "./useGridReveal";
+export { useHeaderDrawer } from "./useHeaderDrawer";
