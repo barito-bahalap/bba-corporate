@@ -15,10 +15,10 @@ export const sectionsEn: SectionsContent = {
   },
 
   doors: {
-    eyebrow: "Two divisions",
-    title: "Two divisions, two independent disciplines",
+    eyebrow: "Two units",
+    title: "Two units, two independent disciplines",
     intro:
-      "BBA is the holding company. The work is done by two separate divisions, each with its own identity, team and channels. Choose the one that fits what you need.",
+      "BBA is the holding company. The work is done by two separate units, each with its own identity, team and channels. Choose the one that fits what you need.",
     doors: [
       {
         key: "tech",
@@ -63,12 +63,12 @@ export const sectionsEn: SectionsContent = {
       label: "Barito Bahalap Tech",
       cases: [
         {
-          client: "PT Telkom Indonesia (Regional 3)",
+          client: "PT Telkom Indonesia",
           title: "RSO2 Telkom Dashboard",
           location: "Surabaya, East Java",
           summary:
             "An analytical and operational dashboard built around internal workflows and data needs, with automated reporting.",
-          tags: ["Operational Dashboard", "Report Automation", "Retainer"],
+          tags: ["Operational Dashboard", "Report Automation"],
           status: "Active",
           image: { alt: "RSO2 Telkom Dashboard interface" },
         },
@@ -79,6 +79,7 @@ export const sectionsEn: SectionsContent = {
           summary:
             "A delivery platform designed around the characteristics and needs of the local Kasongan market.",
           tags: ["Custom Software", "Web Platform"],
+          status: "Active",
           image: { alt: "E-Palugada platform interface" },
         },
         {
@@ -88,6 +89,7 @@ export const sectionsEn: SectionsContent = {
           summary:
             "One platform for organizational information, programs, news, documents, media, partnership registration and public submissions.",
           tags: ["Web Platform", "Information System"],
+          status: "Active",
           image: { alt: "AMPI Kalteng official website interface" },
         },
       ],

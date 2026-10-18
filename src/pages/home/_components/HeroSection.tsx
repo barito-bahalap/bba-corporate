@@ -1,20 +1,17 @@
 // Style
 import "./HeroSection.css";
 // Components
-import { Button, IndexLabel } from "@/components";
+import { Button } from "@/components";
 import { RiverVisual } from "./RiverVisual";
 // Types
 import type { HeroContent } from "@/domain/content";
 
 interface HeroSectionProps extends HeroContent {
-  index: string;
   location: string;
   imageSrc: string;
 }
 
 export function HeroSection({
-  index,
-  eyebrow,
   headline,
   subhead,
   primaryCta,
@@ -26,7 +23,7 @@ export function HeroSection({
     <section id="home-hero" className="cg-hero" aria-labelledby="hero-title">
       <div className="cg-hero__grid cg-wrap">
         <div className="cg-hero__copy">
-          <IndexLabel index={index} label={eyebrow ?? undefined} />
+          {/* <IndexLabel index={index} label={eyebrow ?? undefined} /> */}
 
           <h1 id="hero-title" className="cg-hero__title">
             {headline}
@@ -41,7 +38,7 @@ export function HeroSection({
               size="lg"
               iconName="arrowRight"
               iconFill="var(--cg-slate)"
-              iconFillHover="var(--cg-slate)"
+              iconFillHover="var(--cg-white)"
               iconAfter
             />
             <Button

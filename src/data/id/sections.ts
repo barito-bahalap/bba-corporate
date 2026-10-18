@@ -19,10 +19,10 @@ export const sectionsId: SectionsContent = {
   },
 
   doors: {
-    eyebrow: "Dua divisi",
-    title: "Dua divisi, dua disiplin yang berdiri sendiri",
+    eyebrow: "Dua unit",
+    title: "Dua unit, dua disiplin yang berdiri sendiri",
     intro:
-      "BBA adalah organisasi induk. Pekerjaan dijalankan oleh dua divisi yang terpisah, masing-masing dengan identitas, tim, dan kanal tersendiri. Pilih yang sesuai dengan kebutuhan Anda.",
+      "BBA adalah organisasi induk. Pekerjaan dijalankan oleh dua unit yang terpisah, masing-masing dengan identitas, tim, dan kanal tersendiri. Pilih yang sesuai dengan kebutuhan Anda.",
     doors: [
       {
         key: "tech",
@@ -67,12 +67,12 @@ export const sectionsId: SectionsContent = {
       label: "Barito Bahalap Tech",
       cases: [
         {
-          client: "PT Telkom Indonesia (Regional 3)",
+          client: "PT Telkom Indonesia",
           title: "RSO2 Telkom Dashboard",
           location: "Surabaya, Jawa Timur",
           summary:
             "Dasbor analitik dan operasional yang dibangun mengikuti alur kerja dan kebutuhan data internal, dilengkapi pelaporan otomatis.",
-          tags: ["Dasbor Operasional", "Otomasi Pelaporan", "Retainer"],
+          tags: ["Dasbor Operasional", "Otomasi Pelaporan"],
           status: "Berjalan aktif",
           image: { alt: "Tampilan RSO2 Telkom Dashboard" },
         },
@@ -83,15 +83,17 @@ export const sectionsId: SectionsContent = {
           summary:
             "Platform pengiriman yang dirancang untuk karakteristik dan kebutuhan pasar lokal Kasongan.",
           tags: ["Perangkat Lunak Khusus", "Platform Web"],
+          status: "Berjalan aktif",
           image: { alt: "Tampilan platform E-Palugada" },
         },
         {
-          client: "AMPI Kalimantan Tengah",
+          client: "DPD AMPI Kalteng",
           title: "Situs resmi dan platform manajemen organisasi",
-          location: "Kalimantan Tengah",
+          location: "Palangka Raya, Kalimantan Tengah",
           summary:
             "Satu platform untuk informasi organisasi, program kerja, berita, dokumen, media, pendaftaran kemitraan, dan penyampaian aspirasi.",
           tags: ["Platform Web", "Sistem Informasi"],
+          status: "Berjalan aktif",
           image: { alt: "Tampilan situs resmi AMPI Kalteng" },
         },
       ],
@@ -189,7 +191,7 @@ export const sectionsId: SectionsContent = {
     eyebrow: "Struktur dan tata kelola",
     title: "Kepemilikan bersama, operasional terpisah",
     intro:
-      "BBT dan BBM berada dalam satu kelompok usaha, tetapi berjalan sebagai dua divisi yang terpisah secara fungsional. Pemisahan ini adalah kerangka tata kelola, bukan strategi pemasaran.",
+      "BBT dan BBM berada dalam satu kelompok usaha, tetapi berjalan sebagai dua unit yang terpisah secara fungsional. Pemisahan ini adalah kerangka tata kelola, bukan strategi pemasaran.",
     diagramLabel: "Diagram struktur BBA, BBT, dan BBM",
     holding: {
       name: "Barito Bahalap Agency",

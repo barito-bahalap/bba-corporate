@@ -55,7 +55,7 @@ export function WorkSection({
 
             <div className="cg-case__body">
               <p className="cg-case__meta">
-                <span>{item.client}</span>
+                <span>{item.client}</span>|
                 {item.location && <span>{item.location}</span>}
               </p>
               <h3 className="cg-case__title">{item.title}</h3>

@@ -32,7 +32,6 @@ export default function HomePage() {
 
       <HeroSection
         {...content.hero}
-        index="00"
         location={site.location}
         imageSrc={placeholders.hero}
       />

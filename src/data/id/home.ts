@@ -13,7 +13,7 @@ export const homeContent: HomeContent = {
     headline: "Sistem yang berjalan. Pesan yang sampai.",
     subhead:
       "Barito Bahalap Agency adalah organisasi induk independen dari Kalimantan Tengah. Barito Bahalap Tech membangun dan memelihara perangkat lunak enterprise. Barito Bahalap Media menjalankan komunikasi strategis. Tim, akun klien, dan data terpisah, dengan satu standar akuntabilitas.",
-    primaryCta: { label: "Kenali kedua divisi kami", href: "/#divisions" },
+    primaryCta: { label: "Kenali kedua unit kami", href: "/#divisions" },
     secondaryCta: { label: "Hubungi kami", href: "/#contact" },
   },
 
@@ -93,7 +93,7 @@ export const homeContent: HomeContent = {
           },
           {
             project: "Situs web AMPI Kalteng",
-            client: "AMPI Kalimantan Tengah",
+            client: "DPD AMPI Kalteng",
             scope:
               "Satu platform untuk informasi organisasi, program, berita, dokumen, media, pendaftaran mitra, dan kiriman dari publik. Retainer berjalan.",
           },

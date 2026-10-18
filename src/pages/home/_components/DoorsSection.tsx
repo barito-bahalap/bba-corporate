@@ -63,11 +63,11 @@ export function DoorsSection({
             <Button
               href={door.url}
               label={door.cta}
-              variant="accent"
+              variant="ink"
               size="lg"
               iconName="arrowRight"
-              iconFill="var(--cg-slate)"
-              iconFillHover="var(--cg-slate)"
+              iconFill="var(--cg-white)"
+              iconFillHover="var(--cg-white)"
               iconAfter
               aria-label={`${door.cta}, ${door.name} ${pad2(i + 1)}`}
             />

@@ -14,7 +14,7 @@ export const homeContent: HomeContent = {
     headline: "Systems that run. Messages that land.",
     subhead:
       "Barito Bahalap Agency is an independent holding company from Central Kalimantan. Barito Bahalap Tech builds and maintains enterprise software. Barito Bahalap Media runs strategic communications. Separate teams, client accounts and data, held to one standard of accountability.",
-    primaryCta: { label: "Meet the two divisions", href: "/#divisions" },
+    primaryCta: { label: "Meet the two units", href: "/#divisions" },
     secondaryCta: { label: "Talk to us", href: "/#contact" },
   },
 
@@ -94,7 +94,7 @@ export const homeContent: HomeContent = {
           },
           {
             project: "AMPI Kalteng website",
-            client: "AMPI Kalimantan Tengah",
+            client: "DPD AMPI Kalteng",
             scope:
               "One platform for organization information, programs, news, documents, media, partner registration and public submissions. Ongoing retainer.",
           },
