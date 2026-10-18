@@ -2,7 +2,7 @@ import type { FooterGroup, NavLink } from "@barito-bahalap/types";
 import type { LocaleCode } from "@/i18n/locales";
 
 const text = {
-  divisions: { en: "Divisions", id: "Divisi" },
+  home: { en: "Home", id: "Beranda" },
   work: { en: "Work", id: "Karya" },
   process: { en: "Process", id: "Proses" },
   about: { en: "About", id: "Tentang" },
@@ -28,7 +28,7 @@ function link(
 export function getMainNav(locale: string): NavLink[] {
   const l = pick(locale);
   return [
-    link("divisions", "/", l, "divisions"),
+    link("home", "/", l),
     link("work", "/", l, "work"),
     link("process", "/", l, "engage"),
     link("about", "/about", l),
@@ -46,7 +46,7 @@ export function getFooterGroups(locale: string): FooterGroup[] {
     {
       title: text.company[l],
       links: [
-        link("divisions", "/", l, "divisions"),
+        link("home", "/", l),
         link("about", "/about", l),
         link("careers", "/careers", l),
         link("contact", "/", l, "contact"),
