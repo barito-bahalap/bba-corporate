@@ -1,9 +1,56 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://baritobahalap.com/</loc></url>
-  <url><loc>https://baritobahalap.com/about</loc></url>
-  <url><loc>https://baritobahalap.com/contact</loc></url>
-  <url><loc>https://baritobahalap.com/careers</loc></url>
-  <url><loc>https://baritobahalap.com/privacy</loc></url>
-  <url><loc>https://baritobahalap.com/terms</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://baritobahalap.com/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en/about"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en/about"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en/contact"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en/contact"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/careers</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/careers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en/careers"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/en/careers</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://baritobahalap.com/careers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://baritobahalap.com/en/careers"/>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/privacy</loc>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/en/privacy</loc>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/terms</loc>
+  </url>
+  <url>
+    <loc>https://baritobahalap.com/en/terms</loc>
+  </url>
 </urlset>
