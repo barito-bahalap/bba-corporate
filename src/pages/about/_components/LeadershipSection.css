@@ -6,6 +6,10 @@
   margin-bottom: var(--space-12);
 }
 
+.cg-leadership__people .person-card__placeholder {
+  color: var(--clr-ink-muted) !important;
+}
+
 .cg-leadership__subtitle {
   margin-bottom: var(--space-5);
   padding-top: var(--space-3);
