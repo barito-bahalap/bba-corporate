@@ -6,7 +6,7 @@ export const uiContent: UiContent = {
   loading: "Memuat",
   language: { label: "Bahasa" },
   menu: {
-    open: "Buka menu",
+    open: "Menu",
     close: "Tutup menu",
     primaryNav: "Utama",
     mobileDialog: "Navigasi seluler",
