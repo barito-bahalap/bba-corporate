@@ -10,8 +10,9 @@ import { SEO } from "@/components";
 import { ContactSection, DoorsSection, EngageSection } from "./_components";
 import { HeroSection, ProofSection, WorkSection } from "./_components";
 // Data & Utils
-import { placeholders } from "@/data/placeholders";
 import { buildOrganizationSchema } from "@/domain/schema";
+// Assets
+import { ampiKalteng, ePalugada, heroImg, telkomDashboard } from "@/assets";
 
 export default function HomePage() {
   const content = useHomeContent();
@@ -33,7 +34,7 @@ export default function HomePage() {
       <HeroSection
         {...content.hero}
         location={site.location}
-        imageSrc={placeholders.hero}
+        imageSrc={heroImg}
       />
       <ProofSection {...sections.proof} index="01" />
       <DoorsSection
@@ -44,7 +45,7 @@ export default function HomePage() {
       <WorkSection
         {...sections.work}
         index="03"
-        fallbackImages={placeholders.cases}
+        fallbackImages={[telkomDashboard, ePalugada, ampiKalteng]}
       />
       <EngageSection {...sections.engage} index="04" />
       <ContactSection

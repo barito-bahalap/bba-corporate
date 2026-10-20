@@ -1,4 +1,7 @@
+// Types
 import type { HomeContent } from "@/domain/content";
+// Assets
+import { basil } from "@/assets";
 
 export const homeContent: HomeContent = {
   seo: {
@@ -189,6 +192,7 @@ export const homeContent: HomeContent = {
         title: "Co-founder & CEO",
         bio: "Mengawasi tata kelola korporasi, strategi, kontrak, keuangan, kepatuhan hukum, dan risiko reputasi BBA.",
         published: true,
+        photoSrc: basil,
       },
     ],
     authorityTitle: "Kewenangan keputusan",
