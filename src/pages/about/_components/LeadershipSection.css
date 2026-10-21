@@ -1,9 +1,108 @@
-.cg-leadership__people {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-4);
-  max-width: 22rem;
+.cg-leadership__carousel {
   margin-bottom: var(--space-12);
+}
+
+.cg-leadership__people {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-4);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.cg-leadership__people::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.cg-leadership__people:focus-visible {
+  outline: 2px solid var(--cg-teal);
+  outline-offset: 4px;
+}
+
+/* Mobile: 1 card per screen */
+.cg-leadership__people > * {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.cg-leadership__people .person-card__placeholder {
+  color: var(--clr-ink-muted) !important;
+}
+
+/* Controls */
+.cg-leadership__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-5);
+}
+
+.cg-leadership__dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cg-leadership__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--clr-ink-muted);
+  opacity: 0.35;
+  cursor: pointer;
+  transition:
+    width 0.25s ease,
+    opacity 0.25s ease,
+    background 0.25s ease;
+}
+
+.cg-leadership__dot[aria-current="true"] {
+  width: 1.5rem; /* active dot stretches into a pill */
+  background: var(--cg-teal);
+  opacity: 1;
+}
+
+/* Tooling for touch targets without enlarging the visible dot */
+.cg-leadership__dot {
+  position: relative;
+}
+.cg-leadership__dot::after {
+  content: "";
+  position: absolute;
+  inset: -0.75rem -0.25rem;
+}
+
+.cg-leadership__arrows {
+  display: none;
+}
+
+.cg-leadership__arrow {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--cg-teal);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--cg-teal);
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.cg-leadership__arrow:hover:not(:disabled) {
+  background: var(--cg-teal);
+  color: #fff;
+}
+
+.cg-leadership__arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .cg-leadership__people .person-card__placeholder {
@@ -25,6 +124,23 @@
 }
 
 @media (min-width: 768px) {
+  .cg-leadership__people > * {
+    flex-basis: calc((100% - 2 * var(--space-4)) / 3);
+  }
+
+  .cg-leadership__controls {
+    justify-content: flex-end;
+  }
+
+  .cg-leadership__dots {
+    display: none;
+  }
+
+  .cg-leadership__arrows {
+    display: flex;
+    gap: var(--space-2);
+  }
+
   .cg-leadership__authority {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

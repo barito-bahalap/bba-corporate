@@ -1,7 +1,7 @@
 // Types
 import type { HomeContent } from "@/domain/content";
 // Assets
-import { basil } from "@/assets";
+import { People } from "@/assets";
 
 export const homeContent: HomeContent = {
   seo: {
@@ -189,10 +189,46 @@ export const homeContent: HomeContent = {
         id: "basilius-tengang",
         name: "Basilius Tengang",
         role: "SUPER_ADMIN",
-        title: "Co-founder & CEO",
+        title: "CEO & Tech Delivery Lead",
         bio: "Mengawasi tata kelola korporasi, strategi, kontrak, keuangan, kepatuhan hukum, dan risiko reputasi BBA.",
         published: true,
-        photoSrc: basil,
+        photoSrc: People.basil,
+      },
+      {
+        id: "fredy-berdani",
+        name: "Fredy Berdani",
+        role: "ADMIN",
+        title: "Media Creative Lead",
+        bio: "Mengawas",
+        published: true,
+        photoSrc: People.fredy,
+      },
+      {
+        id: "aric-krisnayar",
+        name: "Aric Krisnayar",
+        role: "ADMIN",
+        title: "Business Development",
+        bio: "Mengawas",
+        published: true,
+        photoSrc: People.aric,
+      },
+      {
+        id: "rabel-batubara",
+        name: "Rabel Gabriel Batubara",
+        role: "ADMIN",
+        title: "Legal & Compliance",
+        bio: "Mengawas",
+        published: true,
+        photoSrc: People.basil,
+      },
+      {
+        id: "karel-jocom",
+        name: "Karel Immanuel Fernando Jocom",
+        role: "ADMIN",
+        title: "Public Relations",
+        bio: "sss",
+        published: true,
+        photoSrc: People.basil,
       },
     ],
     authorityTitle: "Kewenangan keputusan",

@@ -12,7 +12,7 @@ import { HeroSection, ProofSection, WorkSection } from "./_components";
 // Data & Utils
 import { buildOrganizationSchema } from "@/domain/schema";
 // Assets
-import { ampiKalteng, ePalugada, heroImg, telkomDashboard } from "@/assets";
+import { AssetImages } from "@/assets";
 
 export default function HomePage() {
   const content = useHomeContent();
@@ -34,7 +34,7 @@ export default function HomePage() {
       <HeroSection
         {...content.hero}
         location={site.location}
-        imageSrc={heroImg}
+        imageSrc={AssetImages.heroImg}
       />
       <ProofSection {...sections.proof} index="01" />
       <DoorsSection
@@ -45,7 +45,11 @@ export default function HomePage() {
       <WorkSection
         {...sections.work}
         index="03"
-        fallbackImages={[telkomDashboard, ePalugada, ampiKalteng]}
+        fallbackImages={[
+          AssetImages.telkomDashboard,
+          AssetImages.ePalugada,
+          AssetImages.ampiKalteng,
+        ]}
       />
       <EngageSection {...sections.engage} index="04" />
       <ContactSection
