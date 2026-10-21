@@ -219,7 +219,7 @@ export const homeContent: HomeContent = {
         title: "Legal & Compliance",
         bio: "Mengawas",
         published: true,
-        photoSrc: People.basil,
+        photoSrc: People.rabel,
       },
       {
         id: "karel-jocom",
@@ -228,7 +228,7 @@ export const homeContent: HomeContent = {
         title: "Public Relations",
         bio: "sss",
         published: true,
-        photoSrc: People.basil,
+        photoSrc: People.karel,
       },
     ],
     authorityTitle: "Kewenangan keputusan",
