@@ -5,42 +5,40 @@ export const careersContent: CareersContent = {
   seo: {
     title: "Careers",
     description:
-      "Careers at Barito Bahalap Agency. BBT and BBM build and manage their teams independently, from Palangka Raya.",
+      "Careers at Barito Bahalap Agency. There are no open positions at the moment, but we welcome introductions from people who want to join our team in Palangka Raya.",
   },
   title: "Careers",
   intro:
-    "Barito Bahalap Agency is early. We are building technical and editorial teams in Palangka Raya, one division at a time, and the people who join now will shape how those teams work.",
+    "We are building a technical team and a creative team. The people who join early help shape how we work.",
   openings: {
-    title: "No open positions at the moment.",
-    sub: "Introduce yourself anyway. We keep applications on file and reach out when a role opens.",
+    title: "There are no open positions at the moment.",
+    sub: "Introduce yourself anyway. We keep every application on file and will contact you when a suitable position opens.",
   },
-  hiringTitle: "How we hire",
+  hiringTitle: "How to apply",
   hiringParagraphs: [
-    "BBT and BBM recruit and manage their teams independently. Technical roles report into BBT and editorial and creative roles report into BBM, so each division keeps its own working practices, client accounts and data.",
-    "In your introduction, tell us which division your work relates to, what you have built or produced, and where you are based.",
+    "Send an email with a short introduction and a link to your work, such as a repository, portfolio, writing, or video production.",
+    "Also tell us which area you are aiming for and the city where you live.",
   ],
-  rolesTitle: "Roles in our organization",
+  rolesTitle: "Roles we need",
   rolesIntro:
-    "These are the functions in our organization structure. A role listed here is not necessarily open.",
+    "Each division hires for its own team. This list shows roles we have or will need, not necessarily ones that are open right now.",
   roleGroups: [
     {
       brand: "tech",
       division: "Barito Bahalap Tech",
       roles: [
-        "Delivery Lead",
-        "Software Developer (Backend)",
-        "Software Developer (Frontend)",
-        "Quality Assurance",
         "UI/UX Designer",
+        "Software Developer (Frontend)",
+        "Software Developer (Backend)",
+        "Quality Assurance",
       ],
     },
     {
       brand: "media",
       division: "Barito Bahalap Media",
       roles: [
-        "Creative Lead",
         "Content and Copywriting",
-        "Graphic and Multimedia Design",
+        "Graphic Design and Multimedia",
         "Photography and Videography",
         "Account and Relationship Contact",
       ],
@@ -48,9 +46,9 @@ export const careersContent: CareersContent = {
   ],
   cta: {
     title: "Introduce yourself",
-    body: "Send a short note and links to your work, and tell us which division you are writing about.",
+    body: "Send a short note and a link to your work. Tell us which area you are aiming for.",
     primary: {
-      label: "Email us",
+      label: "Send an email",
       href: `mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("Introduction: careers")}`,
     },
   },

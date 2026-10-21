@@ -6,51 +6,51 @@ import { People } from "@/assets";
 export const homeContent: HomeContent = {
   seo: {
     title:
-      "Barito Bahalap Agency | Enterprise software and strategic communications",
+      "Barito Bahalap Agency | Software and strategic communications from Central Kalimantan",
     description:
-      "Barito Bahalap Agency is an independent holding company in Palangka Raya, Central Kalimantan. Barito Bahalap Tech builds enterprise software. Barito Bahalap Media runs strategic communications.",
+      "Barito Bahalap Agency is based in Palangka Raya. Barito Bahalap Tech builds and maintains digital systems. Barito Bahalap Media handles strategic communications, content, and multimedia production.",
   },
 
   hero: {
-    eyebrow: "Independent holding company · Palangka Raya",
-    headline: "Systems that run. Messages that land.",
+    eyebrow: "Palangka Raya, Central Kalimantan",
+    headline: "Digital systems & strategic communications.",
     subhead:
-      "Barito Bahalap Agency is an independent holding company from Central Kalimantan. Barito Bahalap Tech builds and maintains enterprise software. Barito Bahalap Media runs strategic communications. Separate teams, client accounts and data, held to one standard of accountability.",
-    primaryCta: { label: "Meet the two units", href: "/#divisions" },
-    secondaryCta: { label: "Talk to us", href: "/#contact" },
+      "From software and dashboards to publications and multimedia, we help organizations work and communicate better.",
+    primaryCta: { label: "Explore our services", href: "/#divisions" },
+    secondaryCta: { label: "Contact us", href: "/#contact" },
   },
 
   about: {
     eyebrow: "About BBA",
-    title: "One holding company. Two disciplines, kept apart on purpose.",
+    title: "About BBA",
     paragraphs: [
-      "Barito Bahalap Agency (BBA) was founded in 2026 in Palangka Raya. It holds two operating brands: Barito Bahalap Tech for software engineering, and Barito Bahalap Media for strategic communications.",
-      "BBA keeps to corporate functions: strategy, contracts, finance, legal compliance, and risk and reputation. It makes no technical decisions for BBT and no editorial decisions for BBM. That separation protects clients on both sides from conflicts of interest.",
+      "BBA oversees two units: Barito Bahalap Tech for software engineering and Barito Bahalap Media for strategic communications.",
+      "At the holding level, BBA handles strategy, contracts, finance, legal compliance, and reputational risk. Technical decisions and editorial decisions remain with the respective divisions.",
     ],
     stats: [
       {
         value: "3",
-        label: "Systems delivered and maintained",
+        label: "Systems built and maintained",
         note: "By Barito Bahalap Tech.",
       },
       {
         value: "2",
-        label: "Operating brands",
-        note: "Separate teams, client accounts and data.",
+        label: "Operating units",
+        note: "Separate teams, clients, and data.",
       },
       {
         value: "2026",
         label: "Founded in Palangka Raya",
-        note: "Working with clients in Central Kalimantan and East Java.",
+        note: "Serving clients in Central Kalimantan and East Java.",
       },
     ],
   },
 
   divisions: {
     eyebrow: "Our divisions",
-    title: "Two brands. Each answers for its own work.",
+    title: "Two units, each with its own responsibilities.",
     intro:
-      "Each division has its own identity, team, client accounts and decision authority. Client information stays inside the division that serves the client, unless the client explicitly agrees otherwise.",
+      "Each division has its own identity, team, client accounts, and decision-making authority. Client information stays within the division that serves them unless the client expressly agrees otherwise.",
     items: [
       {
         id: "bbt",
@@ -59,51 +59,50 @@ export const homeContent: HomeContent = {
         badge: "BBT",
         descriptor: "Technology and digital infrastructure",
         summary:
-          "Designs, builds and maintains the digital systems organizations run on. BBT stays on as a long-term infrastructure partner, not a one-off web developer.",
+          "We design, build, and maintain the systems that support an organization's operations. BBT works for the long term, so support continues after a system launches.",
         capabilities: [
           {
             iconName: "codeSlash",
             title: "Custom software and internal systems",
             description:
-              "Enterprise applications and information systems built around how your organization actually works.",
+              "Applications and information systems built around the way your organization works.",
           },
           {
             iconName: "pieChartFill",
             title: "Operational dashboards",
             description:
-              "Analytics and monitoring that bring internal data and reporting into one place.",
+              "Internal data and reporting brought together in one place, with monitoring and analytics.",
           },
           {
             iconName: "barChart",
             title: "Automation and integration",
             description:
-              "Process automation and platform integration, backed by long-term technical support under a retainer.",
+              "Manual processes are automated and standalone platforms are connected. Technical support continues through a retainer arrangement.",
           },
         ],
-        trackRecordTitle: "In production, under retainer",
+        trackRecordTitle: "Already running in production",
         trackRecord: [
           {
             project: "RSO2 Telkom Dashboard",
             client: "PT Telkom Indonesia, Regional 3, Surabaya",
             scope:
-              "Analytical and operational dashboard with internal data and automated reporting. Ongoing retainer.",
+              "Analytics and operational dashboard with internal data and automated reporting. Operating under a retainer arrangement.",
           },
           {
             project: "E-Palugada",
             client: "Kasongan, Central Kalimantan",
-            scope:
-              "Web-based delivery platform designed for the local market. Ongoing retainer.",
+            scope: "Web-based delivery service platform for the local market.",
           },
           {
             project: "AMPI Kalteng website",
             client: "DPD AMPI Kalteng",
             scope:
-              "One platform for organization information, programs, news, documents, media, partner registration and public submissions. Ongoing retainer.",
+              "A single platform for organizational information, programs, news, documents, media, partner registration, and public submissions.",
           },
         ],
         note: {
           title: "Technical authority",
-          body: "System architecture, development approach and maintenance priorities are decided by the BBT Delivery Lead.",
+          body: "The BBT Delivery Lead decides system architecture, development approach, and maintenance priorities.",
         },
         cta: { label: "Discuss a BBT project", href: "/#contact" },
       },
@@ -114,34 +113,34 @@ export const homeContent: HomeContent = {
         badge: "BBM",
         descriptor: "Media and strategic communications",
         summary:
-          "Strategic communications, content and publication management for organizations and institutions. A professional communications operation, not only a social media service.",
+          "Strategic communications, content, and publication management for organizations and institutions. Our scope runs from message planning and media relations to multimedia production.",
         capabilities: [
           {
             iconName: "megaphone",
             title: "Strategic communications",
             description:
-              "Institutional message planning, public communication and media relations.",
+              "Institutional message planning, public communications, and media relations.",
           },
           {
             iconName: "newspaper",
-            title: "Content and editorial operations",
+            title: "Content and editorial",
             description:
-              "Copywriting, editorial services, content calendars and publication management.",
+              "Copywriting, editorial services, content calendars, and publication management.",
           },
           {
             iconName: "imageAlt",
             title: "Multimedia production",
             description:
-              "Photography, videography and graphic production, supported by social media strategy.",
+              "Photo, video, and graphics, with social media strategy as a supporting service.",
           },
         ],
         statusNote:
-          "BBM is in its early operational phase. Its portfolio will be published as engagements are completed and clients consent.",
+          "BBM is still in its early stage. We will showcase its portfolio once projects are completed and clients give their approval.",
         note: {
           title: "Editorial independence",
-          body: "Content, narrative and publication schedule are decided by the BBM Creative Lead. The BBA Founder and Director oversees contracts, finance, legal compliance and reputational risk, and takes no part in day-to-day editorial decisions. Press publication activities follow Law No. 40 of 1999 on the Press and the applicable journalistic code of ethics.",
+          body: "The BBM Creative Lead decides content, narrative, and publication schedule. The BBA Director oversees contracts, finance, legal compliance, and reputational risk, but does not take part in day-to-day editorial decisions. Press publishing activities follow Law No. 40 of 1999 on the Press and the applicable journalistic code of ethics.",
         },
-        cta: { label: "Discuss a BBM engagement", href: "/#contact" },
+        cta: { label: "Discuss a BBM collaboration", href: "/#contact" },
       },
     ],
   },
@@ -150,31 +149,31 @@ export const homeContent: HomeContent = {
     eyebrow: "Our approach",
     title: "How we work",
     intro:
-      "These commitments are built into how the organization operates, so procurement, legal and compliance teams can review them.",
+      "These four commitments are built into the way we operate. Procurement, legal, and compliance teams can review them directly.",
     items: [
       {
         iconName: "box",
-        title: "Separation by design",
+        title: "Separated by design",
         description:
-          "BBT and BBM have separate brands, teams, client accounts and working data. Cross-division access is need-to-know only.",
+          "BBT and BBM each have their own unit, team, client accounts, and working data. Cross-division access is granted only on a need-to-know basis.",
       },
       {
         iconName: "filePdf",
-        title: "Defined scope and accountability",
+        title: "Clear scope",
         description:
-          "Every engagement rests on a written agreement covering scope, responsibilities, timeline and dispute resolution. Every function has a named decision owner.",
+          "Every engagement rests on a written agreement covering scope, responsibilities, schedule, and dispute resolution. Every function has a clear decision-maker.",
       },
       {
         iconName: "lock",
-        title: "Confidentiality by default",
+        title: "Confidentiality as standard",
         description:
-          "Only the people working on an engagement can access that client's information. It does not cross divisions without the client's explicit agreement.",
+          "Only personnel handling an engagement can access that client's information. Information does not move between divisions without the client's express consent.",
       },
       {
         iconName: "shieldFillCheck",
-        title: "Compliance and oversight",
+        title: "Oversight at the holding level",
         description:
-          "Contractual, legal and reputational risk is overseen at holding level, without overriding technical or editorial decisions in either division.",
+          "BBA monitors contractual, legal, and reputational risk. Technical and editorial decisions remain with the respective divisions.",
       },
     ],
   },
@@ -183,16 +182,52 @@ export const homeContent: HomeContent = {
     eyebrow: "Leadership",
     title: "Who is accountable",
     intro:
-      "Governance sits with the Founder and Director. Technical and editorial decisions sit with the division leads.",
+      "Governance rests with the Co-founders and the Director. Technical and editorial decisions rest with the division leads.",
     people: [
       {
         id: "basilius-tengang",
         name: "Basilius Tengang",
         role: "SUPER_ADMIN",
-        title: "Co-founder & CEO",
-        bio: "Oversees corporate governance, strategy, contracts, finance, legal compliance and reputational risk for BBA.",
+        title: "CEO & Tech Delivery Lead",
+        bio: "Oversees company governance and strategy. Also leads project delivery at BBT.",
         published: true,
         photoSrc: People.basil,
+      },
+      {
+        id: "fredy-berdani",
+        name: "Fredy Berdani",
+        role: "ADMIN",
+        title: "Media Creative Lead",
+        bio: "Leads creative direction and editorial decisions at BBM.",
+        published: true,
+        photoSrc: People.fredy,
+      },
+      {
+        id: "aric-krisnayar",
+        name: "Aric Krisnayar",
+        role: "ADMIN",
+        title: "Business Development",
+        bio: "Handles business development and relationships with prospective clients.",
+        published: true,
+        photoSrc: People.aric,
+      },
+      {
+        id: "rabel-batubara",
+        name: "Rabel Gabriel Batubara",
+        role: "ADMIN",
+        title: "Legal & Compliance",
+        bio: "Handles BBA's legal documents, legal affairs, and compliance.",
+        published: true,
+        photoSrc: People.rabel,
+      },
+      {
+        id: "karel-jocom",
+        name: "Karel Immanuel F. Jocom",
+        role: "ADMIN",
+        title: "Public Relations",
+        bio: "Handles BBA's public relations and communications.",
+        published: true,
+        photoSrc: People.karel,
       },
     ],
     authorityTitle: "Decision authority",
@@ -200,30 +235,30 @@ export const homeContent: HomeContent = {
       {
         brand: "tech",
         iconName: "codeSlash",
-        title: "Delivery Lead, BBT",
+        title: "Tech Delivery Lead, BBT",
         description:
-          "Decides system architecture, development methodology and maintenance priorities.",
+          "Decides system architecture, development methodology, and maintenance priorities.",
       },
       {
         brand: "media",
         iconName: "newspaper",
-        title: "Creative Lead, BBM",
-        description: "Decides content, narrative and publication schedule.",
+        title: "Media Creative Lead, BBM",
+        description: "Decides content, narrative, and publication schedule.",
       },
     ],
   },
 
   careers: {
     eyebrow: "Careers",
-    title: "Building two teams, one division at a time.",
-    body: "BBT and BBM hire independently. Nothing is open right now, but you are welcome to introduce yourself and the work you do.",
+    title: "Two teams, built one hire at a time.",
+    body: "BBT and BBM hire independently. There are no open positions at the moment. If you would like to introduce yourself and your work, we would be glad to read it.",
     cta: { label: "Careers at BBA", href: "/careers" },
   },
 
   contact: {
     eyebrow: "Contact",
-    title: "Start a conversation.",
+    title: "Tell us what you need.",
     intro:
-      "Tell us about your organization and which division your enquiry concerns. The form prepares a message in your email app, addressed to BBA.",
+      "Tell us about your needs. This form will open a message in your email app.",
   },
 };

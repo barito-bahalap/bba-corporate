@@ -14,7 +14,7 @@ export const uiContent: UiContent = {
   },
   footer: {
     firewall:
-      "BBT dan BBM beroperasi sebagai merek terpisah dengan tim, akun klien, dan data yang terpisah.",
+      "BBT dan BBM adalah dua merek dengan tim, akun klien, dan data yang terpisah.",
     divisions: "Divisi",
     follow: "Ikuti",
     social: "Media sosial",
@@ -23,10 +23,9 @@ export const uiContent: UiContent = {
   form: {
     generalOption: "Pertanyaan umum untuk BBA",
     submit: "Siapkan email",
-    consent:
-      "Saya setuju data di atas digunakan untuk menanggapi pertanyaan saya.",
+    consent: "Saya setuju data ini digunakan untuk menanggapi pertanyaan saya.",
     status:
-      "Aplikasi email Anda akan terbuka dengan pesan yang siap dikirim. Jika tidak terbuka, salin alamat email yang tertera di samping formulir ini.",
+      "Aplikasi email Anda akan terbuka dengan pesan yang siap dikirim. Jika tidak terbuka, salin alamat email di samping formulir ini.",
     labels: {
       name: "Nama lengkap",
       organization: "Organisasi",
@@ -53,7 +52,7 @@ export const uiContent: UiContent = {
     seoTitle: "Halaman tidak ditemukan",
     code: "404",
     title: "Halaman tidak ditemukan.",
-    sub: "Halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    sub: "Halaman ini tidak ada atau sudah dipindahkan.",
     homeCta: "Kembali ke beranda",
     suggestionsTitle: "Mungkin Anda mencari",
     suggestions: [
@@ -64,7 +63,7 @@ export const uiContent: UiContent = {
       },
       {
         label: "Pendekatan",
-        description: "Cara kami bekerja dan memisahkan divisi.",
+        description: "Cara kami bekerja.",
         href: "/approach",
       },
       {

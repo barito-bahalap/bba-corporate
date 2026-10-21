@@ -4,32 +4,35 @@ export const sectionsEn: SectionsContent = {
   proof: {
     label: "Verified track record",
     items: [
-      { value: "3", label: "Client systems delivered and maintained by BBT" },
+      { value: "3", label: "Client systems built and maintained by BBT" },
       {
         value: "Retainer",
-        label: "Ongoing relationship with PT Telkom Indonesia Regional 3",
+        label: "Ongoing working relationship with PT Telkom Indonesia",
       },
       { value: "2", label: "Separate operating divisions" },
-      { value: "Kalteng", label: "Based in Palangka Raya, Central Kalimantan" },
+      {
+        value: "Kalteng",
+        label: "Based in Palangka Raya, Central Kalimantan",
+      },
     ],
   },
 
   doors: {
     eyebrow: "Two units",
-    title: "Two units, two independent disciplines",
+    title: "Two units, each with its own expertise",
     intro:
-      "BBA is the holding company. The work is done by two separate units, each with its own identity, team and channels. Choose the one that fits what you need.",
+      "BBA is the parent organization. The work is carried out by two separate units, each with its own identity, team, and channels. Choose the one that fits your needs.",
     doors: [
       {
         key: "tech",
         name: "Barito Bahalap Tech",
-        discipline: "Technology & Digital Infrastructure",
+        discipline: "Software Development",
         statement:
-          "A long-term digital infrastructure partner for internal systems, operational dashboards and business process automation.",
+          "A long-term partner for internal systems, operational dashboards, and business process automation.",
         points: [
           "Custom software and information systems",
-          "Operational dashboards and report automation",
-          "Technical support and ongoing retainers",
+          "Operational dashboards and reporting automation",
+          "Technical support through a retainer arrangement",
         ],
         cta: "Visit Barito Bahalap Tech",
         badgeVariant: "accent",
@@ -40,7 +43,7 @@ export const sectionsEn: SectionsContent = {
         name: "Barito Bahalap Media",
         discipline: "Media & Strategic Communications",
         statement:
-          "A professional communications operation for institutions and public figures: message strategy, media relations and content production.",
+          "Professional communications operations for institutions and public figures. Covers message strategy, media relations, and content production.",
         points: [
           "Strategic communications and media relations",
           "Editorial services and publication management",
@@ -55,10 +58,10 @@ export const sectionsEn: SectionsContent = {
 
   work: {
     eyebrow: "Selected work",
-    title: "Delivered and in progress",
+    title: "What we have done and are working on",
     intro:
-      "Track record is shown per division. Every entry is a confirmed engagement.",
-    imagePlaceholder: "Documentation forthcoming",
+      "Work is grouped by division. Each entry is a confirmed engagement.",
+    imagePlaceholder: "Documentation coming soon",
     tech: {
       label: "Barito Bahalap Tech",
       cases: [
@@ -67,72 +70,70 @@ export const sectionsEn: SectionsContent = {
           title: "RSO2 Telkom Dashboard",
           location: "Surabaya, East Java",
           summary:
-            "An analytical and operational dashboard built around internal workflows and data needs, with automated reporting.",
-          tags: ["Operational Dashboard", "Report Automation"],
-          status: "Active",
-          image: { alt: "RSO2 Telkom Dashboard interface" },
+            "Analytics and operational dashboard built around internal workflows and data needs. Includes automated reporting.",
+          tags: ["Operational Dashboard", "Reporting Automation"],
+          status: "Actively running",
+          image: { alt: "Screenshot of the RSO2 Telkom Dashboard" },
         },
         {
           client: "E-Palugada",
-          title: "Web-based delivery platform",
+          title: "Web-based delivery service platform",
           location: "Kasongan, Central Kalimantan",
           summary:
-            "A delivery platform designed around the characteristics and needs of the local Kasongan market.",
+            "A delivery service platform designed for the needs of the local market in Kasongan.",
           tags: ["Custom Software", "Web Platform"],
-          status: "Active",
-          image: { alt: "E-Palugada platform interface" },
+          status: "Actively running",
+          image: { alt: "Screenshot of the E-Palugada platform" },
         },
         {
-          client: "AMPI Central Kalimantan",
-          title: "Official website and organization management platform",
-          location: "Central Kalimantan",
+          client: "DPD AMPI Kalteng",
+          title: "Official website and organizational platform",
+          location: "Palangka Raya, Central Kalimantan",
           summary:
-            "One platform for organizational information, programs, news, documents, media, partnership registration and public submissions.",
+            "A single platform for organizational information, work programs, news, documents, media, partner registration, and public input.",
           tags: ["Web Platform", "Information System"],
-          status: "Active",
-          image: { alt: "AMPI Kalteng official website interface" },
+          status: "Actively running",
+          image: { alt: "Screenshot of the AMPI Kalteng official website" },
         },
       ],
     },
     media: {
       label: "Barito Bahalap Media",
-      emptyTitle: "Portfolio in preparation",
+      emptyTitle: "Portfolio in progress",
       emptyText:
-        "BBM is in an early stage of operations. Its track record will be published progressively as initial engagements are completed and clients give consent.",
-      practiceTitle: "Practice areas",
+        "BBM is still in its early stage. We will showcase its work gradually once the first projects are completed and clients give their approval.",
+      practiceTitle: "Areas of work",
       practiceAreas: [
         {
           title: "Strategic communications",
-          description:
-            "Institutional message planning and public communication.",
+          description: "Institutional message planning and public communications.",
         },
         {
           title: "Media relations",
-          description: "Managing media relationships and correspondence.",
+          description: "Managing relationships and correspondence with the media.",
         },
         {
           title: "Content operations",
-          description: "Writing, editing and institutional content calendars.",
+          description: "Writing, editing, and content calendars.",
         },
         {
-          title: "Editorial and publication",
-          description:
-            "Publication management that follows journalistic standards.",
+          title: "Editorial and publishing",
+          description: "Publication management in line with journalistic standards.",
         },
         {
           title: "Multimedia production",
-          description: "Photography, videography and graphic design.",
+          description: "Photography, videography, and graphic design.",
         },
         {
           title: "Social media strategy",
-          description: "Planning and management of social media channels.",
+          description: "Planning and managing social media channels.",
         },
       ],
       principlesTitle: "Editorial principles",
       principles: [
         {
           title: "Accuracy and verification",
-          description: "Information is verified before it is published.",
+          description: "Information is checked before it is published.",
         },
         {
           title: "Balance",
@@ -142,57 +143,57 @@ export const sectionsEn: SectionsContent = {
         {
           title: "Independent editorial decisions",
           description:
-            "Narrative, content and publication schedule are decided by BBM's Creative Lead, not by the holding company or by BBT's technology clients.",
+            "Narrative, content, and publication schedule are decided by the BBM Creative Lead. BBA and BBT clients take no part in determining them.",
         },
       ],
       principlesNote:
-        "For activities that qualify as press publishing, BBM observes Law No. 40 of 1999 on the Press (UU Pers).",
+        "For activities that count as press publishing, BBM follows Law No. 40 of 1999 on the Press.",
     },
   },
 
   engage: {
-    eyebrow: "How we engage",
-    title: "A clear engagement process you can audit",
+    eyebrow: "How we work together",
+    title: "A clear, auditable engagement process",
     intro:
-      "Every engagement is contract-based, with defined scope, duration and measurable deliverables.",
+      "Every engagement is bound by a contract that sets out scope, duration, and measurable deliverables.",
     deliverableLabel: "Deliverable",
     steps: [
       {
         title: "Discovery",
         description:
-          "We identify needs, stakeholders and constraints. Objectives and success indicators are agreed from the start.",
-        deliverable: "Requirements summary",
+          "We map out your needs, stakeholders, and project constraints.",
+        deliverable: "Needs summary",
       },
       {
         title: "Proposal",
         description:
-          "Scope, schedule, cost structure and contract terms are prepared to fit the client's procurement requirements.",
+          "Scope of work, cost structure, and contract are prepared to fit the client's procurement requirements.",
         deliverable: "Proposal and draft contract",
       },
       {
-        title: "Delivery",
+        title: "Execution",
         description:
-          "Work proceeds in stages. Each stage closes with a Handover Report (BAST) as the basis for acceptance.",
-        deliverable: "Stage deliverables and BAST",
+          "Each phase closes with a report that serves as the basis for acceptance.",
+        deliverable: "Report per phase",
       },
       {
-        title: "Support and retainer",
+        title: "Retainer",
         description:
-          "Maintenance, fixes and further development under a retainer with an agreed service level.",
-        deliverable: "Periodic service reports",
+          "Maintenance runs through a retainer arrangement with an agreed service level.",
+        deliverable: "Periodic service report",
       },
     ],
   },
 
   structure: {
-    eyebrow: "Structure & governance",
-    title: "Shared ownership, separate operations",
+    eyebrow: "Structure and governance",
+    title: "One owner, two units that operate separately",
     intro:
-      "BBT and BBM sit within one group but run as two functionally separate divisions. The separation is a governance framework, not a marketing strategy.",
+      "BBT and BBM belong to one business group but work as two separate units. This separation is a governance rule we follow, not a marketing point.",
     diagramLabel: "Structure diagram of BBA, BBT, and BBM",
     holding: {
       name: "Barito Bahalap Agency",
-      role: "Holding company and governance layer",
+      role: "Parent organization and governance layer",
       items: [
         "Strategy",
         "Contracts",
@@ -206,63 +207,58 @@ export const sectionsEn: SectionsContent = {
         key: "tech",
         name: "Barito Bahalap Tech",
         role: "Technology & Digital Infrastructure",
-        items: ["Technical decisions: Delivery Lead", "BBT account line"],
+        items: ["Technical decisions: Tech Delivery Lead", "BBT account channel"],
       },
       {
         key: "media",
         name: "Barito Bahalap Media",
         role: "Media & Strategic Communications",
-        items: ["Editorial decisions: Creative Lead", "BBM account line"],
+        items: ["Editorial decisions: Media Creative Lead", "BBM account channel"],
       },
     ],
-    governanceTitle: "Operational separation across seven dimensions",
+    governanceTitle: "Separation across six areas",
     governanceIntro:
-      "The Operational Firewall sets the boundary between BBT and BBM, so clients on both sides are protected from conflicts of interest.",
+      "We set the boundary between BBT and BBM in writing. The aim is to protect clients on both sides from conflicts of interest.",
     dimensions: [
       {
-        title: "Brand identity",
+        title: "Team",
         description:
-          "Distinct names, logos, public channels and positioning. No combined marketing material.",
-      },
-      {
-        title: "Teams",
-        description:
-          "Separate technical and editorial work lines. Cross-division assignments are need-to-know only.",
+          "Technical and editorial work streams are separate. Cross-division assignments are limited on a need-to-know basis.",
       },
       {
         title: "Client account management",
         description:
-          "One division's client information is not shared with the other without the client's consent.",
+          "One division's client information is not shared with the other division without the client's consent.",
       },
       {
         title: "Data and information",
-        description:
-          "Project documents and data are stored and accessed separately.",
+        description: "Project documents and data are stored and accessed separately.",
       },
       {
         title: "Decision-making",
         description:
-          "Technical and editorial decisions run on independent lines.",
+          "Technical and editorial decisions run on independent tracks.",
       },
       {
         title: "Editorial independence",
         description:
-          "The Founder/Director is not BBM's day-to-day editorial decision-maker.",
+          "Management does not make BBM's day-to-day editorial decisions.",
       },
       {
-        title: "Legal and reputation oversight",
+        title: "Legal and reputational oversight",
         description:
-          "Contracts, compliance and risk are handled at holding level without overriding divisional decisions.",
+          "Contracts, compliance, and risk are managed at the holding level without interfering in division decisions.",
       },
     ],
     pressTitle: "Press compliance",
     pressText:
-      "For activities that qualify as press publishing, BBM's editorial function observes Law No. 40 of 1999 on the Press and its implementing regulations.",
+      "For activities that count as press publishing, BBM's editorial function follows Law No. 40 of 1999 on the Press and its implementing regulations.",
   },
 
+  // TODO: Make the actual presentable PDF, currently its a placeholder
   profile: {
     title: "Company profile",
-    text: "Download a summary of BBA: structure, divisions, governance and confirmed track record.",
+    text: "Download the BBA profile summary: structure, divisions, governance, and confirmed track record.",
     cta: "Download Profile (PDF)",
     url: "/files/BBA-Company-Profile-EN.pdf",
     meta: "PDF, English",
