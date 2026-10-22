@@ -26,7 +26,7 @@ export const careersContent: CareersContent = {
     {
       brand: "tech",
       division: "Barito Bahalap Tech",
-      roles: [ 
+      roles: [
         "UI/UX Designer",
         "Software Developer (Frontend)",
         "Software Developer (Backend)",
@@ -36,7 +36,7 @@ export const careersContent: CareersContent = {
     {
       brand: "media",
       division: "Barito Bahalap Media",
-      roles: [ 
+      roles: [
         "Konten dan Copywriting",
         "Desain Grafis dan Multimedia",
         "Fotografi dan Videografi",

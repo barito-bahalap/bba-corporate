@@ -59,8 +59,7 @@ export const sectionsEn: SectionsContent = {
   work: {
     eyebrow: "Selected work",
     title: "What we have done and are working on",
-    intro:
-      "Work is grouped by division. Each entry is a confirmed engagement.",
+    intro: "Work is grouped by division. Each entry is a confirmed engagement.",
     imagePlaceholder: "Documentation coming soon",
     tech: {
       label: "Barito Bahalap Tech",
@@ -106,11 +105,13 @@ export const sectionsEn: SectionsContent = {
       practiceAreas: [
         {
           title: "Strategic communications",
-          description: "Institutional message planning and public communications.",
+          description:
+            "Institutional message planning and public communications.",
         },
         {
           title: "Media relations",
-          description: "Managing relationships and correspondence with the media.",
+          description:
+            "Managing relationships and correspondence with the media.",
         },
         {
           title: "Content operations",
@@ -118,7 +119,8 @@ export const sectionsEn: SectionsContent = {
         },
         {
           title: "Editorial and publishing",
-          description: "Publication management in line with journalistic standards.",
+          description:
+            "Publication management in line with journalistic standards.",
         },
         {
           title: "Multimedia production",
@@ -207,13 +209,19 @@ export const sectionsEn: SectionsContent = {
         key: "tech",
         name: "Barito Bahalap Tech",
         role: "Technology & Digital Infrastructure",
-        items: ["Technical decisions: Tech Delivery Lead", "BBT account channel"],
+        items: [
+          "Technical decisions: Tech Delivery Lead",
+          "BBT account channel",
+        ],
       },
       {
         key: "media",
         name: "Barito Bahalap Media",
         role: "Media & Strategic Communications",
-        items: ["Editorial decisions: Media Creative Lead", "BBM account channel"],
+        items: [
+          "Editorial decisions: Media Creative Lead",
+          "BBM account channel",
+        ],
       },
     ],
     governanceTitle: "Separation across six areas",
@@ -232,7 +240,8 @@ export const sectionsEn: SectionsContent = {
       },
       {
         title: "Data and information",
-        description: "Project documents and data are stored and accessed separately.",
+        description:
+          "Project documents and data are stored and accessed separately.",
       },
       {
         title: "Decision-making",

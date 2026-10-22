@@ -219,7 +219,7 @@ export const sectionsId: SectionsContent = {
     governanceTitle: "Pemisahan di enam area",
     governanceIntro:
       "Batas antara BBT dan BBM kami tetapkan secara tertulis. Tujuannya melindungi klien di kedua sisi dari benturan kepentingan.",
-    dimensions: [   
+    dimensions: [
       {
         title: "Tim",
         description:
