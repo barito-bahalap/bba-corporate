@@ -11,21 +11,21 @@ export const homeContent: HomeContent = {
       "Barito Bahalap Agency berbasis di Palangka Raya. Barito Bahalap Tech membangun dan merawat sistem digital. Barito Bahalap Media menangani komunikasi strategis, konten, dan produksi multimedia.",
   },
 
-hero: {
-  eyebrow: "Palangka Raya, Kalimantan Tengah",
-  headline: "Sistem digital & komunikasi strategis.",
-  subhead:
-    "Dari software dan dashboard hingga publikasi dan multimedia, kami membantu organisasi bekerja dan berkomunikasi lebih baik.",
-  primaryCta: { label: "Jelajahi layanan", href: "/#divisions" },
-  secondaryCta: { label: "Hubungi kami", href: "/#contact" },
-},
+  hero: {
+    eyebrow: "Palangka Raya, Kalimantan Tengah",
+    headline: "Sistem digital & komunikasi strategis.",
+    subhead:
+      "Dari software dan dashboard hingga publikasi dan multimedia, kami membantu organisasi bekerja dan berkomunikasi lebih baik.",
+    primaryCta: { label: "Jelajahi layanan", href: "/#divisions" },
+    secondaryCta: { label: "Hubungi kami", href: "/#contact" },
+  },
 
   about: {
     eyebrow: "Tentang BBA",
     title: "Tentang BBA",
     paragraphs: [
-       "BBA menaungi dua unit: Barito Bahalap Tech untuk rekayasa perangkat lunak dan Barito Bahalap Media untuk komunikasi strategis.",
-       "Di tingkat induk, BBA mengurus strategi, kontrak, keuangan, kepatuhan hukum, dan risiko reputasi. Keputusan teknis dan keputusan redaksi tetap berada di divisi masing-masing."
+      "BBA menaungi dua unit: Barito Bahalap Tech untuk rekayasa perangkat lunak dan Barito Bahalap Media untuk komunikasi strategis.",
+      "Di tingkat induk, BBA mengurus strategi, kontrak, keuangan, kepatuhan hukum, dan risiko reputasi. Keputusan teknis dan keputusan redaksi tetap berada di divisi masing-masing.",
     ],
     stats: [
       {
@@ -189,7 +189,7 @@ hero: {
         name: "Basilius Tengang",
         role: "SUPER_ADMIN",
         title: "CEO & Tech Delivery Lead",
-        bio: "Mengawasi tata kelola & strategi perusahaan. Juga memimpin pengiriman proyek di BBT.",
+        bio: "Memimpin tata kelola dan strategi perusahaan. Juga memimpin pengerjaan proyek teknologi.",
         published: true,
         photoSrc: People.basil,
       },
@@ -198,8 +198,8 @@ hero: {
         name: "Fredy Berdani",
         role: "ADMIN",
         title: "Media Creative Lead",
-        bio: "Memimpin arah kreatif dan keputusan redaksi di BBM.",
-        published: true,  
+        bio: "Memimpin tim kreatif dan menentukan arah konten, berita, dan publikasi.",
+        published: true,
         photoSrc: People.fredy,
       },
       {
@@ -216,7 +216,7 @@ hero: {
         name: "Rabel Gabriel Batubara",
         role: "ADMIN",
         title: "Legal & Compliance",
-        bio: "Menangani berkas legal, urusan hukum dan kepatuhan BBA.",
+        bio: "Menangani berkas legal, urusan hukum dan kepatuhan perusahaan.",
         published: true,
         photoSrc: People.rabel,
       },
@@ -225,7 +225,7 @@ hero: {
         name: "Karel Immanuel F. Jocom",
         role: "ADMIN",
         title: "Public Relations",
-        bio: "Menangani hubungan masyarakat dan komunikasi BBA.",
+        bio: "Menangani hubungan dan komunikasi dengan publik & lembaga.",
         published: true,
         photoSrc: People.karel,
       },
@@ -235,14 +235,14 @@ hero: {
       {
         brand: "tech",
         iconName: "codeSlash",
-        title: "Tech Delivery Lead, BBT",
+        title: "Tech Delivery Lead",
         description:
           "Memutuskan arsitektur sistem, metodologi pengembangan, dan prioritas pemeliharaan.",
       },
       {
         brand: "media",
         iconName: "newspaper",
-        title: "Media Creative Lead, BBM",
+        title: "Media Creative Lead",
         description: "Memutuskan konten, narasi, dan jadwal publikasi.",
       },
     ],
