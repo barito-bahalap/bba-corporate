@@ -59,22 +59,22 @@ export const uiContent: UiContent = {
       {
         label: "Divisions",
         description: "Barito Bahalap Tech and Barito Bahalap Media.",
-        href: "/divisions",
+        href: "/en/divisions",
       },
       {
         label: "Approach",
         description: "How we work.",
-        href: "/approach",
+        href: "/en/approach",
       },
       {
         label: "Careers",
         description: "Introduce yourself to BBT or BBM.",
-        href: "/careers",
+        href: "/en/careers",
       },
       {
         label: "Contact",
         description: "Start a conversation with BBA.",
-        href: "/#contact",
+        href: "/en/#contact",
       },
     ],
   },

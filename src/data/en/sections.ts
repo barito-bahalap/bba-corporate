@@ -269,7 +269,7 @@ export const sectionsEn: SectionsContent = {
     title: "Company profile",
     text: "Download the BBA profile summary: structure, divisions, governance, and confirmed track record.",
     cta: "Download Profile (PDF)",
-    url: "/files/BBA-Company-Profile-EN.pdf",
+    url: "/en/files/BBA-Company-Profile-EN.pdf",
     meta: "PDF, English",
   },
 };

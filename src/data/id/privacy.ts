@@ -7,20 +7,35 @@ export const privacyContent: LegalContent = {
   seo: {
     title: "Kebijakan Privasi",
     description:
-      "Cara Barito Bahalap Agency mengelola informasi pribadi yang dikumpulkan melalui situs web ini.",
+      "Kebijakan Privasi PT Barito Bahalap Agency selaku pengendali Data Pribadi, berdasarkan UU Pelindungan Data Pribadi.",
     path: "/privacy",
   },
   title: "Kebijakan Privasi",
-  updated: "Oktober 2026",
+  updated: "22 Oktober 2026",
   intro:
-    "Kebijakan ini menjelaskan informasi pribadi apa yang dikumpulkan Barito Bahalap Agency melalui situs web ini, tujuannya, dan pilihan yang Anda miliki.",
+    "Dalam Kebijakan Privasi ini, kami menyatakan bahwa Barito Bahalap Agency selaku pengendali Data Pribadi senantiasa memberikan keamanan dan pelindungan Data Pribadi klien. Kami mematuhi peraturan perundang-undangan yang berlaku, termasuk Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi beserta perubahannya (UU PDP).",
   sections: [
     {
       id: "who-we-are",
       heading: "Siapa kami",
       paragraphs: [
-        `${siteConfig.legalName} (BBA) adalah organisasi induk yang berkedudukan di ${siteConfig.location}. BBA bertanggung jawab atas informasi pribadi yang dijelaskan dalam kebijakan ini.`,
+        `${siteConfig.legalName} (BBA) adalah organisasi induk yang berkedudukan di ${siteConfig.location}. BBA bertindak sebagai pengendali Data Pribadi dan bertanggung jawab atas informasi pribadi yang dijelaskan dalam kebijakan ini.`,
         `Anda dapat menghubungi kami melalui ${siteConfig.contactEmail}.`,
+      ],
+    },
+    {
+      id: "compliance",
+      heading: "Kewajiban mematuhi kebijakan ini",
+      paragraphs: [
+        "Kepatuhan terhadap Kebijakan Privasi ini bersifat wajib. Kegagalan mematuhinya dapat mengakibatkan tindakan disipliner atau tindakan lain sesuai prosedur yang telah ditetapkan. Perseroan dapat mengambil setiap langkah yang diperlukan, termasuk tindakan hukum dan administratif, untuk menjaga kepatuhan terhadap kebijakan ini.",
+      ],
+    },
+    {
+      id: "uu-pdp",
+      heading: "Dasar hukum: UU PDP",
+      paragraphs: [
+        "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP) mengatur asas; jenis Data Pribadi; hak subjek Data Pribadi; pemrosesan Data Pribadi; kewajiban pengendali dan prosesor Data Pribadi dalam pemrosesan; transfer Data Pribadi; sanksi administratif; kelembagaan; kerja sama internasional; partisipasi masyarakat; penyelesaian sengketa dan hukum acara; larangan dalam penggunaan Data Pribadi; dan ketentuan pidana terkait pelindungan Data Pribadi.",
+        "Pelindungan Data Pribadi adalah keseluruhan upaya untuk melindungi Data Pribadi dalam rangkaian pemrosesan Data Pribadi guna menjamin hak konstitusional subjek Data Pribadi.",
       ],
     },
     {
@@ -56,7 +71,7 @@ export const privacyContent: LegalContent = {
       id: "sharing",
       heading: "Pembagian informasi",
       paragraphs: [
-        "Kami tidak menjual informasi pribadi. Kami membagikannya hanya kepada penyedia layanan yang membantu operasional kami, seperti penyedia hosting dan email, serta ketika diwajibkan oleh hukum.",
+        "Kami tidak menjual Data Pribadi. Kami membagikannya hanya kepada penyedia layanan yang membantu operasional kami, seperti penyedia hosting dan email, serta ketika diwajibkan oleh hukum.",
       ],
     },
     {
@@ -70,7 +85,7 @@ export const privacyContent: LegalContent = {
       id: "your-rights",
       heading: "Hak Anda",
       paragraphs: [
-        "Berdasarkan Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, Anda berhak meminta akses, perbaikan, atau penghapusan data pribadi Anda, menarik persetujuan yang telah diberikan, dan menyatakan keberatan atas pemrosesan tertentu. Untuk menggunakan hak tersebut, kirimkan email kepada kami dan sampaikan apa yang Anda inginkan.",
+        "Berdasarkan UU PDP, Anda sebagai subjek Data Pribadi berhak meminta akses, perbaikan, atau penghapusan Data Pribadi Anda, menarik persetujuan yang telah diberikan, dan menyatakan keberatan atas pemrosesan tertentu. Untuk menggunakan hak tersebut, kirimkan email kepada kami dan sampaikan apa yang Anda inginkan.",
       ],
     },
     {
@@ -81,10 +96,23 @@ export const privacyContent: LegalContent = {
       ],
     },
     {
+      id: "sanctions",
+      heading: "Sanksi bagi pelanggar",
+      paragraphs: [
+        "UU PDP menetapkan dua jalur sanksi, yaitu sanksi administratif dan ketentuan pidana. Untuk pelanggaran kewajiban administratif, Pasal 57 UU PDP mengatur sanksi berupa:",
+      ],
+      items: [
+        "peringatan tertulis;",
+        "penghentian sementara kegiatan pemrosesan Data Pribadi;",
+        "penghapusan atau pemusnahan Data Pribadi; dan",
+        "denda administratif paling tinggi 2 (dua) persen dari pendapatan tahunan pengendali Data Pribadi.",
+      ],
+    },
+    {
       id: "changes",
       heading: "Perubahan kebijakan ini",
       paragraphs: [
-        "Kami dapat memperbarui kebijakan ini seiring perubahan situs web atau kewajiban hukum kami. Tanggal di bagian atas menunjukkan kapan kebijakan ini terakhir direvisi.",
+        "Kami dapat memperbarui kebijakan ini seiring perubahan situs web atau kewajiban hukum kami. Tanggal di bagian atas menunjukkan kapan kebijakan ini terakhir diperbarui.",
       ],
     },
     {

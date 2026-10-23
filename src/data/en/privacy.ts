@@ -5,20 +5,35 @@ export const privacyContent: LegalContent = {
   seo: {
     title: "Privacy Policy",
     description:
-      "How Barito Bahalap Agency handles personal information collected through this website.",
-    path: "/privacy",
+      "Privacy Policy of PT Barito Bahalap Agency as personal data controller, under Indonesia's Personal Data Protection Law.",
+    path: "/en/privacy",
   },
   title: "Privacy Policy",
-  updated: "October 2026",
+  updated: "22 October 2026",
   intro:
-    "This policy explains what personal information Barito Bahalap Agency collects through this website, why, and the choices you have.",
+    "In this Privacy Policy, we state that Barito Bahalap Agency, as the personal data controller, is committed to the security and protection of its clients' personal data. We comply with applicable laws and regulations, including Law No. 27 of 2022 on Personal Data Protection and its amendments (the PDP Law).",
   sections: [
     {
       id: "who-we-are",
       heading: "Who we are",
       paragraphs: [
-        `${siteConfig.legalName} (BBA) is a holding organization based in ${siteConfig.location}. BBA is responsible for the personal information described in this policy.`,
+        `${siteConfig.legalName} (BBA) is a holding organization based in ${siteConfig.location}. BBA acts as the personal data controller and is responsible for the personal information described in this policy.`,
         `You can contact us at ${siteConfig.contactEmail}.`,
+      ],
+    },
+    {
+      id: "compliance",
+      heading: "Mandatory compliance with this policy",
+      paragraphs: [
+        "Compliance with this Privacy Policy is mandatory. Failure to comply may result in disciplinary action or other action under established procedures. The Company may take any necessary steps, including legal and administrative action, to maintain compliance with this policy.",
+      ],
+    },
+    {
+      id: "uu-pdp",
+      heading: "Legal basis: the PDP Law",
+      paragraphs: [
+        "Law No. 27 of 2022 on Personal Data Protection (the PDP Law) regulates principles; types of personal data; the rights of data subjects; personal data processing; the obligations of personal data controllers and processors; transfers of personal data; administrative sanctions; institutions; international cooperation; public participation; dispute resolution and procedural law; prohibitions on the use of personal data; and criminal provisions relating to personal data protection.",
+        "Personal data protection means all efforts to protect personal data throughout its processing in order to guarantee the constitutional rights of the data subject.",
       ],
     },
     {
@@ -54,7 +69,7 @@ export const privacyContent: LegalContent = {
       id: "sharing",
       heading: "Sharing information",
       paragraphs: [
-        "We do not sell personal information. We share it only with service providers that help us operate, such as hosting and email providers, and where the law requires it.",
+        "We do not sell personal data. We share it only with service providers that help us operate, such as hosting and email providers, and where the law requires it.",
       ],
     },
     {
@@ -68,7 +83,7 @@ export const privacyContent: LegalContent = {
       id: "your-rights",
       heading: "Your rights",
       paragraphs: [
-        "Under Law No. 27 of 2022 on Personal Data Protection, you may ask to access, correct or delete your personal data, to withdraw consent you have given, and to object to certain processing. To exercise these rights, email us and tell us what you would like us to do.",
+        "Under the PDP Law, as a data subject you may ask to access, correct or delete your personal data, withdraw consent you have given, and object to certain processing. To exercise these rights, email us and tell us what you would like us to do.",
       ],
     },
     {
@@ -79,10 +94,23 @@ export const privacyContent: LegalContent = {
       ],
     },
     {
+      id: "sanctions",
+      heading: "Sanctions for violations",
+      paragraphs: [
+        "The PDP Law provides two tracks of sanctions: administrative sanctions and criminal provisions. For breaches of administrative obligations, Article 57 of the PDP Law provides for:",
+      ],
+      items: [
+        "a written warning;",
+        "temporary suspension of personal data processing;",
+        "deletion or destruction of personal data; and",
+        "an administrative fine of up to 2 (two) percent of the data controller's annual revenue.",
+      ],
+    },
+    {
       id: "changes",
       heading: "Changes to this policy",
       paragraphs: [
-        "We may update this policy as our website or legal obligations change. The date at the top shows when it was last revised.",
+        "We may update this policy as our website or legal obligations change. The date at the top shows when it was last updated.",
       ],
     },
     {

@@ -16,8 +16,8 @@ export const homeContent: HomeContent = {
     headline: "Digital systems & strategic communications.",
     subhead:
       "From software and dashboards to publications and multimedia, we help organizations work and communicate better.",
-    primaryCta: { label: "Explore our services", href: "/#divisions" },
-    secondaryCta: { label: "Contact us", href: "/#contact" },
+    primaryCta: { label: "Explore our services", href: "/en/#divisions" },
+    secondaryCta: { label: "Contact us", href: "/en/#contact" },
   },
 
   about: {
@@ -104,7 +104,7 @@ export const homeContent: HomeContent = {
           title: "Technical authority",
           body: "The BBT Delivery Lead decides system architecture, development approach, and maintenance priorities.",
         },
-        cta: { label: "Discuss a BBT project", href: "/#contact" },
+        cta: { label: "Discuss a BBT project", href: "/en/#contact" },
       },
       {
         id: "bbm",
@@ -140,7 +140,7 @@ export const homeContent: HomeContent = {
           title: "Editorial independence",
           body: "The BBM Creative Lead decides content, narrative, and publication schedule. The BBA Director oversees contracts, finance, legal compliance, and reputational risk, but does not take part in day-to-day editorial decisions. Press publishing activities follow Law No. 40 of 1999 on the Press and the applicable journalistic code of ethics.",
         },
-        cta: { label: "Discuss a BBM collaboration", href: "/#contact" },
+        cta: { label: "Discuss a BBM collaboration", href: "/en/#contact" },
       },
     ],
   },
@@ -252,7 +252,7 @@ export const homeContent: HomeContent = {
     eyebrow: "Careers",
     title: "Two teams, built one hire at a time.",
     body: "BBT and BBM hire independently. There are no open positions at the moment. If you would like to introduce yourself and your work, we would be glad to read it.",
-    cta: { label: "Careers at BBA", href: "/careers" },
+    cta: { label: "Careers at BBA", href: "/en/careers" },
   },
 
   contact: {
