@@ -184,10 +184,12 @@
 
 @media (min-width: 1024px) {
   .header__menus {
+    width: fit-content;
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-self: center;
     gap: var(--space-8);
-    margin-left: auto;
   }
 
   .header__cta {

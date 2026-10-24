@@ -9,6 +9,7 @@ import type {
 export interface Cta {
   label: string;
   href: string;
+  section?: string;
 }
 
 export interface HeroContent {
@@ -112,7 +113,7 @@ export interface HomeContent {
   seo: { title: string; description: string };
   hero: HeroContent;
   about: AboutContent;
-  divisions: DivisionsContent;
+  // divisions: DivisionsContent;
   approach: ApproachContent;
   leadership: LeadershipContent;
   careers: CareersTeaserContent;

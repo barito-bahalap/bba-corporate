@@ -16,8 +16,8 @@ export const homeContent: HomeContent = {
     headline: "Sistem digital & komunikasi strategis.",
     subhead:
       "Dari software dan dashboard hingga publikasi dan multimedia, kami membantu organisasi bekerja dan berkomunikasi lebih baik.",
-    primaryCta: { label: "Jelajahi layanan", href: "/#divisions" },
-    secondaryCta: { label: "Hubungi kami", href: "/#contact" },
+    primaryCta: { label: "Jelajahi layanan", href: "/", section: "divisions" },
+    secondaryCta: { label: "Hubungi kami", href: "/", section: "contact" },
   },
 
   about: {
@@ -42,105 +42,6 @@ export const homeContent: HomeContent = {
         value: "2026",
         label: "Didirikan di Palangka Raya",
         note: "Melayani klien di Kalimantan Tengah dan Jawa Timur.",
-      },
-    ],
-  },
-
-  divisions: {
-    eyebrow: "Divisi kami",
-    title: "Dua unit dengan tanggung jawab masing-masing.",
-    intro:
-      "Setiap divisi punya identitas, tim, akun klien, dan wewenang keputusan sendiri. Informasi klien tetap berada di divisi yang melayaninya kecuali klien menyetujui lain secara tegas.",
-    items: [
-      {
-        id: "bbt",
-        brand: "tech",
-        name: "Barito Bahalap Tech",
-        badge: "BBT",
-        descriptor: "Teknologi dan infrastruktur digital",
-        summary:
-          "Merancang, membangun, dan merawat sistem yang menopang operasional organisasi. BBT bekerja untuk jangka panjang, jadi dukungannya berlanjut setelah sistem diluncurkan.",
-        capabilities: [
-          {
-            iconName: "codeSlash",
-            title: "Perangkat lunak khusus dan sistem internal",
-            description:
-              "Aplikasi dan sistem informasi yang dibangun mengikuti cara organisasi Anda bekerja.",
-          },
-          {
-            iconName: "pieChartFill",
-            title: "Dasbor operasional",
-            description:
-              "Data internal dan pelaporan dikumpulkan di satu tempat, lengkap dengan pemantauan dan analitik.",
-          },
-          {
-            iconName: "barChart",
-            title: "Otomasi dan integrasi",
-            description:
-              "Proses manual diotomasi dan platform yang berdiri sendiri-sendiri dihubungkan. Dukungan teknis berlanjut lewat skema retainer.",
-          },
-        ],
-        trackRecordTitle: "Sudah berjalan di produksi",
-        trackRecord: [
-          {
-            project: "RSO2 Telkom Dashboard",
-            client: "PT Telkom Indonesia, Regional 3, Surabaya",
-            scope:
-              "Dasbor analitik dan operasional dengan data internal dan pelaporan otomatis. Berjalan dengan skema retainer.",
-          },
-          {
-            project: "E-Palugada",
-            client: "Kasongan, Kalimantan Tengah",
-            scope: "Platform layanan antar berbasis web untuk pasar lokal.",
-          },
-          {
-            project: "Situs web AMPI Kalteng",
-            client: "DPD AMPI Kalteng",
-            scope:
-              "Satu platform untuk informasi organisasi, program, berita, dokumen, media, pendaftaran mitra, dan kiriman dari publik.",
-          },
-        ],
-        note: {
-          title: "Otoritas teknis",
-          body: "Delivery Lead BBT memutuskan arsitektur sistem, pendekatan pengembangan, dan prioritas pemeliharaan.",
-        },
-        cta: { label: "Diskusikan proyek BBT", href: "/#contact" },
-      },
-      {
-        id: "bbm",
-        brand: "media",
-        name: "Barito Bahalap Media",
-        badge: "BBM",
-        descriptor: "Media dan komunikasi strategis",
-        summary:
-          "Komunikasi strategis, konten, dan pengelolaan publikasi untuk organisasi dan institusi. Cakupannya dari perencanaan pesan dan hubungan media sampai produksi multimedia.",
-        capabilities: [
-          {
-            iconName: "megaphone",
-            title: "Komunikasi strategis",
-            description:
-              "Perencanaan pesan institusional, komunikasi publik, dan hubungan media.",
-          },
-          {
-            iconName: "newspaper",
-            title: "Konten dan redaksi",
-            description:
-              "Penulisan naskah, layanan editorial, kalender konten, dan pengelolaan publikasi.",
-          },
-          {
-            iconName: "imageAlt",
-            title: "Produksi multimedia",
-            description:
-              "Foto, video, dan grafis, dengan strategi media sosial sebagai penunjang.",
-          },
-        ],
-        statusNote:
-          "BBM masih di tahap awal. Portofolionya akan kami tampilkan setelah proyek selesai dan klien menyetujui.",
-        note: {
-          title: "Independensi redaksi",
-          body: "Creative Lead BBM memutuskan konten, narasi, dan jadwal publikasi. Direktur BBA mengawasi kontrak, keuangan, kepatuhan hukum, dan risiko reputasi, tetapi tidak ikut dalam keputusan redaksi harian. Kegiatan publikasi pers mengikuti UU Nomor 40 Tahun 1999 tentang Pers dan kode etik jurnalistik yang berlaku.",
-        },
-        cta: { label: "Diskusikan kerja sama BBM", href: "/#contact" },
       },
     ],
   },

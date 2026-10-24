@@ -16,8 +16,12 @@ export const homeContent: HomeContent = {
     headline: "Digital systems & strategic communications.",
     subhead:
       "From software and dashboards to publications and multimedia, we help organizations work and communicate better.",
-    primaryCta: { label: "Explore our services", href: "/en/#divisions" },
-    secondaryCta: { label: "Contact us", href: "/en/#contact" },
+    primaryCta: {
+      label: "Explore our services",
+      href: "/",
+      section: "divisions",
+    },
+    secondaryCta: { label: "Contact us", href: "/", section: "contact" },
   },
 
   about: {
@@ -42,105 +46,6 @@ export const homeContent: HomeContent = {
         value: "2026",
         label: "Founded in Palangka Raya",
         note: "Serving clients in Central Kalimantan and East Java.",
-      },
-    ],
-  },
-
-  divisions: {
-    eyebrow: "Our divisions",
-    title: "Two units, each with its own responsibilities.",
-    intro:
-      "Each division has its own identity, team, client accounts, and decision-making authority. Client information stays within the division that serves them unless the client expressly agrees otherwise.",
-    items: [
-      {
-        id: "bbt",
-        brand: "tech",
-        name: "Barito Bahalap Tech",
-        badge: "BBT",
-        descriptor: "Technology and digital infrastructure",
-        summary:
-          "We design, build, and maintain the systems that support an organization's operations. BBT works for the long term, so support continues after a system launches.",
-        capabilities: [
-          {
-            iconName: "codeSlash",
-            title: "Custom software and internal systems",
-            description:
-              "Applications and information systems built around the way your organization works.",
-          },
-          {
-            iconName: "pieChartFill",
-            title: "Operational dashboards",
-            description:
-              "Internal data and reporting brought together in one place, with monitoring and analytics.",
-          },
-          {
-            iconName: "barChart",
-            title: "Automation and integration",
-            description:
-              "Manual processes are automated and standalone platforms are connected. Technical support continues through a retainer arrangement.",
-          },
-        ],
-        trackRecordTitle: "Already running in production",
-        trackRecord: [
-          {
-            project: "RSO2 Telkom Dashboard",
-            client: "PT Telkom Indonesia, Regional 3, Surabaya",
-            scope:
-              "Analytics and operational dashboard with internal data and automated reporting. Operating under a retainer arrangement.",
-          },
-          {
-            project: "E-Palugada",
-            client: "Kasongan, Central Kalimantan",
-            scope: "Web-based delivery service platform for the local market.",
-          },
-          {
-            project: "AMPI Kalteng website",
-            client: "DPD AMPI Kalteng",
-            scope:
-              "A single platform for organizational information, programs, news, documents, media, partner registration, and public submissions.",
-          },
-        ],
-        note: {
-          title: "Technical authority",
-          body: "The BBT Delivery Lead decides system architecture, development approach, and maintenance priorities.",
-        },
-        cta: { label: "Discuss a BBT project", href: "/en/#contact" },
-      },
-      {
-        id: "bbm",
-        brand: "media",
-        name: "Barito Bahalap Media",
-        badge: "BBM",
-        descriptor: "Media and strategic communications",
-        summary:
-          "Strategic communications, content, and publication management for organizations and institutions. Our scope runs from message planning and media relations to multimedia production.",
-        capabilities: [
-          {
-            iconName: "megaphone",
-            title: "Strategic communications",
-            description:
-              "Institutional message planning, public communications, and media relations.",
-          },
-          {
-            iconName: "newspaper",
-            title: "Content and editorial",
-            description:
-              "Copywriting, editorial services, content calendars, and publication management.",
-          },
-          {
-            iconName: "imageAlt",
-            title: "Multimedia production",
-            description:
-              "Photo, video, and graphics, with social media strategy as a supporting service.",
-          },
-        ],
-        statusNote:
-          "BBM is still in its early stage. We will showcase its portfolio once projects are completed and clients give their approval.",
-        note: {
-          title: "Editorial independence",
-          body: "The BBM Creative Lead decides content, narrative, and publication schedule. The BBA Director oversees contracts, finance, legal compliance, and reputational risk, but does not take part in day-to-day editorial decisions. Press publishing activities follow Law No. 40 of 1999 on the Press and the applicable journalistic code of ethics.",
-        },
-        cta: { label: "Discuss a BBM collaboration", href: "/en/#contact" },
       },
     ],
   },

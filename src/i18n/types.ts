@@ -8,6 +8,7 @@ export interface NotFoundSuggestion {
   label: string;
   description: string;
   href: string;
+  section?: string;
 }
 
 export interface UiContent {

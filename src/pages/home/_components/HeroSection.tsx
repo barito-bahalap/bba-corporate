@@ -1,5 +1,7 @@
 // Style
 import "./HeroSection.css";
+// Hooks
+import { useLocale, useSectionLink } from "@/hooks";
 // Components
 import { Button } from "@/components";
 import { RiverVisual } from "./RiverVisual";
@@ -19,6 +21,9 @@ export function HeroSection({
   location,
   imageSrc,
 }: HeroSectionProps) {
+  const { href } = useLocale();
+  const onSectionClick = useSectionLink();
+
   return (
     <section id="home-hero" className="cg-hero" aria-labelledby="hero-title">
       <div className="cg-hero__grid cg-wrap">
@@ -33,7 +38,10 @@ export function HeroSection({
           <div className="cg-hero__actions">
             <Button
               label={primaryCta.label}
-              href={primaryCta.href}
+              href={href(primaryCta.href)}
+              onClick={(e) =>
+                onSectionClick(e, primaryCta, href(primaryCta.href))
+              }
               variant="accent"
               size="lg"
               iconName="arrowRight"
@@ -43,7 +51,10 @@ export function HeroSection({
             />
             <Button
               label={secondaryCta.label}
-              href={secondaryCta.href}
+              href={href(secondaryCta.href)}
+              onClick={(e) =>
+                onSectionClick(e, secondaryCta, href(secondaryCta.href))
+              }
               variant="outline"
               size="lg"
             />
