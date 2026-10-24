@@ -80,7 +80,7 @@ export const homeContent: HomeContent = {
   },
 
   leadership: {
-    eyebrow: "Kepemimpinan",
+    eyebrow: "Sosok di balik BBA",
     title: "Siapa yang bertanggung jawab",
     intro:
       "Tata kelola ada pada Co-founders dan Direktur. Keputusan teknis dan redaksi ada pada pimpinan divisi.",

@@ -84,7 +84,7 @@ export const homeContent: HomeContent = {
   },
 
   leadership: {
-    eyebrow: "Leadership",
+    eyebrow: "Minds behind BBA",
     title: "Who is accountable",
     intro:
       "Governance rests with the Co-founders and the Director. Technical and editorial decisions rest with the division leads.",

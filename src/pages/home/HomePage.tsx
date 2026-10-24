@@ -9,6 +9,7 @@ import { useContactForm, useHomeContent } from "@/hooks";
 import { SEO } from "@/components";
 import { ContactSection, DoorsSection, EngageSection } from "./_components";
 import { HeroSection, ProofSection, WorkSection } from "./_components";
+import { LeadershipSection } from "../about/_components"; // borrowed from about page cz look at them handsome gentlemen bruv.
 // Data & Utils
 import { buildOrganizationSchema } from "@/domain/schema";
 // Assets
@@ -52,9 +53,10 @@ export default function HomePage() {
         ]}
       />
       <EngageSection {...sections.engage} index="04" />
+      <LeadershipSection {...content.leadership} index="05" />
       <ContactSection
         {...content.contact}
-        index="05"
+        index="06"
         email={site.contactEmail}
         location={site.location}
         form={form}
