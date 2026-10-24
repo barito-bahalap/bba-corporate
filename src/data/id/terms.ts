@@ -6,7 +6,7 @@ export const termsContent: LegalContent = {
     title: "Ketentuan Penggunaan",
     description:
       "Ketentuan yang mengatur penggunaan situs web Barito Bahalap Agency.",
-    path: "/terms",
+    path: "https://baritobahalap.com/terms",
   },
   title: "Ketentuan Penggunaan",
   updated: "23 Oktober 2026",
