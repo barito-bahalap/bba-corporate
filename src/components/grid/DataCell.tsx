@@ -8,7 +8,6 @@ interface DataCellProps {
   value: string;
   label: string;
   note?: string;
-  index?: string;
   delay?: number;
   tone?: "light" | "dark";
 }
@@ -17,14 +16,12 @@ export function DataCell({
   value,
   label,
   note,
-  index,
   delay = 0,
   tone = "light",
 }: DataCellProps) {
   return (
     <div
       className={cx("cg-data", `cg-data--${tone}`)}
-      data-index={index}
       data-cg-reveal
       style={{ "--cg-i": delay } as CSSProperties}
     >

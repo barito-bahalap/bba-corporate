@@ -2,8 +2,6 @@
 import "./ProofSection.css";
 // Components
 import { DataCell, GridSection, IndexLabel } from "@/components";
-// Utils
-import { pad2 } from "@/domain/format";
 // Types
 import type { ProofContent } from "@/domain/sections";
 
@@ -21,7 +19,6 @@ export function ProofSection({ index, label, items }: ProofSectionProps) {
             key={item.label}
             value={item.value}
             label={item.label}
-            index={pad2(i + 1)}
             delay={i}
             tone="dark"
           />

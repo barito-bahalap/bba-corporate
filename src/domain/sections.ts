@@ -62,6 +62,8 @@ export interface WorkContent {
     label: string;
     emptyTitle: string;
     emptyText: string;
+    ctaLabel: string;
+    ctaHref: string;
     practiceTitle: string;
     practiceAreas: TitledItem[];
     principlesTitle: string;

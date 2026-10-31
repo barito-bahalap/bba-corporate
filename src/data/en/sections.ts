@@ -98,9 +98,11 @@ export const sectionsEn: SectionsContent = {
     },
     media: {
       label: "Barito Bahalap Media",
-      emptyTitle: "Portfolio in progress",
+      emptyTitle: "Read our work on Insight",
       emptyText:
-        "BBM is still in its early stage. We will showcase its work gradually once the first projects are completed and clients give their approval.",
+        "Barito Bahalap Media publishes its editorial work and analysis on Insight. Visit it to see what BBM is producing.",
+      ctaLabel: "Visit Insight",
+      ctaHref: "https://media.baritobahalap.com/insight",
       practiceTitle: "Areas of work",
       practiceAreas: [
         {

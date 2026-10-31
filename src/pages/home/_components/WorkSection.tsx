@@ -2,7 +2,13 @@ import type { CSSProperties } from "react";
 // Style
 import "./WorkSection.css";
 // Components
-import { Badge, GridHeader, GridSection, ResponsiveImage } from "@/components";
+import {
+  Badge,
+  Button,
+  GridHeader,
+  GridSection,
+  ResponsiveImage,
+} from "@/components";
 // Utils
 import { pad2 } from "@/domain/format";
 // Types
@@ -82,9 +88,16 @@ export function WorkSection({
 
       <div className="cg-work__media" data-cg-reveal>
         <p className="cg-work__media-label">{media.label}</p>
-        <div>
+        <div className="stack col gap-2">
           <h3 className="cg-work__media-title">{media.emptyTitle}</h3>
           <p>{media.emptyText}</p>
+
+          <Button
+            label={media.ctaLabel}
+            href={media.ctaHref}
+            iconName="arrowRight"
+            iconAfter
+          />
         </div>
       </div>
     </GridSection>

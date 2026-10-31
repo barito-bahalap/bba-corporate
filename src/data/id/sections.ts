@@ -99,9 +99,11 @@ export const sectionsId: SectionsContent = {
     },
     media: {
       label: "Barito Bahalap Media",
-      emptyTitle: "Portofolio sedang disusun",
+      emptyTitle: "Baca karya kami di Insight",
       emptyText:
-        "BBM masih di tahap awal. Portofolio akan kami tampilkan bertahap setelah proyek pertama selesai dan klien menyetujui.",
+        "Barito Bahalap Media menerbitkan karya editorial dan analisisnya di Insight. Kunjungi untuk melihat apa yang sedang dikerjakan BBM.",
+      ctaLabel: "Kunjungi Insight",
+      ctaHref: "https://media.baritobahalap.com/insight",
       practiceTitle: "Bidang kerja",
       practiceAreas: [
         {
