@@ -2,8 +2,6 @@
 import "./AboutIntroSection.css";
 // Components
 import { DataCell, GridHeader, GridSection } from "@/components";
-// Utils
-import { pad2 } from "@/domain/format";
 // Types
 import type { AboutContent } from "@/domain/content";
 
@@ -34,13 +32,7 @@ export function AboutIntroSection({
       </div>
       <dl className="cg-about__stats">
         {stats.map((stat, i) => (
-          <DataCell
-            key={stat.label}
-            {...stat}
-            index={pad2(i + 1)}
-            delay={i}
-            tone="dark"
-          />
+          <DataCell key={stat.label} {...stat} delay={i} tone="dark" />
         ))}
       </dl>
     </GridSection>
