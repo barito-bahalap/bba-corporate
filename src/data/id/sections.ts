@@ -57,10 +57,10 @@ export const sectionsId: SectionsContent = {
   },
 
   work: {
-    eyebrow: "Karya terpilih",
+    eyebrow: "Portofolio terpilih",
     title: "Yang sudah dan sedang kami kerjakan",
     intro:
-      "Karya dikelompokkan per divisi. Setiap entri adalah kerja sama yang sudah dikonfirmasi.",
+      "Portofolio dikelompokkan per divisi. Setiap entri adalah kerja sama yang sudah dikonfirmasi.",
     imagePlaceholder: "Dokumentasi menyusul",
     tech: {
       label: "Barito Bahalap Tech",
@@ -101,7 +101,7 @@ export const sectionsId: SectionsContent = {
       label: "Barito Bahalap Media",
       emptyTitle: "Portofolio sedang disusun",
       emptyText:
-        "BBM masih di tahap awal. Karyanya akan kami tampilkan bertahap setelah proyek pertama selesai dan klien menyetujui.",
+        "BBM masih di tahap awal. Portofolio akan kami tampilkan bertahap setelah proyek pertama selesai dan klien menyetujui.",
       practiceTitle: "Bidang kerja",
       practiceAreas: [
         {

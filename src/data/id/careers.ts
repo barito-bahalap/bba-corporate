@@ -16,7 +16,7 @@ export const careersContent: CareersContent = {
   },
   hiringTitle: "Cara melamar",
   hiringParagraphs: [
-    "Kirim email berisi perkenalan singkat dan tautan ke karya Anda, misalnya repositori, portofolio, tulisan, atau hasil produksi video.",
+    "Kirim email berisi perkenalan singkat dan tautan ke portofolio Anda, misalnya repositori, portofolio, tulisan, atau hasil produksi video.",
     "Sebutkan juga bidang yang Anda tuju dan kota tempat Anda tinggal.",
   ],
   rolesTitle: "Peran yang kami butuhkan",
@@ -46,7 +46,7 @@ export const careersContent: CareersContent = {
   ],
   cta: {
     title: "Perkenalkan diri Anda",
-    body: "Kirim catatan singkat dan tautan ke karya Anda. Sebutkan bidang yang Anda tuju.",
+    body: "Kirim catatan singkat dan tautan ke portofolio Anda. Sebutkan bidang yang Anda tuju.",
     primary: {
       label: "Kirim email",
       href: `mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("Perkenalan: karier")}`,

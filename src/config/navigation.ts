@@ -3,7 +3,7 @@ import type { LocaleCode } from "@/i18n/locales";
 
 const text = {
   home: { en: "Home", id: "Beranda" },
-  work: { en: "Work", id: "Karya" },
+  work: { en: "Work", id: "Portofolio" },
   process: { en: "Process", id: "Proses" },
   about: { en: "About", id: "Tentang" },
   careers: { en: "Careers", id: "Karier" },
