@@ -88,7 +88,8 @@ export function WorkSection({
 
       <div className="cg-work__media" data-cg-reveal>
         <p className="cg-work__media-label">{media.label}</p>
-        <div className="stack col gap-2">
+
+        <div className="stack col gap-3">
           <h3 className="cg-work__media-title">{media.emptyTitle}</h3>
           <p>{media.emptyText}</p>
 
@@ -97,6 +98,7 @@ export function WorkSection({
             href={media.ctaHref}
             iconName="arrowRight"
             iconAfter
+            className="cg-work__media-cta"
           />
         </div>
       </div>
