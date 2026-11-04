@@ -7,6 +7,7 @@ import { useLocale } from "./useLocale";
 import type {
   ContactField,
   ContactFormErrors,
+  ContactFormLinks,
   ContactFormValues,
   SelectOption,
 } from "@barito-bahalap/components";
@@ -18,7 +19,7 @@ const INITIAL_VALUES: ContactFormValues = {
   email: "",
   division: "general",
   message: "",
-  consent: false,
+  consent: true,
 };
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -33,16 +34,23 @@ function validate(
   else if (!EMAIL_PATTERN.test(values.email.trim()))
     errors.email = copy.emailInvalid;
   if (!values.message.trim()) errors.message = copy.message;
-  if (!values.consent) errors.consent = copy.consent;
   return errors;
 }
 
-function buildMailto(
+function isMobileDevice(): boolean {
+  if (typeof navigator === "undefined") return false;
+  const ua = navigator.userAgent;
+  if (/Android|iPhone|iPad|iPod|Mobile/i.test(ua)) return true;
+  // iPadOS reports as Macintosh
+  return /Macintosh/i.test(ua) && navigator.maxTouchPoints > 1;
+}
+
+function buildLinks(
   values: ContactFormValues,
   options: readonly SelectOption[],
   copy: UiContent["form"],
   recipient: string,
-): string {
+): ContactFormLinks {
   const label =
     options.find((option) => option.value === values.division)?.label ??
     copy.generalOption;
@@ -55,7 +63,16 @@ function buildMailto(
     "",
     values.message.trim(),
   ].join("\r\n");
-  return `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  const to = encodeURIComponent(recipient);
+  const su = encodeURIComponent(subject);
+  const bd = encodeURIComponent(body);
+
+  return {
+    mailto: `mailto:${recipient}?subject=${su}&body=${bd}`,
+    gmail: `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${su}&body=${bd}`,
+    outlook: `https://outlook.live.com/mail/0/deeplink/compose?to=${to}&subject=${su}&body=${bd}`,
+  };
 }
 
 export function useContactForm() {
@@ -63,6 +80,7 @@ export function useContactForm() {
   const [values, setValues] = useState<ContactFormValues>(INITIAL_VALUES);
   const [errors, setErrors] = useState<ContactFormErrors>({});
   const [status, setStatus] = useState<"idle" | "prepared">("idle");
+  const [links, setLinks] = useState<ContactFormLinks | undefined>();
 
   const divisionOptions = useMemo<readonly SelectOption[]>(
     () => [
@@ -92,25 +110,33 @@ export function useContactForm() {
     const found = validate(values, ui.form.errors);
     setErrors(found);
     if (Object.keys(found).length > 0) return;
-    window.location.href = buildMailto(
+
+    const built = buildLinks(
       values,
       divisionOptions,
       ui.form,
       site.contactEmail,
     );
+    setLinks(built);
     setStatus("prepared");
+
+    if (isMobileDevice()) {
+      window.location.href = built.mailto;
+    } else {
+      window.open(built.gmail, "_blank", "noopener,noreferrer");
+    }
   }
 
   return {
     values,
     errors,
     status,
+    links,
     divisionOptions,
     onChange,
     onSubmit,
     labels: ui.form.labels,
     submitLabel: ui.form.submit,
-    consentLabel: ui.form.consent,
     statusMessage: ui.form.status,
   };
 }
